@@ -215,10 +215,21 @@ def render_nav(cards):
 total_videos = sum(len(c['videos']) for c in ordered_cards)
 total_variants = sum(len(v.get('variants', [])) for c in ordered_cards for v in c['videos'])
 total_words = 0
+total_hooks = 0
 for c in ordered_cards:
     for v in c['videos']:
         for var in v.get('variants', []):
-            total_words += len(var.get('vo', '').split())
+            if var.get('hook_options'):
+                # v5 — count recommended hook + body + cta
+                rec_idx = var.get('hook_recommended', 0)
+                hooks = var.get('hook_options', [])
+                rec_hook = hooks[rec_idx] if hooks and rec_idx < len(hooks) else ''
+                combined = ' '.join([rec_hook, var.get('body', ''), var.get('cta', '')])
+                total_words += len(combined.split())
+                total_hooks += len(hooks)
+            else:
+                # v4 fallback
+                total_words += len(var.get('vo', '').split())
 
 if total_variants == 0:
     # Show placeholder if no variants yet
