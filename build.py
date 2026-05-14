@@ -93,6 +93,7 @@ def render_variant(card_id, vid_idx, var_idx, variant):
           <span class="hook-text">{esc(h)}</span>
         </span>
         {rec_badge}
+        <button class="hook-play" data-text="{esc(h)}" type="button" onclick="event.preventDefault(); event.stopPropagation();">▶</button>
       </label>'''
         script_block = f'''
   <div class="hooks-block">
@@ -113,6 +114,7 @@ def render_variant(card_id, vid_idx, var_idx, variant):
     <p class="assembled-vo" data-vid="{esc(var_id)}" data-body="{esc(body)}" data-cta="{esc(cta)}">{esc(hook_options[hook_recommended] + ' ' + body + ' ' + cta)}</p>
     <div class="vo-actions">
       <span class="wf-product">↳ {esc(wf_product)}</span>
+      <button class="play-btn" data-vid="{esc(var_id)}" data-target="vo" type="button"><span class="play-icon">▶</span> Play</button>
       <button class="copy-btn" data-vid="{esc(var_id)}" type="button">Copy VO</button>
     </div>
   </div>'''
@@ -438,6 +440,35 @@ h1 {{ font-size: 32px; line-height: 1.15; letter-spacing: -0.02em;
 .assembled-block {{ background: rgba(10,109,47,0.03); border-top: 1px solid var(--pick); }}
 .assembled-vo {{ font-size: 15.5px; }}
 
+/* Audio controls */
+.audio-bar {{ position: sticky; top: 0; z-index: 50; background: var(--bg);
+  border-bottom: 1px solid var(--line); padding: 10px 60px; display: flex;
+  align-items: center; gap: 16px; flex-wrap: wrap; }}
+.audio-bar-label {{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ink-mute); font-weight: 600; }}
+.voice-select {{ font-family: inherit; font-size: 13px; padding: 6px 28px 6px 10px;
+  border: 1px solid var(--line); border-radius: 5px; background: var(--bg);
+  color: var(--ink); cursor: pointer; min-width: 200px; }}
+.rate-control {{ display: flex; align-items: center; gap: 8px; font-size: 12px;
+  color: var(--ink-soft); }}
+.rate-control input {{ width: 100px; }}
+.rate-val {{ font-family: var(--mono); font-size: 11px; color: var(--ink-mute);
+  min-width: 32px; }}
+
+.play-btn {{ padding: 6px 12px; background: var(--bg); border: 1px solid var(--line);
+  border-radius: 100px; font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft);
+  cursor: pointer; transition: all 0.15s; display: inline-flex; align-items: center; gap: 5px; }}
+.play-btn:hover {{ border-color: var(--ink); color: var(--ink); }}
+.play-btn.playing {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
+.play-btn .play-icon {{ font-size: 9px; }}
+.hook-play {{ padding: 3px 8px; font-size: 9px; margin-left: 8px;
+  background: var(--bg); border: 1px solid var(--line); border-radius: 100px;
+  cursor: pointer; color: var(--ink-mute); font-family: var(--mono);
+  letter-spacing: 0.06em; text-transform: uppercase; }}
+.hook-play:hover {{ color: var(--ink); border-color: var(--ink); }}
+.hook-play.playing {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
+
 .comment-block {{ padding-top: 12px; }}
 .variant-comment {{ width: 100%; min-height: 50px; padding: 9px 12px;
   border: 1px solid var(--line); border-radius: 6px; font-family: inherit;
@@ -498,6 +529,17 @@ h1 {{ font-size: 32px; line-height: 1.15; letter-spacing: -0.02em;
 </aside>
 
 <main>
+  <div class="audio-bar">
+    <span class="audio-bar-label">Audio Preview</span>
+    <select class="voice-select" id="voiceSelect"><option>Loading voices…</option></select>
+    <div class="rate-control">
+      <span>Rate</span>
+      <input type="range" id="rateSlider" min="0.6" max="1.4" step="0.05" value="1.0">
+      <span class="rate-val" id="rateVal">1.0x</span>
+    </div>
+    <button class="play-btn" id="btnStop" style="display:none;"><span class="play-icon">■</span> Stop</button>
+  </div>
+
   <div class="hero">
     <div class="kicker">Sparkloop · /spark_script v2 · 3 styles per video</div>
     <h1>SEA Brand Channel — Voiceover Scripts</h1>
@@ -748,6 +790,130 @@ const observer = new IntersectionObserver(entries => {{
 cards.forEach(c => observer.observe(c));
 
 updatePanel();
+
+// ========== AUDIO PREVIEW (Web Speech API) ==========
+
+const synth = window.speechSynthesis;
+let voices = [];
+let currentBtn = null;
+let currentUtterance = null;
+
+function populateVoices() {{
+  voices = synth.getVoices().filter(v => v.lang.startsWith('en'));
+  const sel = document.getElementById('voiceSelect');
+  if (!voices.length) {{
+    sel.innerHTML = '<option>No voices loaded yet…</option>';
+    return;
+  }}
+  // Sort: premium/enhanced first, then by name
+  voices.sort((a, b) => {{
+    const aPrem = /premium|enhanced|natural/i.test(a.name) ? 0 : 1;
+    const bPrem = /premium|enhanced|natural/i.test(b.name) ? 0 : 1;
+    if (aPrem !== bPrem) return aPrem - bPrem;
+    return a.name.localeCompare(b.name);
+  }});
+  // Default voice: prefer Ava, Zoe, Samantha, Karen, then first premium
+  const preferred = ['Ava (Premium)', 'Zoe (Premium)', 'Samantha (Enhanced)', 'Samantha', 'Karen (Premium)', 'Karen'];
+  let defaultIdx = 0;
+  for (const p of preferred) {{
+    const i = voices.findIndex(v => v.name === p);
+    if (i >= 0) {{ defaultIdx = i; break; }}
+  }}
+  // Try restoring saved voice
+  const saved = localStorage.getItem('sea_vo_voice');
+  if (saved) {{
+    const i = voices.findIndex(v => v.name === saved);
+    if (i >= 0) defaultIdx = i;
+  }}
+  sel.innerHTML = voices.map((v, i) =>
+    `<option value="${{i}}"${{i === defaultIdx ? ' selected' : ''}}>${{v.name}} (${{v.lang}})</option>`
+  ).join('');
+}}
+
+populateVoices();
+if (synth.onvoiceschanged !== undefined) synth.onvoiceschanged = populateVoices;
+
+document.getElementById('voiceSelect').addEventListener('change', (e) => {{
+  const idx = parseInt(e.target.value);
+  if (voices[idx]) localStorage.setItem('sea_vo_voice', voices[idx].name);
+}});
+
+const rateSlider = document.getElementById('rateSlider');
+const rateVal = document.getElementById('rateVal');
+const savedRate = parseFloat(localStorage.getItem('sea_vo_rate') || '1.0');
+rateSlider.value = savedRate;
+rateVal.textContent = savedRate.toFixed(2) + 'x';
+rateSlider.addEventListener('input', () => {{
+  rateVal.textContent = parseFloat(rateSlider.value).toFixed(2) + 'x';
+  localStorage.setItem('sea_vo_rate', rateSlider.value);
+}});
+
+const btnStop = document.getElementById('btnStop');
+btnStop.addEventListener('click', () => stopSpeaking());
+
+function stopSpeaking() {{
+  synth.cancel();
+  if (currentBtn) {{
+    currentBtn.classList.remove('playing');
+    currentBtn.innerHTML = currentBtn.dataset.target === 'vo' ?
+      '<span class="play-icon">▶</span> Play' : '▶';
+    currentBtn = null;
+  }}
+  currentUtterance = null;
+  btnStop.style.display = 'none';
+}}
+
+function speak(text, btn) {{
+  if (synth.speaking) {{
+    synth.cancel();
+    if (currentBtn === btn) {{
+      stopSpeaking();
+      return;
+    }}
+    if (currentBtn) {{
+      currentBtn.classList.remove('playing');
+      currentBtn.innerHTML = currentBtn.dataset.target === 'vo' ?
+        '<span class="play-icon">▶</span> Play' : '▶';
+    }}
+  }}
+  const u = new SpeechSynthesisUtterance(text);
+  const voiceIdx = parseInt(document.getElementById('voiceSelect').value);
+  if (voices[voiceIdx]) u.voice = voices[voiceIdx];
+  u.rate = parseFloat(rateSlider.value);
+  u.pitch = 1.0;
+  u.volume = 1.0;
+  u.onend = () => stopSpeaking();
+  u.onerror = () => stopSpeaking();
+  currentBtn = btn;
+  currentUtterance = u;
+  btn.classList.add('playing');
+  btn.innerHTML = btn.dataset.target === 'vo' ?
+    '<span class="play-icon">■</span> Stop' : '■';
+  btnStop.style.display = 'inline-flex';
+  synth.speak(u);
+}}
+
+// Hook preview buttons
+document.querySelectorAll('.hook-play').forEach(btn => {{
+  btn.addEventListener('click', (e) => {{
+    e.preventDefault();
+    e.stopPropagation();
+    const text = btn.getAttribute('data-text');
+    speak(text, btn);
+  }});
+}});
+
+// Full VO play buttons (assembled hook + body + cta)
+document.querySelectorAll('.play-btn[data-target="vo"]').forEach(btn => {{
+  btn.addEventListener('click', (e) => {{
+    e.stopPropagation();
+    const vid = btn.getAttribute('data-vid');
+    const el = document.querySelector(`.assembled-vo[data-vid="${{vid}}"]`);
+    if (!el) return;
+    speak(el.textContent, btn);
+  }});
+}});
+
 </script>
 </body>
 </html>
