@@ -8,28 +8,55 @@
         "approach": "Curiosity-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
-            "rating_social": 4.6,
-            "rating_audience": 4.5,
-            "rating_sales": 4.2,
-            "wf_product": "WorldFirst",
-            "vo": "We watch operators send the same supplier three wires in a row and get three different speeds. First one takes five days. Second one takes two. Third one lands the same day. They think the bank is being random. It isn't. There are three different roads your money can travel to reach a Chinese supplier. Road one is the old international banking network. Your money gets passed from bank to bank to bank before it arrives. Three to five days. Road two is China's own payment system. Faster, one to two days. Road three is a direct connection to a Chinese bank that handles the local leg. Same day. Your bank picks road one by default and never tells you the other two exist. Check out WorldFirst. We use the fast one."
+            "style": "Story / Narrative arc",
+            "rating_social": 4.5,
+            "rating_audience": 4.6,
+            "rating_sales": 4.3,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "A business owner sends CNY to their Chinese factory and waits 5 days.",
+              "Why does the same CNY payment land in 5 days for one business owner and same-day for another?",
+              "There are three different ways CNY reaches a Chinese supplier. Most business owners only know one.",
+              "Your wire confirmation says sent. Your supplier says nothing has arrived. The path your money is on decides who is right.",
+              "Three paths. Same CNY. One arrives in hours, one in days, one gets stuck."
+            ],
+            "hook_recommended": 0,
+            "body": "Her wire went through the international bank network, the slow path. Money hops bank to bank for 3 to 5 days. Meanwhile her factory waits to start production. There is a second path that clears in 1 to 2 days, China's own clearing system. And a third path designed for paying suppliers on 1688, the wholesale platform. That one arrives same-day. Her bank put her on the slow path by default and never told her there were other options. That is why you should use WorldFirst. Same CNY payment, same supplier, but on the fastest path. Most land same-day.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.3,
-            "rating_audience": 4.7,
+            "rating_social": 4.4,
+            "rating_audience": 4.5,
             "rating_sales": 4.5,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on getting Chinese currency to a Chinese supplier. There are three ways your money can actually travel. Way one. The default international bank route. Your money hops through three or four other banks before it arrives. Three to five days. Each bank along the way takes a fee, fifteen to fifty dollars. Way two. China's own clearing system. One to two days. No middle banks. Way three. A direct link to a Chinese bank that handles the local leg same day. On a fifty thousand dollar wire that's the difference between forty nine thousand landing in five days, or forty nine thousand eight hundred landing today. Your bank picks the slowest one by default. Search WorldFirst. We don't."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Three CNY paths to China. 3 to 5 days, 1 to 2 days, same-day.",
+              "Why does one CNY payment take 5 days and the next one takes 5 hours?",
+              "Your CNY can travel three different ways to China. Speed difference: 5x.",
+              "Your bank says CNY transfer. Your supplier says no money. Both true, because there are three different transfer types.",
+              "5 days. 2 days. Same-day. Three paths, same destination, same money."
+            ],
+            "hook_recommended": 2,
+            "body": "Path one, the global bank network. 3 to 5 business days. Money hops through 1 to 3 banks in the middle, each takes a fee, each takes a day. Path two, China's direct clearing system. 1 to 2 days, fewer middlemen. Path three, the rail built for paying 1688 suppliers. Around 80% land same-day, 90% by the next day. Same CNY amount, same supplier, three speeds. Most banks put you on path one by default because they make the most money on it. That is why you should use WorldFirst. WorldFirst goes direct on the fast path.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.8,
+            "rating_social": 4.5,
             "rating_audience": 4.4,
-            "rating_sales": 4.3,
-            "wf_product": "WorldFirst",
-            "vo": "Your bank told you a wire to China takes five days. That's not a fact. That's a routing choice. There are three different ways your money can travel to reach a Chinese supplier and your bank put you on the slowest one. The old international bank network was built in the seventies to pass messages between banks. It was never built to move money fast. China has its own system that processes twenty four trillion dollars a year. Your bank pretends it doesn't exist. There's also a direct link to a Chinese bank that lands money same day. Your bank pretends that one doesn't exist either. The slow wire isn't physics. It's a choice. Look up WorldFirst. We use the fast road."
+            "rating_sales": 4.4,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Your bank tells you there is one way to send CNY to China. There are three.",
+              "Why is your CNY taking 5 days when CNY clears inside China in seconds?",
+              "Your bank picks the slowest CNY path on purpose. Here is why.",
+              "Everyone tells you a CNY wire is a CNY wire. Three different mechanisms move that money.",
+              "The CNY in China moves instantly. The CNY you send from outside takes 5 days. Why?"
+            ],
+            "hook_recommended": 0,
+            "body": "Inside China, CNY moves between bank accounts in seconds. Outside, your CNY wire takes 3 to 5 days. The reason: your bank puts your money on the global international network, which routes through 2 or 3 middleman banks. There are two faster paths. China's direct clearing system, 1 to 2 days. And the rail used for paying 1688 suppliers, same-day. Your bank does not offer those because they do not own them. That is why you should use WorldFirst. WorldFirst sends your CNY on the fast paths the banks do not show you.",
+            "cta": "Look up WorldFirst."
           }
         ]
       }
@@ -37,35 +64,62 @@
   },
   {
     "card_id": "P1-A4",
-    "card_title": "Your supplier asked you to pay the $200 they didn't receive",
+    "card_title": "Your supplier asked for the $200 they didn't receive",
     "videos": [
       {
         "video_title": "Your supplier just asked for the $200 they did not get",
         "approach": "Pain-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.7,
-            "rating_audience": 4.6,
-            "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "We see this happen on roughly one in ten wires to Chinese suppliers. Operator sends fifty thousand dollars. Next morning a message arrives. We only got forty nine thousand eight hundred and thirty five. Please top up. The bank app says sent. Successful. Done. So who's lying. Neither of them. Here's what really happens. The wire travels through three other banks before it reaches your supplier. Each one is allowed to take its own cut, fifteen to fifty dollars, straight from the amount, before passing it on. Your bank doesn't warn you. Your supplier just sees a smaller number arrive. The missing money isn't a scam. It's three middle banks each taking their slice. Check out WorldFirst. We send the full amount, no middle banks."
+            "rating_audience": 4.7,
+            "rating_sales": 4.5,
+            "wf_product": "WorldFirst (internal: World Account + MYbank, OUR routing)",
+            "hook_options": [
+              "A business owner sends $50,000 to their Chinese factory. Supplier replies: we only got $49,800.",
+              "Why is your supplier asking for the $200 they say did not arrive?",
+              "$50,000 leaves your account. $49,800 arrives. The $200 just vanishes.",
+              "Your bank says sent in full. Your supplier says short payment. Both are telling the truth.",
+              "A business owner just got a message from her factory: short by $200. She wires the same amount the next day. Short again."
+            ],
+            "hook_recommended": 0,
+            "body": "Here is what happened. Her wire went through the international bank network. Money does not fly straight to China. It passes through 1 to 3 banks in the middle. Each one quietly takes a fee, usually $15 to $50, straight out of her wire before passing it on. Her bank never warned her. Her factory just saw a smaller number arrive. So she has to wire the missing $200. New transfer fee. Another delay. Factory still has not started production. That is why you should use WorldFirst. WorldFirst skips the middleman chain entirely. The amount you send is the amount your supplier gets.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.4,
+            "rating_social": 4.6,
             "rating_audience": 4.7,
-            "rating_sales": 4.5,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on why your supplier got less than you sent. A wire to China passes through one to three middle banks on its way. Each one takes fifteen to fifty dollars before passing the rest on. So on a fifty thousand dollar wire, that's forty five to a hundred and fifty dollars gone before your supplier sees a cent. The default setting on your wire says supplier eats those fees. You can change the setting so you pay them yourself, but that costs you another thirty to seventy five dollars upfront, and your bank will quietly mark up the rate to make it back. Or you can use a system with no middle banks at all. Look up WorldFirst. Full amount, every time."
+            "rating_sales": 4.6,
+            "wf_product": "WorldFirst (internal: World Account + MYbank, OUR routing)",
+            "hook_options": [
+              "$50,000 sent. $49,800 arrived. $200 gone. Here is the math.",
+              "Why is 8 to 15% of all wires to Chinese suppliers landing short?",
+              "Your wire to China hits 1 to 3 middleman banks. Each one keeps $15 to $50.",
+              "Your bank says zero fees deducted. Your supplier says $200 short. Both right.",
+              "$50K wire. 3 middleman banks. $50 each. Quick maths: your supplier gets $49,850."
+            ],
+            "hook_recommended": 0,
+            "body": "When you wire $50,000 to China through your bank, it passes through 1 to 3 middleman banks in the chain. Each one deducts $15 to $50 directly from your wire before passing it on. Your bank never tells you. Your supplier just sees a smaller number land. Quick maths: 3 middlemen at $50 each is $150 gone. Across a year of wires, that is real money. That is why you should use WorldFirst. WorldFirst routes your CNY direct, no middleman chain, full amount lands with your supplier.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
-            "rating_audience": 4.5,
-            "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "Everyone treats the missing two hundred dollars on a China wire like a mystery. It's not a mystery. It's how the system was built. The international bank network isn't actually a payment system. It's a messaging system from 1973 that lets banks send instructions to each other. The real money moves through middle banks who all get paid for the favour. Each one quietly takes fifteen to fifty dollars from your wire. Your bank wrote a code on your transfer that says the supplier pays those fees, not you. You aren't being scammed. You're being routed through fifty year old infrastructure that was designed to charge per stop. WorldFirst sends money to China direct, no middle banks. Check us out."
+            "rating_social": 4.5,
+            "rating_audience": 4.6,
+            "rating_sales": 4.5,
+            "wf_product": "WorldFirst (internal: World Account + MYbank, OUR routing)",
+            "hook_options": [
+              "Your bank told you the wire went through. The $200 that disappeared is not a bug.",
+              "Why is the bank not refunding the $200 your supplier never got?",
+              "Your supplier is not lying about the $200. Your bank is not lying about sending $50,000. Welcome to the chain.",
+              "Everyone tells you cross-border wires are reliable. 8 to 15% land short to China.",
+              "The $200 missing from your wire did not vanish. Somebody took it."
+            ],
+            "hook_recommended": 0,
+            "body": "Your bank moves your $50,000 by handing it to another bank, which hands it to another bank, until it reaches your supplier. That is how international wires actually work, even though banks rarely explain it. Each middleman bank takes a small fee, $15 to $50, out of the amount. By the time it lands, your supplier is short. Your bank shows the wire as complete because, from their side, it is. The chain is legal, documented, and standard. Nobody flags it because nobody loses money except you. That is why you should use WorldFirst. WorldFirst goes direct, no chain to deduct from.",
+            "cta": "Look up WorldFirst."
           }
         ]
       },
@@ -74,28 +128,55 @@
         "approach": "Pain-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.5,
-            "rating_audience": 4.7,
-            "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "We see the same pattern almost every week. Day one, operator wires thirty thousand to a factory. Day two, supplier is quiet. Day three, still quiet. Day four, the bank is reviewing it. Day five, finally released. Short a hundred and fifty dollars. Production was supposed to start Monday. It's Friday. Two things ate that week. The wire passed through two middle banks, each taking a day and forty dollars. And the supplier's name on the wire didn't exactly match what's on their Chinese business registration. They wrote ABC Trading. The registered name is ABC Trading Co Limited. Chinese banks check that match. Anything off pauses the wire for review. Check out WorldFirst. We verify the supplier's exact registered name before the wire leaves."
+            "rating_audience": 4.6,
+            "rating_sales": 4.3,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "A business owner sends a wire to China on a Monday. By Friday, her supplier is still chasing.",
+              "Why is your 2-day wire to China taking 5 days?",
+              "Day 1: wire sent. Day 5: supplier still asking where the money is. This is normal.",
+              "Your bank promised 2 business days. You are on day 5. Welcome to the China corridor.",
+              "Three middleman banks. One name spelling mismatch. Five days of delay."
+            ],
+            "hook_recommended": 0,
+            "body": "Her wire was supposed to clear in 2 business days. By Friday, day 5, her factory had still not seen the money. Two things were happening at once. First, middleman banks. Her wire was passing through 3 different banks in the middle, each taking a day. Second, the Chinese bank flagged the company name. Her wire said Shenzhen ABC Trading. The actual registered name was Shenzhen ABC Trading Co., Ltd. Three missing letters held the wire for manual review. Production got delayed by a week. That is why you should use WorldFirst. Same-day CNY payments, no middlemen, no name mismatch holds.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.3,
-            "rating_audience": 4.7,
-            "rating_sales": 4.6,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on a delayed China wire. Two things slow it down. One. Middle banks. A wire to China usually passes through one to three of them. Each one takes a business day to process. Each one takes fifteen to fifty dollars. Two. Name mismatch. Chinese banks check the supplier's name on the wire against their official business registration. If you wrote ABC Trading but the registered name is ABC Trading Co Limited, the wire pauses for review. Three to ten days typical. Five to ten percent of wires to China get held up this way. Two minutes spent matching the exact registered name saves a week. Search WorldFirst. We catch the mismatch before the wire ever leaves."
+            "rating_social": 4.4,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Day 1 sender bank. Day 2 middleman A. Day 3 middleman B. Day 4 Chinese bank review. Day 5 supplier.",
+              "Why does a 2-day wire to China actually take 5 days, 8 out of 10 times?",
+              "5 to 10% of wires to China get returned for one reason: the company name has 3 letters missing.",
+              "Your bank quoted 2 business days. The chain has 4 banks. Quick maths: not 2 days.",
+              "$150 in middleman fees. 3 extra days waiting. One typo in the company name."
+            ],
+            "hook_recommended": 0,
+            "body": "A typical wire to China takes 5 days, not the 2 your bank quoted. Day 1: your bank processes. Day 2 and 3: middleman banks pass it along, each taking $15 to $50 in fees. Day 4: Chinese bank runs a compliance check, matching the name on the wire to the company registration. If you wrote Shenzhen ABC Trading but the registered name is Shenzhen ABC Trading Co., Ltd., it gets held for manual review. 5 to 10% of wires to China bounce back for this. Day 5: supplier finally sees it. That is why you should use WorldFirst. WorldFirst verifies the supplier name upfront and sends direct.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.6,
+            "rating_social": 4.4,
             "rating_audience": 4.5,
-            "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "Your bank told you the wire would clear in two days. It's day five. Your supplier is still chasing. Your bank says it left their system on day one, so this isn't their problem. Here's what they didn't say. Your money is sitting at the second middle bank in the chain, stuck in a review queue, because the supplier's name on the wire didn't exactly match the Chinese business registration. Missing Co Limited. Or English letters instead of Chinese characters. One small gap and the wire stalls for a week. Banks treat this as normal. We treat it as a fixable problem. WorldFirst checks the exact registered supplier name before the wire leaves. Look us up."
+            "rating_sales": 4.3,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Your wire was not delayed. It was on the slow path all along.",
+              "Why does your bank quote 2 days when the actual average is 5?",
+              "The wire is not lost. It is being held in a Chinese bank because the company name has a typo.",
+              "Everyone blames the supplier when wires arrive late. 80% of the time it is the chain.",
+              "Your bank told you 2 business days. They forgot to mention the other 3 banks in the chain."
+            ],
+            "hook_recommended": 0,
+            "body": "When your bank says 2 business days for a wire to China, they mean their own processing time. They do not count the middleman banks in the chain. A US to China wire usually hits 3 of them. They also do not count Chinese bank compliance, where your wire gets paused if the company name on it does not exactly match the registered name in China. Add it up and most wires actually take 5 days. The delay is built in. Your bank does not explain it. Your supplier waits. That is why you should use WorldFirst. WorldFirst goes direct, same-day, no chain.",
+            "cta": "Look up WorldFirst."
           }
         ]
       }
@@ -110,28 +191,55 @@
         "approach": "Reframe",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.6,
-            "rating_audience": 4.6,
-            "rating_sales": 4.5,
-            "wf_product": "WorldFirst",
-            "vo": "We watch operators pay Chinese suppliers in US dollars for years because it feels safer. Then someone runs the numbers. On a twenty thousand dollar order they're losing roughly four hundred dollars per wire. Not in fees. In the exchange rate. Their bank converts local money to US dollars and pockets one percent in the rate. The supplier's Chinese bank then converts US dollars to Chinese currency on the other end and pockets another half percent. Two conversions, both invisible, both paid by the operator. When they switch to paying directly in Chinese currency, one conversion, supplier gets full amount same day. The safety was an illusion costing two percent on every order. Check out WorldFirst. One conversion, no double tax."
+            "rating_audience": 4.7,
+            "rating_sales": 4.7,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "A business owner pays her Chinese factory in USD. She thinks it is the safe choice. It costs her 2% extra.",
+              "Why is paying your supplier in USD costing you 2% more than paying in CNY?",
+              "$20,000 USD wire to China. $460 invisible loss. Two conversions, not one.",
+              "USD feels universal. It is also the most expensive currency to send to China.",
+              "Your supplier accepts USD. They also charge you a hidden fee for it."
+            ],
+            "hook_recommended": 0,
+            "body": "Her USD wire actually goes through two currency conversions, not one. First her bank converts her local currency into USD, takes 0.5 to 1.5%. Then her supplier's Chinese bank converts USD back into CNY on the other side, takes another 0.3 to 0.8%. That double conversion is invisible because it is baked into the rates, not the fee line. On a $20,000 order, she has quietly given up 160 to 460 dollars before anything ships. That is why you should use WorldFirst. WorldFirst sends CNY directly to your supplier. One conversion. Lower total cost. Same destination bank account.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.4,
-            "rating_audience": 4.8,
+            "rating_social": 4.5,
+            "rating_audience": 4.7,
             "rating_sales": 4.7,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on paying your Chinese supplier in US dollars versus Chinese currency. US dollar route. Two conversions stack up. Your bank converts your local money to US dollars, half a percent to one and a half percent gets baked into the exchange rate. Supplier's bank then converts US dollars to Chinese currency on arrival, another point three to point eight percent. Combined hidden cost is point eight to two point three percent on top of the invoice. On a twenty thousand dollar order that's a hundred and sixty to four hundred and sixty dollars before anything ships. Chinese currency direct route. One conversion, point three to point five percent. Same payment. Same destination bank. Half the cost. Search WorldFirst."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "USD route: two currency conversions. CNY route: one. Total cost difference: 2%.",
+              "Why does a $20K USD wire cost $460 more than a $20K CNY wire to the same supplier?",
+              "$20,000 USD to China stacks two FX charges. Quick maths: $460 silent loss.",
+              "Your bank quotes USD wire as standard. The math says it costs 2x what a CNY wire costs.",
+              "0.5 to 1.5% on the send side. 0.3 to 0.8% on the receive side. That is your USD wire."
+            ],
+            "hook_recommended": 0,
+            "body": "When you send USD to a Chinese supplier, the money gets converted twice. Conversion one, your bank turns your local currency into USD, takes 0.5 to 1.5%. Conversion two, your supplier's bank turns that USD into CNY, takes 0.3 to 0.8%. Quick maths on a $20K order: that is up to $460 gone before your supplier even receives it. Pay in CNY directly: one conversion, 0.3 to 0.5% total. Same order, half the cost. That is why you should use WorldFirst. WorldFirst sends CNY direct, one conversion, transparent rate.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
+            "rating_social": 4.5,
             "rating_audience": 4.6,
             "rating_sales": 4.6,
-            "wf_product": "WorldFirst",
-            "vo": "Everyone tells you to pay in US dollars because it's safe. Safe for who. Your US dollar wire to a Chinese factory hits two conversions. Your bank takes one percent turning your local cash into US dollars. The supplier's bank takes another half percent turning that into Chinese currency. Both costs are invisible because they're hidden in the exchange rate, not the fee line. Meanwhile the supplier is sitting on US dollars they can't actually spend, waiting seven days for clearance, paying their own bank to flip the money. Safe is a marketing word. The cost is real. Pay in Chinese currency direct and the whole stack disappears. WorldFirst is built for this. Check us out."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Everyone says pay your supplier in USD. The math says pay them in CNY.",
+              "Why is USD considered the safe currency when it costs 2% extra in China?",
+              "Your bank pushes USD wires. Your supplier prefers CNY. The reason is the same: cost.",
+              "USD is the universal currency. In China, it is the universal extra fee.",
+              "The 'safe' currency to send your supplier is the one that gets converted twice on the way."
+            ],
+            "hook_recommended": 0,
+            "body": "USD looks safe because everyone uses it. That habit is exactly why it costs more. When you send USD to a Chinese supplier, the money gets converted twice. Your bank charges on the way out, the supplier's bank charges on the way in. Both conversions are invisible because they are baked into the rate. The CNY path avoids the second conversion entirely. One currency, one rate, one cost. Your supplier even prefers it: they get clean CNY instead of waiting 7 to 10 days for their bank to convert your USD. That is why you should use WorldFirst. WorldFirst sends CNY direct.",
+            "cta": "Look up WorldFirst."
           }
         ]
       },
@@ -140,28 +248,55 @@
         "approach": "Supplier-perspective",
         "variants": [
           {
-            "style": "Pattern / What we see",
-            "rating_social": 4.7,
-            "rating_audience": 4.6,
-            "rating_sales": 4.5,
-            "wf_product": "WorldFirst",
-            "vo": "Every Chinese factory we talk to says the same thing about US dollar wires. A week of waiting for the money to actually clear. A fee their bank takes off the top to convert it into Chinese currency. And a guess on which way the exchange rate moves before the money settles. So what do they do. They pad the US dollar price by three to five percent to protect themselves. Most operators have been paying that markup for years without knowing. Ask your supplier for their Chinese currency price on the next quote. Watch what comes back. Often three percent lower for the same factory, same order, just a different currency on the invoice. Look up WorldFirst. We send Chinese currency direct."
+            "style": "Story / Narrative arc",
+            "rating_social": 4.6,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Your supplier accepts USD. They also quietly pad your invoice 2 to 5% to cover it.",
+              "Why does the same supplier quote you $10,000 in USD and 70,000 in CNY when 70,000 CNY is closer to $9,700?",
+              "Your supplier does not want your USD. They just do not say it out loud.",
+              "When your USD wire lands in China, your supplier waits 7 to 10 days to use it.",
+              "A factory owner in Guangzhou prefers CNY. The 2% USD markup on your invoice is why."
+            ],
+            "hook_recommended": 2,
+            "body": "Here is what happens when USD lands at a Chinese supplier's bank. They wait 7 to 10 days for the bank to clear the funds. They pay a receiving fee to convert the USD to CNY. And they carry the currency risk if the rate moves before settlement. None of that is your problem on paper. It becomes your problem on the next quote. They pad the USD price by 2 to 5% to protect themselves. Ask for the CNY price and that padding has no reason to exist. That is why you should use WorldFirst. WorldFirst lets you pay your supplier in CNY directly, so you can ask for the CNY price and actually get it.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
             "rating_social": 4.5,
-            "rating_audience": 4.7,
-            "rating_sales": 4.6,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on what your supplier actually loses on a US dollar wire. US dollars land in their Chinese bank. Three costs hit them. One, seven to ten days waiting for it to clear. Working capital frozen. Two, their bank takes a fee to convert US dollars into Chinese currency, point three to point eight percent. Three, currency risk if the exchange rate moves between the day they invoiced you and the day the money arrives. On a twenty thousand dollar order that's sixty to a hundred and sixty dollars in fees, plus a week of frozen cashflow, plus exchange rate exposure. So they pad the next invoice by two to five percent to cover it. You've been paying that markup invisibly for years. Search WorldFirst. Pay in Chinese currency direct. Watch the next quote drop."
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Your supplier pads USD invoices 2 to 5%. Three reasons: wait, fee, rate risk.",
+              "Why is your supplier's USD price always 2 to 5% higher than their CNY price?",
+              "USD to a Chinese supplier: 7 to 10 day wait, plus receiving fee, plus rate risk. Quick maths: 2 to 5% markup.",
+              "Your supplier sees three downsides to USD. Each one gets priced into your invoice.",
+              "On a 100,000 CNY order: USD price is 5,000 CNY higher. That is the padding."
+            ],
+            "hook_recommended": 0,
+            "body": "Three reasons Chinese suppliers prefer CNY. One: speed. CNY lands in their account same-day. USD takes 7 to 10 days for their bank to clear and convert. Two: fee. Their bank charges them around 0.3 to 0.8% to convert your USD back to CNY. They eat that or push it to you. Three: rate risk. If the rate moves between when you quote and when you pay, they lose. All three get baked into the USD price as a 2 to 5% padding. Quick maths on a 100,000 CNY order: that is 5,000 CNY of padding gone. That is why you should use WorldFirst. WorldFirst sends CNY direct.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
+            "rating_social": 4.4,
             "rating_audience": 4.5,
             "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "Your supplier doesn't actually want your US dollars. They just don't say it because they're polite. Every US dollar wire forces them to wait a week for the money to clear, pay their own bank a fee to flip it into Chinese currency, and absorb the risk if the exchange rate moves against them. So they don't refuse it. They just quietly price it in. The US dollar invoice you got is three to five percent higher than the Chinese currency one would be. That's not greed. That's defence. You've been paying for your supplier's exchange rate risk and calling it the invoice price. Ask for the Chinese currency quote. WorldFirst handles this. Check us out."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Your supplier never asks for CNY because most foreign buyers cannot send it.",
+              "Why is your supplier accepting USD when they would rather have CNY?",
+              "Your supplier is not refusing CNY. They assumed you could not send it. Ask them.",
+              "Everyone tells you USD is the supplier-friendly currency. The supplier is just being polite.",
+              "Your supplier quotes USD because that is what you asked for. CNY was always available."
+            ],
+            "hook_recommended": 0,
+            "body": "Most Chinese suppliers prefer CNY. They just never bring it up because they assume foreign buyers cannot send it. So they quote USD, accept USD, and quietly pad the price by 2 to 5% to cover the conversion wait, the bank receiving fee, and the rate risk on their side. The conversation literally never happens. The moment a buyer asks for the CNY price, suppliers reveal the lower number. The padding had no reason to exist; it was insurance against a problem you can actually solve. That is why you should use WorldFirst. WorldFirst sends CNY directly to your supplier. Ask for the CNY price and watch what they quote.",
+            "cta": "Look up WorldFirst."
           }
         ]
       },
@@ -170,28 +305,55 @@
         "approach": "Math-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
-            "rating_social": 4.3,
+            "style": "Story / Narrative arc",
+            "rating_social": 4.4,
             "rating_audience": 4.7,
-            "rating_sales": 4.6,
-            "wf_product": "WorldFirst",
-            "vo": "When operators pull up their last twelve supplier wires, all twenty thousand dollar orders, all paid in US dollars, the pattern shows up. Their bank's exchange rate margin on the US dollar leg, one percent, two hundred dollars per wire. Supplier's bank converting US dollars to Chinese currency on the other end, half a percent, another hundred. Middle bank fees, sixty. Total per wire, three hundred and sixty dollars. Times twelve. Four thousand three hundred and twenty dollars a year. Sitting in someone else's pocket. Same order paid in Chinese currency direct, one conversion at point four percent, eighty dollars total. Same supplier, same bank account. Search WorldFirst. The math is the math."
+            "rating_sales": 4.7,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "A business owner pays the same supplier $20,000 in USD. Her cost: 360 dollars more than paying in CNY.",
+              "Why does paying your supplier $20,000 in USD cost 360 dollars more than paying in CNY?",
+              "$20,000 USD wire to China. $360 quietly lost. Multiply by 12 orders: $4,320 a year.",
+              "Same supplier. Same order. USD costs $360 more than CNY. Here is exactly where it goes.",
+              "$20K to China. Same factory. Two routes. The math sits in someone else's pocket."
+            ],
+            "hook_recommended": 3,
+            "body": "Her order, $20,000. The USD route. Her bank converted her local currency into USD, taking 1%, that is 200 dollars. The supplier's bank converted USD into CNY, taking 0.5%, another 100 dollars hidden in the rate. Wire and middleman bank fees, around 60 dollars. Total leakage: 360 dollars and 4 days. The CNY route via WorldFirst. One conversion at 0.4%, 80 dollars, settled same-day. Difference: 280 dollars on one order. Run 12 orders a year and that is 3,360 dollars sitting in someone else's pocket. That is why you should use WorldFirst. Same order, less cost, faster delivery.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
             "rating_social": 4.5,
-            "rating_audience": 4.8,
-            "rating_sales": 4.8,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on a twenty thousand dollar payment to a Chinese supplier. Route A, US dollar wire. Your bank marks up the exchange rate by one percent, two hundred dollars hidden in the rate. Supplier's bank converts US dollars to Chinese currency at half a percent on their end, another hundred. Middle bank fees, sixty. Total leakage, three hundred and sixty dollars. Four days to land. Route B, Chinese currency direct. One exchange at point four percent, eighty dollars total. Same day arrival. Difference per order, two hundred and eighty dollars. Run twelve orders a year, that's three thousand three hundred and sixty dollars sitting in someone else's pocket. Look up WorldFirst. Run the numbers on your last ten invoices."
+            "rating_audience": 4.7,
+            "rating_sales": 4.7,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "$20,000 USD wire to China. Breakdown: $200 send-side, $100 receive-side, $60 middleman. Total: $360.",
+              "Why does the same $20K supplier order cost $360 more in USD than in CNY?",
+              "Run the math on USD vs CNY for $20K. The gap is $280 per order. Quick maths: $3,360 a year.",
+              "Your USD wire to China carries 3 separate charges. Quick maths on $20K: $360.",
+              "$20K supplier order. USD route: $360 lost. CNY route: $80 cost. Same factory."
+            ],
+            "hook_recommended": 0,
+            "body": "Quick maths on a $20,000 supplier order. USD route. Send-side conversion at 1%: $200. Receive-side conversion at 0.5%: $100. Middleman bank fees in the chain: around $60. Total leakage: $360. Plus 3 to 5 days waiting. CNY route via WorldFirst. One conversion at 0.4%: $80. Settled same-day. Difference per order: $280. Run 12 orders a year, that is $3,360 sitting in someone else's pocket. Run 24 orders and the number doubles. That is why you should use WorldFirst. WorldFirst's CNY rail strips out the second conversion and the middleman chain.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.5,
-            "rating_audience": 4.5,
-            "rating_sales": 4.5,
-            "wf_product": "WorldFirst",
-            "vo": "Your accountant told you three hundred and sixty dollars per wire is the cost of doing business. They're wrong. That three hundred and sixty isn't fees. It isn't operational cost. It's the gap between what your bank pays for foreign currency and what they charge you for foreign currency. Two hundred on your side conversion. A hundred on your supplier's side conversion. Sixty in middle bank hops. None of it is listed as a fee because technically none of it is a fee. It's just margin baked into the rate you got quoted. Twelve wires a year and you've handed your bank four thousand three hundred and twenty dollars for nothing they earned. WorldFirst was built for this. Check us out."
+            "rating_social": 4.3,
+            "rating_audience": 4.6,
+            "rating_sales": 4.6,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Everyone runs the math on supplier discount. Nobody runs the math on the wire.",
+              "Why does negotiating $200 off the supplier price feel like a win when the wire quietly costs $360?",
+              "Your supplier negotiation just saved $200. Your USD wire just cost $360. Net result: minus $160.",
+              "You bargained the supplier down by 1%. The bank takes 2% on the way over.",
+              "Three days of negotiation vs three clicks on a different wire app."
+            ],
+            "hook_recommended": 0,
+            "body": "Most business owners spend hours negotiating with the supplier and zero minutes on the wire rail. On a $20,000 order, a hard-won 1% supplier discount saves $200. The default USD wire to China costs around $360 in invisible currency conversion fees. Net result: minus $160. You won the negotiation and still went backwards. Same order on a CNY rail costs around $80. That is a $280 swing per order, every order. Negotiating the wire pays more than negotiating the price. That is why you should use WorldFirst. WorldFirst sends CNY direct, one conversion, no middleman chain.",
+            "cta": "Look up WorldFirst."
           }
         ]
       }
@@ -206,28 +368,55 @@
         "approach": "Curiosity-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
-            "rating_social": 4.6,
+            "style": "Story / Narrative arc",
+            "rating_social": 4.5,
             "rating_audience": 4.5,
             "rating_sales": 4.3,
-            "wf_product": "WorldFirst",
-            "vo": "Most operators don't know this exists. There's a tiny three letter code on every wire that decides who pays the middle bank fees along the way. Three options. One means you pay them all upfront, supplier gets the full amount. Another means the fees get taken out of the wire as it travels, supplier gets less. The third means the supplier pays everything, they get even less. The default setting at almost every bank is the middle one. The one where your supplier eats the deductions. Banks don't ask you which option you want. They just pick. You can ask them to switch it, or you can use a system that has no middle banks at all. WorldFirst was built for this. Look us up."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "A business owner sends $50,000 to China. Her supplier gets $49,850. The reason is a 3-letter code she never saw.",
+              "Why does one 3-letter setting on your wire decide if your supplier gets the full amount?",
+              "There is a 3-letter code on every wire to China. Your bank picks it for you and never tells you.",
+              "Your bank says no extra charge. Your supplier still got less. The code on the wire is why.",
+              "OUR. SHA. BEN. One of these is on every wire you send. Most business owners never see it."
+            ],
+            "hook_recommended": 0,
+            "body": "Here is what happened. On her wire form, there is a hidden setting with three options. OUR means the sender pays all the middleman bank fees so the supplier gets the full amount. SHA means the fees come out of the wire as it travels, so the supplier gets less. BEN means the supplier pays everything. Her bank picked SHA by default. That is why $150 disappeared on the way to China. Most business owners never see the code, never know it exists, and never get the option to change it. That is why you should use WorldFirst. WorldFirst sends CNY direct, no middlemen, no codes. Your supplier gets the full amount, same-day.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.3,
-            "rating_audience": 4.7,
+            "rating_social": 4.4,
+            "rating_audience": 4.4,
             "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on the three letter code on your China wire. Three options. Option one, you pay all the middle bank fees upfront, your supplier gets the full amount. Costs you thirty to seventy five extra dollars. Option two, the fees get deducted from the wire as it travels. Supplier gets less. On a typical wire to China with two middle banks, that's forty five to a hundred and fifty dollars off the top. Option three, the supplier pays everything including the upfront fees. They get even less. Your bank's default is option two. They picked it for you without asking. Search WorldFirst. We use a system with no middle banks. Different problem, different setup."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "3 options. OUR, SHA, BEN. Cost difference: $30 to $150 per wire.",
+              "Why does a 3-letter code on your wire form change what your supplier receives by $150?",
+              "Your bank defaults to SHA. SHA means your supplier pays the chain fees. Quick maths: $50 short on average.",
+              "OUR: supplier gets full amount, you pay $30 to $75 more. SHA: supplier gets less, your bank's default.",
+              "$50K wire. SHA code. 3 middlemen at $50 each. Supplier gets $49,850."
+            ],
+            "hook_recommended": 0,
+            "body": "Every international wire has a 3-letter code that sets who pays the middleman bank fees in the chain. OUR: sender pays everything upfront, supplier gets the full amount, costs you $30 to $75 extra. SHA: fees come out of the wire as it travels, supplier gets less, your bank's default. BEN: supplier covers all fees, unpredictable arrival amount. On a $50K wire through 3 middleman banks at $50 each, SHA costs your supplier $150. Quick maths across 12 wires a year: $1,800 of supplier shortfalls. That is why you should use WorldFirst. WorldFirst skips the middleman chain entirely.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
+            "rating_social": 4.4,
             "rating_audience": 4.4,
             "rating_sales": 4.3,
-            "wf_product": "WorldFirst",
-            "vo": "Your bank picked a three letter code for you on every wire to China and never asked. The code decides who pays the middle bank fees along the way. They picked the option where your supplier pays them. On a typical wire that means two or three middle banks each take thirty dollars off the top. Your supplier gets less. They flag the shortfall. You top them up. The bank picked that option because it costs them nothing and they don't have to explain it. You could ask them to switch it and pay the fees yourself. Or you could ask why anyone is still using a system from the seventies that has a code for who eats the middleman tax. WorldFirst skips it entirely. Check us out."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Your wire has a setting your bank picks for you. The default makes your supplier pay.",
+              "Why is the default setting on your China wire the one that costs your supplier money?",
+              "Your bank says 'shared fees'. The code on the wire actually says: supplier eats everything in the middle.",
+              "Everyone assumes a wire is a wire. There are three different wire types, and your bank picks the cheapest one for them.",
+              "The 3-letter code on your wire decides if your supplier complains tomorrow. You did not pick it."
+            ],
+            "hook_recommended": 0,
+            "body": "The 3-letter code on a wire is set by your bank when you initiate the transfer. The default at most banks is SHA, which sounds like 'shared' but actually means: you pay your bank's send fee, then your supplier eats every middleman bank deduction in the chain. The bank picks SHA because it is cheaper for them to process and gets your money out of their hands faster. Your supplier ends up short, you get a top-up request, and you wire again. The default is not a mistake. It is the cheapest option for the bank, not for you. That is why you should use WorldFirst. WorldFirst skips the entire chain.",
+            "cta": "Look up WorldFirst."
           }
         ]
       }
@@ -242,28 +431,55 @@
         "approach": "Pain-first",
         "variants": [
           {
-            "style": "Pattern / What we see",
-            "rating_social": 4.8,
+            "style": "Story / Narrative arc",
+            "rating_social": 4.7,
             "rating_audience": 4.7,
             "rating_sales": 4.5,
-            "wf_product": "WorldFirst",
-            "vo": "We see this every week. Day three after the wire. Bank app says sent. Supplier says nothing has arrived. Operator is refreshing both like a maniac. Bank says the money left their system on day one, so it isn't their problem any more. Supplier says nothing visible in their account. Then someone digs and finds the wire sitting at a middle bank in Hong Kong on a compliance hold. Nobody told the operator. Nobody told their bank. The wire wasn't lost. It was sitting in a queue nobody could see. That's the problem with the old international bank network. Three or four other banks handle your money along the way, each one runs its own checks, none of them update you. Check out WorldFirst. Direct route, no invisible queues, same day to Chinese banks eighty percent of the time."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "A business owner checks her bank app. Wire sent. She messages her supplier. Nothing arrived. Both are telling the truth.",
+              "Why does your bank say the wire is sent while your supplier says nothing has arrived?",
+              "Your bank: $50,000 sent on Monday. Your supplier on Friday: where is the money? Both right.",
+              "Sent does not mean arrived. The gap between the two is days long.",
+              "A business owner is staring at two screens. Bank says sent. WhatsApp says nothing. She is not crazy."
+            ],
+            "hook_recommended": 0,
+            "body": "Here is the gap. When her bank says sent, it means the wire left their system. It does not mean it arrived in her supplier's account. In between are 1 to 3 middleman banks, each holding the wire for up to a business day. There can be a currency conversion window of another 2 days. There might be a Chinese bank compliance check on the company name. Add a public holiday in China or her own region and a wire can sit silently for a full week, with no notification, no update, no tracking number that means anything. That is why you should use WorldFirst. WorldFirst's CNY payments land same-day, with a tracking number you can actually check.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.4,
-            "rating_audience": 4.7,
-            "rating_sales": 4.6,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on where your wire actually sits when both your bank and your supplier are right. Five places it can get stuck. One, your bank. Half a day. Two, the first middle bank. Can hold the wire up to two days for compliance checks. Three, the second middle bank. Another one to two days. Four, a currency conversion window. Up to two working days more. Five, your supplier's bank. Plus any local holidays in China. Total possible delay, five to ten business days. None of it visible to you. None of it visible to your bank. The only fix is no middle banks at all. Look up WorldFirst. Direct route to Chinese banks. Same day landing eighty percent of the time."
+            "rating_social": 4.6,
+            "rating_audience": 4.6,
+            "rating_sales": 4.5,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Sent on Monday. Arrives Friday. 4 days in the middleman chain.",
+              "Why is your wire to China still sitting between two banks 4 days after it was sent?",
+              "Bank says sent. Supplier says nothing. Gap: 1 to 5 business days. Cause: middleman chain plus compliance.",
+              "Your wire to China hits 3 middleman banks. Each one holds it for up to 24 hours. Quick maths: 3 days minimum.",
+              "Day 1 sent. Day 4 still in compliance review. Day 5 lands. Day 6 you get the angry message."
+            ],
+            "hook_recommended": 0,
+            "body": "From 'sent' to 'arrived', a typical China wire goes through 1 to 3 middleman banks, each holding the wire for up to 24 hours. Plus currency conversion, another 2 business days. Plus Chinese bank compliance review on the supplier's name, another 1 to 3 days if there is any mismatch. Plus any local public holiday on either side. Quick maths: 4 to 7 working days from sent to arrived is normal for a US to China wire. Your bank does not show you any of this, because their job ended when the wire left their system. That is why you should use WorldFirst. WorldFirst goes direct on the same-day rail.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
+            "rating_social": 4.5,
             "rating_audience": 4.5,
-            "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "Your bank says the wire was sent. Your supplier says they got nothing. Everyone's telling the truth and the system is what's broken. When a bank says sent, all they mean is the wire left their building. They have no idea where it is now. When your supplier says nothing, they mean their account is empty. The space in between is two or three other banks running compliance checks, doing currency conversions, batching transactions, and not telling anybody what they're doing. The old international bank network was built so banks could send messages to each other. It was never built so you could track your money. WorldFirst uses a direct route. No middle banks. No invisible middle. Search us."
+            "rating_sales": 4.3,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "Your bank is not lying. Your supplier is not lying. The wire is just nowhere yet.",
+              "Why does 'sent' from your bank and 'arrived' for your supplier mean two different things?",
+              "Everyone assumes a wire is a single event. It is 4 separate handoffs that nobody coordinates.",
+              "Your bank's job ended the moment they handed your wire to someone else. The rest is somebody else's problem.",
+              "'Sent' is not a confirmation of arrival. It is a confirmation that your bank's part is done."
+            ],
+            "hook_recommended": 0,
+            "body": "Your bank uses 'sent' to mean the wire left their system. Your supplier uses 'arrived' to mean it appeared in their account. Between those two points are 3 or 4 separate banks, each running their own queue, each accountable only to themselves. Nobody is tracking the wire end to end. There is no Amazon-style tracking page. When your bank says sent and your supplier says nothing, both are accurate descriptions of their own boundary. The actual money is somewhere in the middle, with nobody watching it. That is why you should use WorldFirst. WorldFirst owns the rail end to end, so sent and arrived mean the same day.",
+            "cta": "Look up WorldFirst."
           }
         ]
       }
@@ -278,28 +494,55 @@
         "approach": "Mechanism-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
-            "rating_social": 4.5,
+            "style": "Story / Narrative arc",
+            "rating_social": 4.3,
             "rating_audience": 4.5,
             "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "We see this happen on roughly one in five wires marked as Chinese currency. The wire form says Chinese currency. The amount is in Chinese currency. Three days later the supplier messages. Why did this arrive as US dollars. I had to convert it again. Lost two hundred dollars. The operator stares at their bank app like, but I sent Chinese currency. What actually happened. The Chinese currency turned into US dollars at three different points before reaching the supplier. The sending bank flipped it to US dollars because they only hold US dollars in their treasury. The middle bank only handled US dollars. The receiving bank had to convert US dollars back into Chinese currency on the supplier's end. Two extra conversions, two hidden margins. Look up WorldFirst. We actually hold Chinese currency."
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "A business owner sends CNY to her Chinese factory. The supplier opens the receipt and sees USD. Now she is paying for two conversions.",
+              "Why does your CNY wire to China sometimes arrive in USD?",
+              "You wired CNY. Your supplier received USD. Three different banks in the chain can do that.",
+              "Your bank confirmation says CNY sent. Your supplier got USD. Both happened.",
+              "Three different places in the chain can turn your CNY into USD without telling you."
+            ],
+            "hook_recommended": 0,
+            "body": "Here is how that happens. Place one, her own bank, decided to convert her local currency to USD before sending, because USD was cheaper for them to route. Place two, a middleman bank in the chain, only handles USD, so any CNY passing through got converted there. Place three, her supplier's bank could not accept CNY directly, so it converted the arriving currency to USD or back to CNY in another step. Each conversion has a fee, hidden in the rate. By the time her supplier sees the money, she has paid for two conversions when she thought she was paying for none. That is why you should use WorldFirst. WorldFirst sends CNY directly to your supplier's bank. One currency. One conversion. No surprises.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
             "rating_social": 4.3,
-            "rating_audience": 4.6,
-            "rating_sales": 4.5,
-            "wf_product": "WorldFirst",
-            "vo": "Quick maths on where your Chinese currency wire can secretly turn into US dollars. Three points. One, the sending bank. They convert your Chinese currency instruction to US dollars because they don't actually hold Chinese currency. Margin half a percent to one percent. Two, the middle bank. They only handle US dollars on the chain. If a conversion is needed they add another point three to point eight percent. Three, the supplier's bank. They receive US dollars because no Chinese currency direct partner exists in the chain. They convert back to Chinese currency at another point three to point eight percent. Each stop adds a hidden cost. On a twenty thousand dollar wire that's two hundred and forty to five hundred dollars in conversions you never agreed to. Search WorldFirst. We hold the currency directly."
+            "rating_audience": 4.4,
+            "rating_sales": 4.4,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "3 places your CNY can flip to USD. Each one charges 0.3 to 1.5%.",
+              "Why is your CNY wire showing up as USD on your supplier's receipt?",
+              "CNY sent. USD received. Each conversion in between costs 0.3 to 1.5%. Quick maths on $50K: $750 to $1,500.",
+              "Your bank, middleman bank, supplier's bank. Each one can flip your CNY to USD. That is 3 chances to add a fee.",
+              "Three places, three currency conversions, three fees. Same $50K. Same supplier."
+            ],
+            "hook_recommended": 0,
+            "body": "Three places where your CNY wire can get switched to USD. One: your bank converts your local currency to USD on the send side because that is cheaper for them, takes 0.5 to 1.5%. Two: a middleman bank in the chain only handles USD, so any CNY passing through gets converted there. Three: the supplier's bank cannot accept CNY directly, so it converts on arrival, takes another 0.3 to 0.8%. Quick maths on a $50,000 wire with two of those conversions: $400 to $1,150 in hidden conversion costs. That is why you should use WorldFirst. WorldFirst sends CNY directly to the supplier's bank, one conversion, transparent rate.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
-            "rating_audience": 4.5,
-            "rating_sales": 4.4,
-            "wf_product": "WorldFirst",
-            "vo": "You typed Chinese currency into the wire form. Your supplier got US dollars. You both assume something went wrong. Nothing went wrong. The system worked exactly as designed. Your bank doesn't actually hold Chinese currency in its treasury. They hold US dollars. So they converted. The middle bank doesn't hold Chinese currency either. They hold US dollars. So they kept it in US dollars. Your supplier's bank received US dollars and had to convert back to Chinese currency on their end. Three banks, three chances to take a slice of the exchange rate, all hidden inside what looked like a Chinese currency wire. The fix isn't asking the bank nicely. The fix is using an account that actually holds Chinese currency. Look up WorldFirst. We do this differently."
+            "rating_social": 4.3,
+            "rating_audience": 4.4,
+            "rating_sales": 4.3,
+            "wf_product": "WorldFirst (internal: World Account + MYbank)",
+            "hook_options": [
+              "You sent CNY because it was supposed to be the clean option. The chain undid that on the way.",
+              "Why does selecting CNY on your wire form not actually mean CNY arrives?",
+              "Your CNY wire is not guaranteed to stay CNY. The chain decides what arrives.",
+              "Everyone assumes selecting CNY on your wire ticket means CNY lands. The chain has other plans.",
+              "CNY in. USD out. Your bank, middleman bank, and supplier's bank all had a say."
+            ],
+            "hook_recommended": 0,
+            "body": "Selecting CNY on your wire form does not guarantee CNY lands at your supplier. The wire passes through 2 or 3 separate banks, and any of them can convert the currency for its own reasons. Your bank might convert to USD because it does not hold CNY. A middleman bank in the chain might only handle USD. Your supplier's bank might convert on arrival because it cannot accept CNY directly. Each one is making the decision that is cheapest or simplest for them, not for you. The 'CNY' you selected was a request, not a guarantee. That is why you should use WorldFirst. WorldFirst sends CNY directly, no chain to override it.",
+            "cta": "Look up WorldFirst."
           }
         ]
       }
