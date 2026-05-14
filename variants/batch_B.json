@@ -13,7 +13,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.6,
             "wf_product": "World Account near-interbank FX",
-            "vo": "Pattern we see consistently across SEA operators. Importer wires 10 grand to a Chinese supplier. The bank confirmation says zero fees. Zero. Then we check the foreign exchange rate the bank used, the actual mid-market rate banks use among themselves at the time of the wire, against the rate they applied. Gap is 3 percent. That's 300 dollars the bank kept, hidden in the rate. No fee on paper. 300 dollars off in the rate. Same operator, same wire, run through WorldFirst the next month. The foreign exchange margin showed on screen before they confirmed. Near the mid-market rate. The 300 stayed in the order. WorldFirst quotes the actual rate before you hit send. Bio."
+            "vo": "Pattern we see across SEA importers. Operator wires 10 grand to a Chinese supplier. The bank confirmation says zero fees. Zero. Then we look at the exchange rate they used. Banks have a 'real' rate they use with each other, and a rate they show you. The real one was 3 percent better. That's 300 dollars the bank quietly kept, hidden inside the rate. No fee on paper. 300 dollars off in the conversion. Same operator the next month, run through WorldFirst. The rate showed on screen before they confirmed. Almost the same as the real one. The 300 stayed in the order. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -21,7 +21,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.6,
             "wf_product": "World Account",
-            "vo": "Quick maths. You wire 10K to your supplier. Your bank says no fee. You believe them. Here's what they don't show you. The rate they used was 3 percent off the mid-market rate, the real rate Reuters publishes every minute. 3 percent of 10K is 300 dollars. Gone. No line item. No notification. Run that across 12 wires a year. That's 3,600 dollars sitting inside someone else's spreadsheet. WorldFirst quotes the actual foreign exchange rate before you hit send. Margin is 0.3 to 0.5 percent, near-interbank. The 300 stays yours. Bio."
+            "vo": "Quick maths. You wire 10K to your supplier. The bank says no fee. You believe them. Here's what they don't show you. Banks have a 'real' exchange rate they use among each other. They give you a slightly worse one and keep the difference. On this wire, the difference was 3 percent. 3 percent of 10 grand is 300 dollars. Gone. No line item. No notification. Run that across 12 wires a year. That's 3,600 dollars sitting in someone else's pocket. Search WorldFirst. We show the rate before you hit send."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -29,7 +29,7 @@
             "rating_audience": 4.6,
             "rating_sales": 4.5,
             "wf_product": "World Account",
-            "vo": "Everyone tells you to find a bank with no wire fees. Truth is, the wire fee was never the cost. Banks charge you in two places. One you see, that 25 dollars on the confirmation. One you don't, baked into the rate, 1 to 3 percent of the entire wire. On 10 grand, that hidden rate is 300 dollars. The visible fee is 25. Which one are you actually negotiating? Stop optimising the wrong number. WorldFirst shows the foreign exchange rate before you confirm, so the math is honest. 0.3 to 0.5 percent margin, near the rate banks use among themselves. Bio."
+            "vo": "Everyone tells you to find a bank with no wire fees. Truth is, the wire fee was never the cost. Banks charge you in two places. One you see, the 25 dollars on the confirmation. One you don't, baked into the exchange rate. They use a slightly worse rate than the real one and keep the gap. On 10 grand, that's around 300 dollars. The visible fee is 25. Which one are you actually negotiating? Look up WorldFirst. The math gets honest."
           }
         ]
       }
@@ -49,7 +49,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.7,
             "wf_product": "World Account",
-            "vo": "Three operators sent us the same 50 grand wire to China last month. Three different supplier-end amounts. We saw 49,250 at one bank, 49,700 at a regional bank, 49,850 at WorldFirst. Same wire amount. Same supplier. Same Tuesday. 600 dollars of spread across three operators, and all three confirmations said no fee. The difference was the foreign exchange rate each provider used. Bank rates were 1.5 and 0.6 percent off the mid-market rate. WorldFirst was 0.3. The rail decided what landed. WorldFirst quotes near the rate banks use among themselves, so the conversion happens once at the real rate. Bio."
+            "vo": "Three operators sent the same 50 grand wire to China last month. Three different amounts arrived. One supplier got 49,250. Another got 49,700. The third got 49,850. Same wire size. Same supplier. Same Tuesday. 600 dollars of spread, and all three confirmations said no fee. The difference was the exchange rate each provider used. Banks tell you you're getting a competitive rate, but the actual rate they use with each other is usually 1 to 2 percent better. WorldFirst is built closer to that real rate, so the conversion happens once at a price that's actually fair. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -57,7 +57,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.8,
             "wf_product": "World Account",
-            "vo": "Three operators. 50,000 dollar wire. Same supplier. Same day. Three amounts arrived. Bank A at 1.5 percent FX margin, the foreign exchange spread baked into the rate, supplier got 49,250. Bank B at 0.6 percent, 49,700. WorldFirst at 0.3 percent, 49,850. Same wire size, 600 dollars of difference. All three confirmations said no fee. The fee was inside the rate. Multiply 600 by 12 wires a year. That's 7,200 dollars that depends entirely on which rail you're on. WorldFirst runs near-interbank, the rate banks use among themselves. Bio."
+            "vo": "Three operators. 50,000 dollar wire. Same supplier. Same day. Three amounts arrived. Operator A's bank kept 1.5 percent in the rate, supplier got 49,250. Operator B's bank kept 0.6 percent, 49,700. Operator C used WorldFirst, kept 0.3 percent, 49,850. Same wire size, 600 dollars of difference. All three confirmations said no fee. The fee was inside the rate. Multiply 600 by 12 wires a year. That's 7,200 dollars that depends entirely on which provider you used. Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -65,7 +65,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.6,
             "wf_product": "World Account",
-            "vo": "Everyone tells you the wire is the wire. Truth is, the wire is the rate. Three operators sent identical 50K wires to the same factory this week. Three different amounts arrived. The provider you picked decided how much of your money the supplier sees. Banks at 1 to 1.5 percent foreign exchange margin shave 500 to 750 dollars off every wire. WorldFirst at 0.3 percent near the mid-market rate shaves 150. Same wire. Same supplier. The rail you're on is the cost. WorldFirst quotes the rate before you confirm. Bio."
+            "vo": "Everyone tells you the wire is the wire. Truth is, the wire is the rate. Three operators sent identical 50K wires to the same factory this week. Three different amounts arrived. The provider you picked decided how much of your money the supplier sees. Banks take a 1 to 1.5 percent cut on the exchange rate every time, that's 500 to 750 dollars off every 50K wire. WorldFirst takes about 0.3 percent. Same wire. Same supplier. The provider is the cost. Look up WorldFirst. We do this differently."
           }
         ]
       }
@@ -85,7 +85,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.7,
             "wf_product": "World Account and Forwards",
-            "vo": "Pattern we see across operators in our books. 12 wires a year to China, 50 grand each, 600K of sourcing volume. The bank's foreign exchange margin, the spread baked into the rate against the mid-market rate, averages 2 percent. That's 12,000 dollars a year. Twelve grand that never shows up on a statement, never shows up on a confirmation, just sits inside the rate. The same operators on WorldFirst run at 0.3 to 0.5 percent margin. On the same 600K, that's around 2,400. The 9,500 dollar gap goes back into the business. Lock half the orders on a forward rate too, the foreign exchange rate is fixed 3 to 12 months out. Bio."
+            "vo": "Pattern we see across operators. 12 wires a year to China, 50 grand each, 600K of sourcing volume. Every time the bank converts the money, they take a small cut on the exchange rate. Around 2 percent. That's 12,000 dollars a year. Twelve grand that never shows up on a statement, never shows up on a confirmation, just sits inside the rate. The same operators on WorldFirst pay around 0.4 percent. On the same 600K, that's around 2,400. The 9,500 dollar gap goes back into the business. We also let you lock in tomorrow's rate today, so a wire 6 months out costs what you planned for. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -93,7 +93,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.8,
             "wf_product": "World Account and Forwards",
-            "vo": "Quick maths. 50 grand per wire. 12 wires a year. That's 600K of sourcing volume. Your bank's foreign exchange margin, the spread baked into the rate against the mid-market rate, sits at around 2 percent. 2 percent of 600K is 12,000 dollars. Twelve grand a year, no fee line on the confirmation, no notification, no warning email. Specialist FX rails run 0.3 to 0.5 percent. WorldFirst sits there. Same wires, same supplier, same Tuesdays, 2,400 of margin instead of 12,000. Lock half your orders on a forward rate, the foreign exchange rate is fixed 3 to 12 months ahead, no surprises on settlement day. Bio."
+            "vo": "Quick maths. 50 grand per wire. 12 wires a year. That's 600K of sourcing. Your bank takes a small cut on the exchange rate every time you send money abroad. Around 2 percent. 2 percent of 600K is 12,000 dollars. Twelve grand a year, no fee line on the confirmation, no notification, no warning email. WorldFirst takes around 0.4 percent. Same wires, same supplier, same Tuesdays, 2,400 of cost instead of 12,000. We also let you lock the rate in advance, so a wire 6 months from now costs what you planned for. Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -101,7 +101,7 @@
             "rating_audience": 4.6,
             "rating_sales": 4.6,
             "wf_product": "World Account",
-            "vo": "Everyone tells you 2 percent is small. Truth is, 2 percent is the difference between a margin and a leak. Run a 2 percent foreign exchange spread, the gap between your bank's rate and the mid-market rate banks use among themselves, across 600 grand of sourcing. That's 12,000 dollars a year. Gone. Not negotiated, not declared, just gone. Your supplier didn't take it. Your bank did. WorldFirst runs near-interbank, 0.3 to 0.5 percent margin. The 12K goes back into the order. Bio."
+            "vo": "Everyone tells you 2 percent is small. Truth is, 2 percent is the difference between a margin and a leak. Your bank takes a 2 percent cut on the exchange rate every time they send your money abroad. Run that across 600 grand of sourcing in a year. That's 12,000 dollars. Gone. Not negotiated, not declared, just gone. Your supplier didn't take it. Your bank did. WorldFirst takes around 0.4 percent. The 10 grand goes back into the order. Look up WorldFirst."
           }
         ]
       },
@@ -115,7 +115,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.7,
             "wf_product": "World Account",
-            "vo": "Across operators in our books, the pattern is the same. 500 grand of Chinese sourcing in a year. Margins tight. Operator goes looking for the leak. It's not shipping. It's not the supplier. It's the bank. Every wire carries a 2 percent foreign exchange margin, the spread between the bank's rate and the mid-market rate. 2 percent of 500K is 10,000 dollars. Ten grand the bank keeps across the year. Silent. Unaccounted. Same operator on WorldFirst, margin runs 0.3 to 0.5 percent, near-interbank. Same supplier, same volume, 8 grand back in the order. Bio."
+            "vo": "Across operators in our books, the pattern is the same. 500 grand of Chinese sourcing in a year. Margins tight. Operator goes looking for the leak. It's not shipping. It's not the supplier. It's the bank. Every wire, the bank takes a small cut on the exchange rate. Around 2 percent. Over a year of sourcing, that's 10,000 dollars. Ten grand the bank keeps. Silent. Unaccounted. Same operator on WorldFirst, the cut runs around 0.4 percent. Same supplier, same volume, 8 grand back in the order. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -123,7 +123,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.7,
             "wf_product": "World Account",
-            "vo": "Quick maths. 500K of sourcing this year. 2 percent foreign exchange margin, that's the spread baked into your bank's applied rate against the mid-market rate banks actually use among themselves. 2 percent of 500K is 10,000 dollars. Gone. No line item, no fee receipt, no warning email, no notification. The bank just quietly kept it across 12 wires. WorldFirst runs at 0.3 to 0.5 percent, near the mid-market rate Reuters publishes every minute. Same 500K of sourcing, that's 1,500 to 2,500 in margin. 7,500 to 8,500 dollars back in your business this year. Same supplier, same volume, different rail. Bio."
+            "vo": "Quick maths. 500K of sourcing this year. Your bank takes a small cut on the exchange rate every time they send money abroad. Around 2 percent. 2 percent of 500K is 10,000 dollars. Gone. No line item, no fee receipt, no warning email, no notification. The bank quietly kept it across 12 wires. WorldFirst takes around 0.4 percent. Same 500K of sourcing, that's 2,000 dollars instead of 10,000. 8 grand back in your business this year. Same supplier, same volume, different provider. Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -131,7 +131,7 @@
             "rating_audience": 4.6,
             "rating_sales": 4.6,
             "wf_product": "World Account",
-            "vo": "Everyone tells you to negotiate harder with your supplier. Truth is, the biggest leak in your sourcing budget isn't on the invoice. It's in the rate. 2 percent foreign exchange margin on every wire, that's the gap between your bank's price and the mid-market rate banks use among themselves. On 500 grand of yearly sourcing, the bank quietly kept 10,000 dollars. The supplier never saw it. You never saw it. WorldFirst runs near-interbank, 0.3 to 0.5 percent. That 10K stays in the order. Bio."
+            "vo": "Everyone tells you to negotiate harder with your supplier. Truth is, the biggest leak in your sourcing budget isn't on the invoice. It's in the exchange rate. Your bank takes a 2 percent cut every time they convert your money. On 500 grand of yearly sourcing, that's 10,000 dollars the bank quietly kept. The supplier never saw it. You never saw it. WorldFirst takes around 0.4 percent. That 10K stays in the order. Look up WorldFirst. The math gets honest."
           }
         ]
       }
@@ -151,7 +151,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.9,
             "wf_product": "WorldFirst direct comparison",
-            "vo": "Pattern we see every quarter. Operator wires 50 grand to their Chinese factory. WhatsApp pings the next day. Supplier says, we got 48,560. We pull the bank confirmation. Foreign exchange rate the bank used was 2.5 percent off the mid-market rate, the rate banks use among themselves. That's 1,250 dollars in the rate. Plus two SWIFT intermediary banks each shave 30 to 40 dollars. Supplier ends up short 1,440. Operator wires again. New fee. New margin. Production delayed 4 days. Same operator next quarter, same 50K, through WorldFirst. Supplier gets 49,850. 1,350 dollars more landed, no intermediaries, no second wire. WorldFirst runs 0.3 to 0.5 percent foreign exchange margin, near-interbank. Bio."
+            "vo": "Pattern we see every quarter. Operator wires 50 grand to their Chinese factory. WhatsApp pings the next day. Supplier says, we got 48,560. We pull the bank confirmation. The rate the bank used was 2.5 percent worse than the real rate banks use with each other. That's 1,250 dollars lost in the conversion. Then two banks in the middle of the wire each took 30 to 40 dollars to pass the money along. Supplier ends up 1,440 short. Operator wires again. New fee. New cut. Production delayed 4 days. Same operator next quarter, same 50K, through WorldFirst. Supplier gets 49,850. No banks in the middle, no second wire. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -159,7 +159,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.9,
             "wf_product": "WorldFirst direct comparison",
-            "vo": "Quick maths. 50,000 dollar wire to your Chinese supplier. Bank route. Sending fee 50 dollars. Foreign exchange margin 2 percent, the spread baked into the rate, that's 1,000. Two SWIFT intermediary banks deduct 30 each from the wire, 60 total. Supplier gets 48,890. WorldFirst on the same 50K. Direct route to Chinese yuan, no SWIFT chain. Foreign exchange margin 0.4 percent, 200 dollars. Flat transfer cost, no intermediary deductions. Supplier gets 49,800. Difference, 910 dollars on a single wire. Same supplier. Same Tuesday. Bio."
+            "vo": "Quick maths. 50,000 dollar wire to your Chinese supplier. Bank route. Sending fee 50 dollars. The bank takes a 2 percent cut on the exchange rate, that's 1,000. Then two banks in the middle of the wire each deduct 30 to pass it along, 60 more. Supplier gets 48,890. Same 50K through WorldFirst. Direct route to China, no banks in the middle. Cut on the rate is 0.4 percent, 200 dollars. Flat transfer cost, nothing deducted along the way. Supplier gets 49,800. Difference, 910 dollars on a single wire. Same supplier. Same Tuesday. Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -167,7 +167,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.8,
             "wf_product": "WorldFirst direct comparison",
-            "vo": "Everyone tells you a wire is a wire. Truth is, the rail decides everything. Bank wire on 50K to China. 2 percent foreign exchange margin, 1,000 dollars. Two SWIFT intermediary banks, 60 more. Supplier short 1,060. WorldFirst on the same 50K. No SWIFT chain, no intermediary deductions. Direct route to Chinese yuan, supplier gets the full amount within 24 hours. Margin sits at 0.3 to 0.5 percent near the mid-market rate. Same wire. Same supplier. 900 dollars decided by which rail you picked. Bio."
+            "vo": "Everyone tells you a wire is a wire. Truth is, the provider decides everything. Bank wire on 50K to China. 2 percent cut on the exchange rate, 1,000 dollars. Two banks in the middle of the wire each shave 30, 60 more. Supplier short 1,060. Same 50K through WorldFirst. No middle banks, no deductions along the way. Direct route to China, supplier gets the full amount within 24 hours. Cut on the rate is around 0.4 percent. Same wire. Same supplier. 900 dollars decided by which provider you picked. Look up WorldFirst. We do this differently."
           }
         ]
       }
@@ -187,7 +187,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.7,
             "wf_product": "World Account",
-            "vo": "Across operators in our books, the average sourcing budget loses about 4 percent a year to invisible foreign exchange margin. Pattern is consistent. Operator spends three months negotiating the supplier down 2 percent on unit price. Feels like a win. Then we run the foreign exchange numbers on the wires. Bank takes 4 percent on the rate, the spread between the applied rate and the mid-market rate. On 500 grand of sourcing, that's 20,000 dollars a year. The 2 percent negotiated off the supplier is half what the bank quietly took. Same operator on WorldFirst, margin runs 0.3 to 0.5 percent. 18K of the 20K stays in the business. The supplier negotiation wasn't the lever. The rail was. Bio."
+            "vo": "Across operators in our books, the average sourcing budget loses about 4 percent a year to a cost most importers never see. Pattern is consistent. Operator spends three months negotiating the supplier down 2 percent on unit price. Feels like a win. Then we run the numbers on the wires. Every time the bank sent money abroad, they took a 4 percent cut on the exchange rate. On 500 grand of sourcing, that's 20,000 dollars a year. The 2 percent you negotiated off the supplier is half what the bank quietly took. WorldFirst takes around 0.4 percent. 18 grand stays in the business. The supplier negotiation wasn't the lever. The provider was. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -195,7 +195,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.7,
             "wf_product": "World Account",
-            "vo": "Quick maths. 500K annual sourcing. Bank foreign exchange margin 4 percent, the spread baked into the rate. That's 20,000 dollars a year. Over three years, 60,000. If your sourcing grows 10 percent a year, the leak grows with it. Year three is 24K alone. WorldFirst runs 0.3 to 0.5 percent, near the mid-market rate banks use among themselves. Same 500K, 1,500 to 2,500 of margin. 17 to 18 grand back in the business this year. Bio."
+            "vo": "Quick maths. 500K annual sourcing. Your bank takes a small cut on the exchange rate every time you send money abroad. Roughly 4 percent. That's 20,000 dollars a year. Over three years, 60,000. If your sourcing grows 10 percent a year, the leak grows with it. Year three is 24K alone. WorldFirst takes around 0.4 percent. Same 500K, 2,000 dollars in cost instead of 20,000. 18 grand back in the business this year. Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -203,7 +203,7 @@
             "rating_audience": 4.6,
             "rating_sales": 4.6,
             "wf_product": "World Account",
-            "vo": "Everyone tells you to negotiate harder with your supplier. Truth is, you can't supplier-negotiate your way out of foreign exchange margin. 4 percent on every wire is your bank, not your supplier. On 500 grand of sourcing, that's 20,000 dollars a year gone, no matter how good your relationship with the factory. The fix isn't the supplier. It's the rail. WorldFirst runs near-interbank, 0.3 to 0.5 percent margin. The 4 percent stops being a leak. Bio."
+            "vo": "Everyone tells you to negotiate harder with your supplier. Truth is, you can't negotiate your way out of the cut the bank takes on the exchange rate. 4 percent on every wire is your bank, not your supplier. On 500 grand of sourcing, that's 20,000 dollars a year gone, no matter how good your relationship with the factory. The fix isn't the supplier. It's the provider. WorldFirst takes around 0.4 percent. The 4 percent stops being a leak. Look up WorldFirst."
           }
         ]
       }
@@ -223,7 +223,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.6,
             "wf_product": "World Account rate transparency",
-            "vo": "Pattern we see when operators check their own confirmations. Pull the last wire. Find the applied rate, 7.05. Open Google for the foreign exchange rate at the time of the wire, the mid-market rate, 7.22. Run the math. 7.22 minus 7.05, divided by 7.22, times 100. That's 2.35 percent. On a 50K wire, that's 1,175 dollars the bank kept in the rate. Didn't appear anywhere on the confirmation. Same operator runs the next wire through WorldFirst. The actual foreign exchange rate shows on screen before they confirm. No hunting. No Google. Margin sits at 0.3 to 0.5 percent, in plain numbers. Bio."
+            "vo": "Pattern we see when operators check their own confirmations. Pull your last wire. Find the rate the bank used to convert your money, usually near the bottom. Say it's 7.05. Now Google the exchange rate for that day, that's the real one banks use with each other. Say it's 7.22. Run the math. 7.22 minus 7.05, divided by 7.22, times 100. That's 2.35 percent. On a 50K wire, that's 1,175 dollars the bank quietly took in the conversion. Didn't appear anywhere on the confirmation. Same operator runs the next wire through WorldFirst. The rate shows on screen before they confirm. No hunting. No Google. The cut is around 0.4 percent, in plain numbers. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -231,7 +231,7 @@
             "rating_audience": 4.8,
             "rating_sales": 4.7,
             "wf_product": "World Account rate transparency",
-            "vo": "Find your last wire confirmation. Locate the applied rate, usually near the bottom. Google the foreign exchange rate for that exact day, that's the mid-market rate. Formula. Interbank minus applied, divided by interbank, times 100. That's your bank's foreign exchange margin in percent. Multiply by wire amount equals what they kept. Applied 7.05, interbank 7.22, that's 2.35 percent. On 50K, 1,175 dollars. WorldFirst quotes the live foreign exchange rate before you hit send, no math, no Google. Margin lands at 0.3 to 0.5 percent. Bio."
+            "vo": "Find your last wire confirmation. Locate the rate the bank used to convert your money, usually near the bottom. Google the exchange rate for that exact day, that's the real one banks use with each other. Now do the math. Real rate minus the rate they used, divided by the real rate, times 100. That's the bank's cut in percent. Times your wire amount equals what they took. Example. They used 7.05, the real rate was 7.22. Gap is 2.35 percent. On a 50K wire, that's 1,175 dollars. WorldFirst shows you the rate before you hit send, so there's no math to do later. Cut is around 0.4 percent. Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -239,7 +239,7 @@
             "rating_audience": 4.6,
             "rating_sales": 4.6,
             "wf_product": "World Account rate transparency",
-            "vo": "Everyone tells you to check the fee line on your wire confirmation. Truth is, the fee line is a decoy. The real cost is the applied foreign exchange rate, the rate your bank used to convert your money. It's on the confirmation. The mid-market rate, the rate banks use among themselves, is on Google. Subtract, divide, times 100. That's the margin they kept. On most bank wires it's 2 to 3 percent. On 50K, that's 1,000 to 1,500 dollars nobody itemised. WorldFirst shows the live foreign exchange rate before you confirm. Math is done. Bio."
+            "vo": "Everyone tells you to check the fee line on your wire confirmation. Truth is, the fee line is a decoy. The real cost is the exchange rate the bank used to convert your money. That's on the confirmation. The 'real' rate, the one banks use with each other, is free on Google. Subtract one from the other. That's what the bank kept. On most wires it's 2 to 3 percent. On 50K, that's 1,000 to 1,500 dollars nobody listed. WorldFirst shows the rate before you confirm. The math is done in front of you. Look up WorldFirst. The math gets honest."
           }
         ]
       }
@@ -259,7 +259,7 @@
             "rating_audience": 4.6,
             "rating_sales": 4.6,
             "wf_product": "World Account near-interbank FX",
-            "vo": "Pattern we see across operator accounts. Relationship manager calls the importer. We'll give you a good rate. Operator asks what good means. Answer is, better than retail. Operator asks for the rate when the wire goes out. Gets 7.05. We check Reuters, the global interbank rate at that exact minute, 7.22. Gap is 2.4 percent. On a 100K wire, that's 2,400 dollars. The rate isn't bad. It just isn't what the relationship manager implied. Same operator moves the sourcing wires to WorldFirst. The foreign exchange rate runs near-interbank, 0.3 to 0.5 percent off mid-market. No relationship manager needed. The number speaks. Bio."
+            "vo": "Pattern we see across operator accounts. Relationship manager at the bank calls. Says, we'll give you a good rate. Operator asks what good means. Answer is, better than retail. Operator asks the actual number when the wire goes out. Gets 7.05. We Google the real rate banks use with each other at that minute. It's 7.22. Gap is 2.4 percent. On a 100K wire, that's 2,400 dollars. The rate isn't bad. It just isn't what the relationship manager implied. Same operator moves wires to WorldFirst. The rate runs close to the real one, around 0.4 percent off. No relationship manager needed. The number speaks. Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
@@ -267,7 +267,7 @@
             "rating_audience": 4.7,
             "rating_sales": 4.7,
             "wf_product": "World Account near-interbank FX",
-            "vo": "Quick maths. Your bank quotes you 7.05 on USD to Chinese yuan. Says it's a good rate. The real interbank rate, the rate banks use among themselves, that minute on Reuters, is 7.22. Gap, 2.4 percent. On 10K, 240 dollars. On 100K, 2,400. Same percent, scales with wire size. WorldFirst quotes near-interbank, the rate is 0.3 to 0.5 percent off the mid-market. On 100K, that's 300 to 500, not 2,400. Difference, 1,900 to 2,100 dollars per wire. Bio."
+            "vo": "Quick maths. Your bank quotes you 7.05 on US dollars to Chinese yuan. Says it's a good rate. The real rate that banks use with each other, free on Google that same minute, is 7.22. Gap is 2.4 percent. On 10K, 240 dollars. On 100K, 2,400. Same percent, scales with wire size. WorldFirst runs around 0.4 percent off the real rate. On 100K, that's 400 dollars, not 2,400. Difference, 2,000 dollars per wire. Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
@@ -275,7 +275,7 @@
             "rating_audience": 4.6,
             "rating_sales": 4.6,
             "wf_product": "World Account near-interbank FX",
-            "vo": "Everyone tells you to ask your bank for a good rate. Truth is, when your bank says good rate, they mean good for them. The real foreign exchange rate, the interbank rate banks use among themselves, lives on Reuters. It's free. It's public. The 'good rate' your relationship manager quotes is 2 to 3 percent off that. On a 100K wire, that's 2,000 to 3,000 dollars in their margin. Banks compete on the word 'good'. WorldFirst competes on the number. Near-interbank, 0.3 to 0.5 percent. Bio."
+            "vo": "Everyone tells you to ask your bank for a good rate. Truth is, when your bank says good rate, they mean good for them. The real exchange rate, the one banks use with each other, is free on Google. The 'good rate' your relationship manager quotes is usually 2 to 3 percent worse than that. On a 100K wire, that's 2,000 to 3,000 dollars they keep. Banks compete on the word 'good'. WorldFirst competes on the number. Around 0.4 percent off the real rate. Look up WorldFirst. We do this differently."
           }
         ]
       }
