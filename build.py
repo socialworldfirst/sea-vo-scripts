@@ -127,6 +127,26 @@ def render_variant(card_id, vid_idx, var_idx, variant):
     </div>
   </div>'''
 
+    # Audience feedback (Malaysian SMB persona) — multi-select
+    feedback = variant.get('audience_feedback', [])
+    if feedback:
+        fb_items = []
+        for fi, fb in enumerate(feedback):
+            fb_items.append(f'''
+        <label class="feedback-item">
+          <input type="checkbox" class="fp" data-vid="{esc(var_id)}" data-fidx="{fi}" data-text="{esc(fb)}">
+          <span class="fb-check"></span>
+          <span class="fb-text">{esc(fb)}</span>
+        </label>''')
+        feedback_block = f'''
+  <div class="feedback-block">
+    <div class="block-label">Audience feedback — Malaysian SMB, 5th-grade English · multi-select to act on</div>
+    <div class="feedback-list">{"".join(fb_items)}
+    </div>
+  </div>'''
+    else:
+        feedback_block = ''
+
     return f'''
 <div class="variant" data-variant-id="{esc(var_id)}">
   <header class="variant-head">
@@ -146,6 +166,7 @@ def render_variant(card_id, vid_idx, var_idx, variant):
     </div>
   </header>
   {script_block}
+  {feedback_block}
   <div class="comment-block">
     <textarea class="variant-comment" data-vid="{esc(var_id)}" placeholder="Comment on this variant. Want different hook? Different angle? Stronger CTA? Type it here. Auto-included in the bottom prompt."></textarea>
   </div>
@@ -438,6 +459,27 @@ h1 {{ font-size: 32px; line-height: 1.15; letter-spacing: -0.02em;
 .assembled-block {{ background: rgba(10,109,47,0.03); border-top: 1px solid var(--pick); }}
 .assembled-vo {{ font-size: 15.5px; }}
 
+/* Feedback block */
+.feedback-block {{ padding: 14px 20px; border-top: 1px solid var(--line-soft);
+  background: rgba(176,48,96,0.025); }}
+.feedback-list {{ display: flex; flex-direction: column; gap: 4px; }}
+.feedback-item {{ display: grid; grid-template-columns: 22px 1fr; gap: 10px;
+  align-items: start; padding: 7px 10px; border-radius: 5px; cursor: pointer;
+  transition: background 0.12s; position: relative; }}
+.feedback-item:hover {{ background: rgba(176,48,96,0.06); }}
+.feedback-item input[type="checkbox"] {{ position: absolute; opacity: 0; cursor: pointer; }}
+.fb-check {{ width: 16px; height: 16px; border: 2px solid var(--line);
+  border-radius: 4px; background: var(--bg); margin-top: 2px;
+  flex-shrink: 0; transition: all 0.15s; }}
+.feedback-item input:checked ~ .fb-check {{ background: var(--product);
+  border-color: var(--product); }}
+.feedback-item input:checked ~ .fb-check::after {{ content: '✓'; display: block;
+  color: #fff; font-size: 11px; line-height: 12px; text-align: center;
+  font-weight: 700; }}
+.fb-text {{ font-size: 13.5px; line-height: 1.5; color: var(--ink-soft);
+  font-style: italic; }}
+.feedback-item input:checked ~ .fb-text {{ color: var(--ink); font-style: normal; }}
+
 .comment-block {{ padding-top: 12px; }}
 .variant-comment {{ width: 100%; min-height: 50px; padding: 9px 12px;
   border: 1px solid var(--line); border-radius: 6px; font-family: inherit;
@@ -536,13 +578,14 @@ h1 {{ font-size: 32px; line-height: 1.15; letter-spacing: -0.02em;
 const STORAGE_KEY = 'sea_vo_variants_v5';
 
 function loadState() {{
-  try {{ return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{{"picks":[],"comments":{{}},"hooks":{{}}}}'); }}
-  catch (e) {{ return {{picks:[], comments:{{}}, hooks:{{}}}}; }}
+  try {{ return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{{"picks":[],"comments":{{}},"hooks":{{}},"feedback":{{}}}}'); }}
+  catch (e) {{ return {{picks:[], comments:{{}}, hooks:{{}}, feedback:{{}}}}; }}
 }}
 function saveState(s) {{ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }}
 
 let state = loadState();
 if (!state.hooks) state.hooks = {{}};
+if (!state.feedback) state.feedback = {{}};
 
 // Hydrate checkboxes and comments from state
 document.querySelectorAll('.vp').forEach(cb => {{
@@ -564,6 +607,31 @@ document.querySelectorAll('.hp').forEach(rb => {{
   if (state.hooks[vid] !== undefined) {{
     rb.checked = (state.hooks[vid] === hidx);
   }}
+}});
+
+// Hydrate feedback picks
+document.querySelectorAll('.fp').forEach(cb => {{
+  const vid = cb.getAttribute('data-vid');
+  const fidx = parseInt(cb.getAttribute('data-fidx'));
+  const picked = state.feedback[vid] || [];
+  if (picked.includes(fidx)) cb.checked = true;
+}});
+
+// Feedback checkbox handlers
+document.querySelectorAll('.fp').forEach(cb => {{
+  cb.addEventListener('change', () => {{
+    const vid = cb.getAttribute('data-vid');
+    const fidx = parseInt(cb.getAttribute('data-fidx'));
+    if (!state.feedback[vid]) state.feedback[vid] = [];
+    if (cb.checked) {{
+      if (!state.feedback[vid].includes(fidx)) state.feedback[vid].push(fidx);
+    }} else {{
+      state.feedback[vid] = state.feedback[vid].filter(i => i !== fidx);
+    }}
+    if (state.feedback[vid].length === 0) delete state.feedback[vid];
+    saveState(state);
+    updatePanel();
+  }});
 }});
 
 // Hook picker — reassemble VO on change
@@ -647,10 +715,27 @@ function buildPrompt() {{
     }}
   }});
 
+  // Picked audience feedback
+  const feedbackEntries = Object.entries(state.feedback).filter(([k, arr]) => (arr || []).length > 0);
+  const totalFbPicks = feedbackEntries.reduce((a, [k, arr]) => a + arr.length, 0);
+  lines.push('');
+  lines.push(`AUDIENCE FEEDBACK PICKED TO ACT ON (${{totalFbPicks}}):`);
+  if (feedbackEntries.length === 0) lines.push('  (none)');
+  feedbackEntries.forEach(([vid, fidxs]) => {{
+    const info = variantInfo(vid);
+    if (!info) return;
+    fidxs.forEach(fi => {{
+      const cb = document.querySelector(`.fp[data-vid="${{vid}}"][data-fidx="${{fi}}"]`);
+      if (!cb) return;
+      const text = cb.getAttribute('data-text');
+      lines.push(`  ${{info.card_id}} / V${{info.vidx}} / ${{info.letter}}: "${{text}}"`);
+    }});
+  }});
+
   lines.push('');
   lines.push('Action:');
-  lines.push('  - No comments → finalize picked variants and deliver');
-  lines.push('  - Comments present → produce revised variants on flagged ones based on the comment direction');
+  lines.push('  - No comments or feedback picks → finalize picked variants and deliver');
+  lines.push('  - Comments or feedback picks present → revise flagged variants addressing the comments and audience feedback');
 
   return lines.join('\\n');
 }}
@@ -658,11 +743,12 @@ function buildPrompt() {{
 function updatePanel() {{
   const pc = state.picks.length;
   const cc = Object.values(state.comments).filter(v => (v||'').trim()).length;
+  const fc = Object.values(state.feedback || {{}}).reduce((a, arr) => a + (arr || []).length, 0);
   const ctx = document.getElementById('panelCount');
-  if (pc === 0 && cc === 0) {{
-    ctx.innerHTML = '<span class="count-zero">0 picked · 0 comments</span>';
+  if (pc === 0 && cc === 0 && fc === 0) {{
+    ctx.innerHTML = '<span class="count-zero">0 picked · 0 comments · 0 feedback</span>';
   }} else {{
-    ctx.textContent = `${{pc}} picked · ${{cc}} comments`;
+    ctx.textContent = `${{pc}} picked · ${{cc}} comments · ${{fc}} feedback`;
   }}
   document.getElementById('panelPrompt').value = buildPrompt();
 }}
