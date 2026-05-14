@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>SEA Batch 1 — Voiceover Scripts</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --ink: #1d1d1f;
+  --ink-soft: #424245;
+  --ink-mute: #6e6e73;
+  --line: #d2d2d7;
+  --line-soft: #e8e8ed;
+  --tint: #f5f5f7;
+  --accent: #1d1d1f;
+  --pick: #0a6d2f;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+  font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+
+.layout { display: grid; grid-template-columns: 260px 1fr; max-width: 1200px;
+  margin: 0 auto; gap: 0; }
+
+/* Sidebar */
+aside { position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  padding: 40px 22px 40px 28px; border-right: 1px solid var(--line);
+  background: var(--bg); }
+aside .side-kicker { font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute);
+  margin-bottom: 14px; }
+aside .side-title { font-size: 15px; font-weight: 600; margin-bottom: 4px;
+  letter-spacing: -0.01em; line-height: 1.25; }
+aside .side-sub { font-size: 11px; color: var(--ink-mute); margin-bottom: 24px;
+  font-family: var(--mono); letter-spacing: 0.04em; }
+nav { display: flex; flex-direction: column; gap: 2px; }
+nav a { display: grid; grid-template-columns: 54px 1fr 20px; gap: 8px;
+  align-items: baseline; padding: 7px 0;
+  text-decoration: none; color: var(--ink-soft);
+  border-bottom: 1px solid var(--line-soft); font-size: 12px; line-height: 1.35; }
+nav a:hover { color: var(--ink); }
+nav a.active { color: var(--ink); font-weight: 600; }
+nav a.active .nav-id { color: var(--ink); }
+.nav-id { font-family: var(--mono); font-size: 10px;
+  color: var(--ink-mute); letter-spacing: 0.04em; }
+.nav-t { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nav-n { font-family: var(--mono); font-size: 10px; color: var(--ink-mute);
+  text-align: right; }
+
+main { padding: 60px 60px 120px; min-width: 0; }
+
+.hero { padding-bottom: 36px; border-bottom: 1px solid var(--line);
+  margin-bottom: 42px; }
+.kicker { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-mute); margin-bottom: 14px; }
+h1 { font-size: 36px; line-height: 1.15; letter-spacing: -0.02em;
+  font-weight: 600; margin-bottom: 16px; }
+.lede { font-size: 17px; color: var(--ink-soft); max-width: 640px;
+  line-height: 1.55; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--line); border-radius: 4px; margin-top: 36px;
+  overflow: hidden; }
+.stat { padding: 18px 16px; border-right: 1px solid var(--line-soft); }
+.stat:last-child { border-right: none; }
+.stat-n { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink); line-height: 1.1; }
+.stat-l { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ink-mute); margin-top: 4px; }
+
+.card { margin-bottom: 56px; padding-top: 12px; }
+.card-head { padding-bottom: 18px; border-bottom: 1px solid var(--ink);
+  margin-bottom: 22px; }
+.card-id { font-family: var(--mono); font-size: 11px; color: var(--ink-mute);
+  letter-spacing: 0.06em; margin-bottom: 6px; }
+.card-title { font-size: 24px; font-weight: 600; letter-spacing: -0.01em;
+  line-height: 1.25; margin-bottom: 8px; }
+.card-meta { display: flex; flex-wrap: wrap; gap: 14px 22px;
+  font-family: var(--mono); font-size: 11px; color: var(--ink-mute);
+  letter-spacing: 0.04em; }
+
+.findings { margin-bottom: 28px; border: 1px solid var(--line); border-radius: 4px;
+  padding: 0; overflow: hidden; }
+.findings summary { cursor: pointer; padding: 12px 16px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--ink-mute); user-select: none;
+  background: var(--tint); }
+.findings summary:hover { color: var(--ink); }
+.findings[open] summary { border-bottom: 1px solid var(--line); }
+.findings ul { padding: 14px 22px 14px 38px; }
+.findings li { font-size: 13px; line-height: 1.55; color: var(--ink-soft);
+  margin-bottom: 6px; }
+.findings li:last-child { margin-bottom: 0; }
+
+.scripts { display: flex; flex-direction: column; gap: 24px; }
+.script { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.script-head { padding: 16px 22px 14px; border-bottom: 1px solid var(--line-soft);
+  background: var(--tint); }
+.script-meta { display: flex; justify-content: space-between;
+  align-items: baseline; margin-bottom: 6px; }
+.approach { font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-soft); font-weight: 600; }
+.duration { font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.06em; color: var(--ink-mute); }
+.vt { font-size: 17px; font-weight: 600; letter-spacing: -0.01em;
+  line-height: 1.3; color: var(--ink); }
+.vo-block { padding: 22px 24px 16px; position: relative; }
+.vo { font-size: 16px; line-height: 1.7; color: var(--ink);
+  font-family: ui-serif, "New York", "Iowan Old Style", "Apple Garamond", Georgia, serif;
+  letter-spacing: 0.005em; }
+.copy-btn { margin-top: 14px; padding: 7px 14px; background: var(--bg);
+  border: 1px solid var(--line); border-radius: 100px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--ink-soft); cursor: pointer;
+  transition: all 0.15s; }
+.copy-btn:hover { border-color: var(--ink); color: var(--ink); }
+.copy-btn.copied { background: var(--pick); color: #fff; border-color: var(--pick); }
+
+.foot { margin-top: 60px; padding-top: 22px; border-top: 1px solid var(--line);
+  font-family: var(--mono); font-size: 10px; color: var(--ink-mute);
+  letter-spacing: 0.06em; text-transform: uppercase; }
+.foot a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; }
+
+@media (max-width: 920px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { display: none; }
+  main { padding: 36px 22px 100px; }
+  h1 { font-size: 26px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat { border-bottom: 1px solid var(--line-soft); }
+  .card-title { font-size: 20px; }
+  .vo-block { padding: 18px 18px 14px; }
+  .vo { font-size: 15px; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+<aside>
+  <div class="side-kicker">Sparkloop · Step 5</div>
+  <div class="side-title">SEA Batch 1 Voiceover Scripts</div>
+  <div class="side-sub">24 scripts · 17 cards</div>
+  <nav><a href="#p1-a2"><span class="nav-id">P1-A2</span><span class="nav-t">3 ways CNY actually reaches your supplier</span><span class="nav-n">1</span></a>
+<a href="#p1-a4"><span class="nav-id">P1-A4</span><span class="nav-t">Your supplier asked you to pay the $200 they didn&#x27;t receive</span><span class="nav-n">2</span></a>
+<a href="#p1-a6"><span class="nav-id">P1-A6</span><span class="nav-t">Why paying your supplier in CNY actually wins</span><span class="nav-n">3</span></a>
+<a href="#p1-a8"><span class="nav-id">P1-A8</span><span class="nav-t">The 3-letter code that decides if your wire is same-day</span><span class="nav-n">1</span></a>
+<a href="#p1-a9"><span class="nav-id">P1-A9</span><span class="nav-t">Supplier said wire didn&#x27;t arrive. Bank says it did.</span><span class="nav-n">1</span></a>
+<a href="#p1-a11"><span class="nav-id">P1-A11</span><span class="nav-t">Why your CNY payment sometimes arrives in USD</span><span class="nav-n">1</span></a>
+<a href="#p1-a13"><span class="nav-id">P1-A13</span><span class="nav-t">Bank says no fee. You still paid $300.</span><span class="nav-n">1</span></a>
+<a href="#p1-a14"><span class="nav-id">P1-A14</span><span class="nav-t">Three operators, same $50K wire, three different supplier-end amounts</span><span class="nav-n">1</span></a>
+<a href="#p2-a1"><span class="nav-id">P2-A1</span><span class="nav-t">How a 2% bank-to-rail gap compounds over a year</span><span class="nav-n">2</span></a>
+<a href="#p2-a3"><span class="nav-id">P2-A3</span><span class="nav-t">Bank wire vs WorldFirst on the same $50K payment</span><span class="nav-n">1</span></a>
+<a href="#p2-a7"><span class="nav-id">P2-A7</span><span class="nav-t">Your sourcing budget shrinks 4% a year (silent compound)</span><span class="nav-n">1</span></a>
+<a href="#p2-a8"><span class="nav-id">P2-A8</span><span class="nav-t">How to read FX margin off your wire confirmation</span><span class="nav-n">1</span></a>
+<a href="#p2-a9"><span class="nav-id">P2-A9</span><span class="nav-t">Good rate quoted vs real interbank rate</span><span class="nav-n">1</span></a>
+<a href="#p2-a13"><span class="nav-id">P2-A13</span><span class="nav-t">How much PayPal actually costs you on a $20K supplier payment</span><span class="nav-n">2</span></a>
+<a href="#p2-a14"><span class="nav-id">P2-A14</span><span class="nav-t">Credit cards for international supplier payments: the gap</span><span class="nav-n">1</span></a>
+<a href="#p2-a18"><span class="nav-id">P2-A18</span><span class="nav-t">Personal vs business FX rate: the spread</span><span class="nav-n">2</span></a>
+<a href="#p2-a24"><span class="nav-id">P2-A24</span><span class="nav-t">When CAN you pay a Chinese supplier by card?</span><span class="nav-n">2</span></a></nav>
+</aside>
+
+<main>
+  <div class="hero">
+    <div class="kicker">Sparkloop · /spark_script output · Pure VO format</div>
+    <h1>SEA Brand Channel Batch 1 — Voiceover Scripts</h1>
+    <p class="lede">Pure reading copy for talent. Each block is one short-form reel, start to finish, no timing markers or shot direction. Director and editor handle visuals separately at shoot time. Default talent lead: Heng Hui Mei.</p>
+    <div class="stats">
+      <div class="stat"><div class="stat-n">17</div><div class="stat-l">Cards</div></div>
+      <div class="stat"><div class="stat-n">24</div><div class="stat-l">Scripts</div></div>
+      <div class="stat"><div class="stat-n">3,684</div><div class="stat-l">VO words</div></div>
+      <div class="stat"><div class="stat-n">~25m</div><div class="stat-l">Total speak time</div></div>
+    </div>
+  </div>
+
+  
+<section class="card" id="p1-a2">
+  <header class="card-head">
+    <div class="card-id">P1-A2</div>
+    <h2 class="card-title">3 ways CNY actually reaches your supplier</h2>
+    <div class="card-meta">
+      <span>Pillar </span>
+      <span></span>
+      <span>Topic </span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>The 3 ways: SWIFT-routed via correspondent banks; CIPS direct clearing; MYbank/Alipay corporate (for 1688).</li>
+<li>CIPS processed $24.47T USD-equivalent in 2024 (+42.6% YoY), real-scale infrastructure.</li>
+<li>Most operators treat the three as one mechanism. Differences are speed, cost, supplier-side amount.</li>
+<li>WF SG public page doesn&#x27;t name MYbank, use &quot;dedicated CNY rail&quot; framing.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a2-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Curiosity-led</span>
+      <span class="duration">160 words · ~64s</span>
+    </div>
+    <h3 class="vt">The 3 paths your CNY takes to China (most operators only know one)</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Your CNY can take three different paths to reach a Chinese supplier. Only one of them is same-day. Path one is SWIFT, the global bank messaging network. Your money hops through correspondent banks, one to three of them, each taking a piece of the fee. Expect three to five business days. Path two is CIPS, China&#x27;s own clearing system. Fewer hops, dedicated to CNY. One to two days. CIPS cleared 24 trillion US dollars in 2024, this is not a side road. Path three is a dedicated CNY rail. For platforms like 1688, the payment routes through Alipay&#x27;s corporate banking partner straight to a Chinese supplier&#x27;s account. Same-day, when it&#x27;s set up right. Most operators are on path one and don&#x27;t know paths two and three exist. Your bank usually won&#x27;t volunteer that. Check your wire confirmation. The routing&#x27;s on it. If it says SWIFT, you&#x27;re on path one. Same supplier, slower path. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Your CNY can take three different paths to reach a Chinese supplier. Only one of them is same-day. Path one is SWIFT, the global bank messaging network. Your money hops through correspondent banks, one to three of them, each taking a piece of the fee. Expect three to five business days. Path two is CIPS, China&#x27;s own clearing system. Fewer hops, dedicated to CNY. One to two days. CIPS cleared 24 trillion US dollars in 2024, this is not a side road. Path three is a dedicated CNY rail. For platforms like 1688, the payment routes through Alipay&#x27;s corporate banking partner straight to a Chinese supplier&#x27;s account. Same-day, when it&#x27;s set up right. Most operators are on path one and don&#x27;t know paths two and three exist. Your bank usually won&#x27;t volunteer that. Check your wire confirmation. The routing&#x27;s on it. If it says SWIFT, you&#x27;re on path one. Same supplier, slower path. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p1-a4">
+  <header class="card-head">
+    <div class="card-id">P1-A4</div>
+    <h2 class="card-title">Your supplier asked you to pay the $200 they didn&#x27;t receive</h2>
+    <div class="card-meta">
+      <span>Pillar </span>
+      <span></span>
+      <span>Topic </span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (6)</summary>
+  <ul><li>Roughly 8 to 15% of SWIFT wires to Chinese suppliers arrive short, delayed, or returned. The two biggest causes: intermediary bank fee deductions and beneficiary name mismatches.</li>
+<li>Most banks default to SHA (shared fees) in SWIFT field 71A. SHA does not actually mean shared evenly: it means you pay your bank&#x27;s send fee, the supplier eats every correspondent bank deduction in the chain.</li>
+<li>Each correspondent bank in the chain deducts $15 to $50 directly from the wire amount before passing it on. The sender is never notified. 1 to 3 hops is typical for a US to China wire, so on a $50,000 wire a supplier can lose $30 to $150 invisibly, sometimes more.</li>
+<li>Real reference: a Vienna company paid $12,000 to a US vendor using SHA. Vendor received $11,940. The $60 vanished into the correspondent chain with no line item.</li>
+<li>The fix is one of two things. Either change the SWIFT instruction to OUR (sender pays all chain fees, supplier gets full amount, costs the sender $30 to $75 more upfront) or bypass the SWIFT chain entirely via CIPS or MYbank routing, where there is no intermediary chain to deduct from.</li>
+<li>China-bound wires also fail on beneficiary name mismatch. A 5 to 10% return rate in the China corridor traces back to pinyin vs Chinese character name, missing &#x27;Co., Ltd.&#x27;, or wrong company-form suffix on the SWIFT MT103. Returns cost 2 to 3 weeks of delay and another round of fees.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a4-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Pain-led</span>
+      <span class="duration">182 words · ~73s</span>
+    </div>
+    <h3 class="vt">Your supplier just asked for the $200 they did not get</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">You paid $50,000. Your supplier says $49,800 landed. You are not crazy and they are not lying. Here is what happened. Your wire went through SWIFT, the global bank messaging network. SWIFT does not move money on its own. Real banks in the middle, called correspondent banks, pass the funds hop by hop. Most US to China wires hit one to three of them. Each one is allowed to deduct its own fee, usually 15 to 50 dollars, straight from the amount before passing it on. Your bank never warns you. Your supplier just sees a smaller number arrive. That 200 dollar gap is not a scam. It is the chain. There is a code on every wire called field 71A. SHA means shared, which sounds fair, but it actually means the supplier eats every correspondent deduction. OUR means you pay all chain fees upfront, supplier gets the full amount. Ask your bank to send as OUR, not SHA. Or skip the chain entirely with a direct CNY rail. Same payment. Fewer hops. Full amount. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="You paid $50,000. Your supplier says $49,800 landed. You are not crazy and they are not lying. Here is what happened. Your wire went through SWIFT, the global bank messaging network. SWIFT does not move money on its own. Real banks in the middle, called correspondent banks, pass the funds hop by hop. Most US to China wires hit one to three of them. Each one is allowed to deduct its own fee, usually 15 to 50 dollars, straight from the amount before passing it on. Your bank never warns you. Your supplier just sees a smaller number arrive. That 200 dollar gap is not a scam. It is the chain. There is a code on every wire called field 71A. SHA means shared, which sounds fair, but it actually means the supplier eats every correspondent deduction. OUR means you pay all chain fees upfront, supplier gets the full amount. Ask your bank to send as OUR, not SHA. Or skip the chain entirely with a direct CNY rail. Same payment. Fewer hops. Full amount. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+<article class="script" data-script-id="p1-a4-s2">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Pain-led</span>
+      <span class="duration">151 words · ~60s</span>
+    </div>
+    <h3 class="vt">Why your wire arrived 3 days late and short $150</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Your wire was supposed to clear in 2 days. Day 5, your supplier is still chasing. Two reasons it stalls. One, intermediary banks. A US to China SWIFT wire usually routes through one to three correspondent banks. Each one takes a business day to process and shaves 15 to 50 dollars in fees. That&#x27;s where the days disappear. Two, compliance review in China. Chinese banks check the beneficiary name on the wire against the company registration. If the name on your wire says &#x27;Shenzhen ABC Trading&#x27; but the registered name is &#x27;Shenzhen ABC Trading Co., Ltd.&#x27;, the wire pauses for manual review. Sometimes 3 days. Sometimes 10. Sometimes the wire is returned to sender, and you start over. Five to ten percent of China-bound wires fail on this exact mismatch. Two minutes spent matching the exact registered name saves a week of supplier emails. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Your wire was supposed to clear in 2 days. Day 5, your supplier is still chasing. Two reasons it stalls. One, intermediary banks. A US to China SWIFT wire usually routes through one to three correspondent banks. Each one takes a business day to process and shaves 15 to 50 dollars in fees. That&#x27;s where the days disappear. Two, compliance review in China. Chinese banks check the beneficiary name on the wire against the company registration. If the name on your wire says &#x27;Shenzhen ABC Trading&#x27; but the registered name is &#x27;Shenzhen ABC Trading Co., Ltd.&#x27;, the wire pauses for manual review. Sometimes 3 days. Sometimes 10. Sometimes the wire is returned to sender, and you start over. Five to ten percent of China-bound wires fail on this exact mismatch. Two minutes spent matching the exact registered name saves a week of supplier emails. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p1-a6">
+  <header class="card-head">
+    <div class="card-id">P1-A6</div>
+    <h2 class="card-title">Why paying your supplier in CNY actually wins</h2>
+    <div class="card-meta">
+      <span>Pillar </span>
+      <span></span>
+      <span>Topic </span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (5)</summary>
+  <ul><li>USD route stacks two FX margins: your bank converts local currency to USD (0.5 to 1.5%), then your supplier&#x27;s Chinese bank converts USD to CNY on receipt (0.3 to 0.8%). Combined hidden cost is 0.8 to 2.3% on top of the visible invoice.</li>
+<li>CIPS and MYbank route direct CNY payments at roughly 0.3 to 0.5% all-in. 80% land same-day, 90% next-day. SWIFT USD wires take 3 to 5 business days and can stall for SAFE compliance review at the supplier&#x27;s bank.</li>
+<li>Most Chinese suppliers prefer receiving CNY. They skip a 7 to 10 day wait for USD-to-RMB conversion at their bank, avoid an inbound forex fee, and remove their own currency risk on the order.</li>
+<li>Paying in CNY often unlocks a 1 to 3% supplier discount on a fresh quote. Suppliers pad USD quotes by 2 to 5% to cover FX swings between PI and payment. Ask for the CNY price and that padding comes off.</li>
+<li>USD price is not &quot;locked in&quot;. It floats with your bank&#x27;s daily FX rate when the wire executes. The PI says USD 10,000 but your bank settles it at their card-rate, not the rate you saw on Google.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a6-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Reframe</span>
+      <span class="duration">111 words · ~44s</span>
+    </div>
+    <h3 class="vt">USD feels safer. It costs you 2% more.</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">USD feels safer. You&#x27;re paying 2% extra for that feeling. Your USD wire to a Chinese factory goes through two FX conversions. Your bank takes 0.5 to 1.5% turning your local currency into USD. Your supplier&#x27;s bank takes another 0.3 to 0.8% turning that USD back into CNY. That stack is invisible because it&#x27;s baked into the rate, not the fee line. On a USD 20,000 order, you&#x27;ve quietly given up 160 to 460 dollars before anything ships. Pay in CNY directly through CIPS or a dedicated CNY rail, one conversion, 0.3 to 0.5% total. Same payment. Half the cost. Same destination bank account. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="USD feels safer. You&#x27;re paying 2% extra for that feeling. Your USD wire to a Chinese factory goes through two FX conversions. Your bank takes 0.5 to 1.5% turning your local currency into USD. Your supplier&#x27;s bank takes another 0.3 to 0.8% turning that USD back into CNY. That stack is invisible because it&#x27;s baked into the rate, not the fee line. On a USD 20,000 order, you&#x27;ve quietly given up 160 to 460 dollars before anything ships. Pay in CNY directly through CIPS or a dedicated CNY rail, one conversion, 0.3 to 0.5% total. Same payment. Half the cost. Same destination bank account. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+<article class="script" data-script-id="p1-a6-s2">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Supplier-perspective</span>
+      <span class="duration">133 words · ~53s</span>
+    </div>
+    <h3 class="vt">Why your supplier secretly wants CNY</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Your supplier doesn&#x27;t want your USD. They just don&#x27;t say it. When USD lands in a Chinese supplier&#x27;s bank, three things happen. They wait 7 to 10 days for the bank to clear it. They pay an inbound forex fee to convert it to CNY. They take the currency risk if the rate moves before settlement. None of that is your problem on paper, but it is on the next quote. So they pad the USD price by 2 to 5% to protect themselves. Offer to pay in CNY and that padding has no reason to exist. Most suppliers will quietly drop the price by 1 to 3% on a fresh quote, because their cost just disappeared. Ask for the CNY price. Watch what they quote. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Your supplier doesn&#x27;t want your USD. They just don&#x27;t say it. When USD lands in a Chinese supplier&#x27;s bank, three things happen. They wait 7 to 10 days for the bank to clear it. They pay an inbound forex fee to convert it to CNY. They take the currency risk if the rate moves before settlement. None of that is your problem on paper, but it is on the next quote. So they pad the USD price by 2 to 5% to protect themselves. Offer to pay in CNY and that padding has no reason to exist. Most suppliers will quietly drop the price by 1 to 3% on a fresh quote, because their cost just disappeared. Ask for the CNY price. Watch what they quote. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+<article class="script" data-script-id="p1-a6-s3">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Math-led</span>
+      <span class="duration">131 words · ~52s</span>
+    </div>
+    <h3 class="vt">The math on USD vs CNY for a $20,000 supplier payment</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Same supplier. Same order. USD costs 460 dollars more than CNY. Here&#x27;s the math. Order, USD 20,000. Route A, USD wire. Your bank&#x27;s FX margin around 1%, that&#x27;s 200 dollars. Supplier&#x27;s bank converts USD to CNY at around 0.5%, another 100 dollars hidden in the rate. SWIFT and intermediary fees, around 60 dollars. Total leakage, 360 dollars and 4 days. Route B, CNY direct via CIPS or a dedicated CNY rail. One conversion at 0.4%, that&#x27;s 80 dollars. Settled same day. Difference per order, 280 dollars. Run 12 orders a year and that&#x27;s 3,360 dollars sitting in someone else&#x27;s pocket. On 24 orders, it doubles. The math doesn&#x27;t care how busy you are. Run the numbers on your last 10 invoices. You&#x27;ll see it. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Same supplier. Same order. USD costs 460 dollars more than CNY. Here&#x27;s the math. Order, USD 20,000. Route A, USD wire. Your bank&#x27;s FX margin around 1%, that&#x27;s 200 dollars. Supplier&#x27;s bank converts USD to CNY at around 0.5%, another 100 dollars hidden in the rate. SWIFT and intermediary fees, around 60 dollars. Total leakage, 360 dollars and 4 days. Route B, CNY direct via CIPS or a dedicated CNY rail. One conversion at 0.4%, that&#x27;s 80 dollars. Settled same day. Difference per order, 280 dollars. Run 12 orders a year and that&#x27;s 3,360 dollars sitting in someone else&#x27;s pocket. On 24 orders, it doubles. The math doesn&#x27;t care how busy you are. Run the numbers on your last 10 invoices. You&#x27;ll see it. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p1-a8">
+  <header class="card-head">
+    <div class="card-id">P1-A8</div>
+    <h2 class="card-title">The 3-letter code that decides if your wire is same-day</h2>
+    <div class="card-meta">
+      <span>Pillar </span>
+      <span></span>
+      <span>Topic </span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (5)</summary>
+  <ul><li>Field 71A of SWIFT MT103 holds the OUR/SHA/BEN code.</li>
+<li>OUR = sender pays all → supplier gets full amount.</li>
+<li>SHA = shared → intermediaries deduct from amount (default at most banks).</li>
+<li>BEN = beneficiary pays → unpredictable arrival amount.</li>
+<li>Each intermediary bank charges $15-50. Multiple intermediaries possible.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a8-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Curiosity-led</span>
+      <span class="duration">116 words · ~46s</span>
+    </div>
+    <h3 class="vt">The 3-letter code on every China wire (most operators never see it)</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">There&#x27;s a 3-letter code on every China wire. Your bank picks it for you. Field 71A of SWIFT MT103. The line on every wire confirmation that decides who pays the chain of fees. Three options. OUR, sender pays all intermediary fees, supplier gets the full amount. SHA, shared, the intermediaries deduct from the amount, supplier gets less. BEN, beneficiary pays everything, the supplier covers the wire fee plus every chain deduction. Your bank&#x27;s default is usually SHA. That&#x27;s why supplier-side amounts come up short. Each intermediary bank can take 15 to 50 dollars. Multiple intermediaries are normal on a US to China wire. Change the code, change the outcome. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="There&#x27;s a 3-letter code on every China wire. Your bank picks it for you. Field 71A of SWIFT MT103. The line on every wire confirmation that decides who pays the chain of fees. Three options. OUR, sender pays all intermediary fees, supplier gets the full amount. SHA, shared, the intermediaries deduct from the amount, supplier gets less. BEN, beneficiary pays everything, the supplier covers the wire fee plus every chain deduction. Your bank&#x27;s default is usually SHA. That&#x27;s why supplier-side amounts come up short. Each intermediary bank can take 15 to 50 dollars. Multiple intermediaries are normal on a US to China wire. Change the code, change the outcome. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p1-a9">
+  <header class="card-head">
+    <div class="card-id">P1-A9</div>
+    <h2 class="card-title">Supplier said wire didn&#x27;t arrive. Bank says it did.</h2>
+    <div class="card-meta">
+      <span>Pillar </span>
+      <span></span>
+      <span>Topic </span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>Wires can sit between intermediary correspondents for hours to days.</li>
+<li>Currency conversion windows add up to 2 working days.</li>
+<li>Local bank holidays in CN or SEA cause silent delays.</li>
+<li>AML/fraud thresholds can hold wires above certain amounts without sender notification.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a9-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Pain-first</span>
+      <span class="duration">163 words · ~65s</span>
+    </div>
+    <h3 class="vt">My bank says sent. My supplier says nothing. Both right.</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Your bank says sent. Your supplier says nothing. Both are right. When a bank says &#x27;sent&#x27;, it means the wire left their system. When a supplier says &#x27;nothing&#x27;, it means nothing has arrived in their account. The space between is real. Four things happen there. One, intermediary banks. A wire can sit at a correspondent bank for hours, sometimes days, especially across weekends. Two, currency conversion. Converting your local currency to USD or USD to CNY can add up to 2 working days at the supplier&#x27;s bank. Three, bank holidays. China has different holidays than Thailand, Malaysia, or Singapore. If a Chinese holiday falls in the middle, you only find out when nothing moves. Four, compliance review. Wires above a certain amount can sit on an AML hold. Your bank doesn&#x27;t notify you. It just waits. Track the wire by SWIFT reference, not by &#x27;sent&#x27;. Your bank can give you the UETR number. Ask for it. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Your bank says sent. Your supplier says nothing. Both are right. When a bank says &#x27;sent&#x27;, it means the wire left their system. When a supplier says &#x27;nothing&#x27;, it means nothing has arrived in their account. The space between is real. Four things happen there. One, intermediary banks. A wire can sit at a correspondent bank for hours, sometimes days, especially across weekends. Two, currency conversion. Converting your local currency to USD or USD to CNY can add up to 2 working days at the supplier&#x27;s bank. Three, bank holidays. China has different holidays than Thailand, Malaysia, or Singapore. If a Chinese holiday falls in the middle, you only find out when nothing moves. Four, compliance review. Wires above a certain amount can sit on an AML hold. Your bank doesn&#x27;t notify you. It just waits. Track the wire by SWIFT reference, not by &#x27;sent&#x27;. Your bank can give you the UETR number. Ask for it. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p1-a11">
+  <header class="card-head">
+    <div class="card-id">P1-A11</div>
+    <h2 class="card-title">Why your CNY payment sometimes arrives in USD</h2>
+    <div class="card-meta">
+      <span>Pillar </span>
+      <span></span>
+      <span>Topic </span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>Conversion can happen at sender side, correspondent, or beneficiary bank.</li>
+<li>If no CNY-direct correspondent in chain, USD conversion happens by default.</li>
+<li>Supplier ends up holding USD when expecting CNY.</li>
+<li>Supplier then converts USD → CNY at their bank → double conversion cost.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a11-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Mechanism-led</span>
+      <span class="duration">154 words · ~62s</span>
+    </div>
+    <h3 class="vt">3 places where your CNY can become USD</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Three places where your CNY can become USD between you and your supplier. Point one. Sender&#x27;s bank converts to USD before sending. Sometimes because it&#x27;s cheaper for the bank, sometimes because they don&#x27;t have a CNY rail available. Point two. The intermediary correspondent bank in the middle converts because they only hold USD. If your wire passes through a US-based correspondent, that&#x27;s almost always where it happens. Point three. The supplier&#x27;s receiving bank converts because nothing in the chain held CNY, so they accept USD and convert on arrival. Each one of these is a separate conversion point, and each adds a spread. By the time your supplier sees the money, it&#x27;s been converted once, twice, or three times. They then convert it back to CNY at their bank, paying again. Map the conversion points on your wire. Eliminate them. One conversion or none, that&#x27;s the goal. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Three places where your CNY can become USD between you and your supplier. Point one. Sender&#x27;s bank converts to USD before sending. Sometimes because it&#x27;s cheaper for the bank, sometimes because they don&#x27;t have a CNY rail available. Point two. The intermediary correspondent bank in the middle converts because they only hold USD. If your wire passes through a US-based correspondent, that&#x27;s almost always where it happens. Point three. The supplier&#x27;s receiving bank converts because nothing in the chain held CNY, so they accept USD and convert on arrival. Each one of these is a separate conversion point, and each adds a spread. By the time your supplier sees the money, it&#x27;s been converted once, twice, or three times. They then convert it back to CNY at their bank, paying again. Map the conversion points on your wire. Eliminate them. One conversion or none, that&#x27;s the goal. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p1-a13">
+  <header class="card-head">
+    <div class="card-id">P1-A13</div>
+    <h2 class="card-title">Bank says no fee. You still paid $300.</h2>
+    <div class="card-meta">
+      <span>Pillar </span>
+      <span></span>
+      <span>Topic </span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>Banks advertise &#x27;no transfer fee&#x27; on cross-border wires while embedding 1 to 4 percent margin in the FX rate itself.</li>
+<li>Bancoli case data: on a $10,000 transfer with a 3 percent FX markup, businesses pay $300 hidden in the rate with no line-item disclosure.</li>
+<li>The wire confirmation lists &#x27;no fee&#x27; or &#x27;fee waived&#x27; while the applied rate is 1 to 3 percent off the mid-market. The two facts coexist legally.</li>
+<li>35 percent of businesses surveyed by Airwallex cite &#x27;high or hidden fees&#x27; as their top frustration. Source: cross-border payment industry surveys.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a13-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Tutorial</span>
+      <span class="duration">123 words · ~49s</span>
+    </div>
+    <h3 class="vt">How banks charge you nothing and still keep $300</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Your bank says zero fee on this wire. You still paid 300 dollars. Here&#x27;s where it hides. Banks charge you in two ways. One you see. One you don&#x27;t. The wire fee is the visible one. Twenty five dollars, forty dollars, whatever shows on the receipt. The rate margin is the invisible one. One to three percent of the wire amount, baked into the FX rate itself, which means foreign exchange rate. On a ten thousand dollar wire at three percent margin, that&#x27;s 300 dollars. Nobody itemises it. Nobody calls it a fee. Both facts coexist on the same confirmation legally. Always check the applied rate against Google&#x27;s mid-market rate. That gap is the real cost. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Your bank says zero fee on this wire. You still paid 300 dollars. Here&#x27;s where it hides. Banks charge you in two ways. One you see. One you don&#x27;t. The wire fee is the visible one. Twenty five dollars, forty dollars, whatever shows on the receipt. The rate margin is the invisible one. One to three percent of the wire amount, baked into the FX rate itself, which means foreign exchange rate. On a ten thousand dollar wire at three percent margin, that&#x27;s 300 dollars. Nobody itemises it. Nobody calls it a fee. Both facts coexist on the same confirmation legally. Always check the applied rate against Google&#x27;s mid-market rate. That gap is the real cost. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p1-a14">
+  <header class="card-head">
+    <div class="card-id">P1-A14</div>
+    <h2 class="card-title">Three operators, same $50K wire, three different supplier-end amounts</h2>
+    <div class="card-meta">
+      <span>Pillar P1</span>
+      <span>Short-form 60s</span>
+      <span>Topic 02</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>Three SEA operators sending identical $50,000 wires to the same supplier on the same day can see supplier-end amounts vary by $700 to $1,500 depending on provider FX margin.</li>
+<li>Bank A at 1.5 percent margin: supplier receives ~$49,250. Bank B at 0.6 percent: ~$49,700. Specialist FX at 0.3 percent: ~$49,850. Same wire, three outcomes.</li>
+<li>Variation is driven entirely by the applied FX rate, not by the visible wire fee. Most SMEs only compare wire fees, missing the larger spread cost.</li>
+<li>Currency Transfer reports SMEs save 50,000 GBP/year on 2M GBP volume by switching from bank (3 percent) to specialist FX (0.5 percent).</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p1-a14-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Comparison</span>
+      <span class="duration">147 words · ~59s</span>
+    </div>
+    <h3 class="vt">Three operators, same wire, three amounts</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Three operators. Same fifty thousand dollar wire. Same supplier in China. Same day. Three different amounts arrived. Operator A used a major bank. Supplier received forty nine thousand two hundred fifty. Operator B used a regional bank. Supplier received forty nine thousand seven hundred. Operator C used a specialist FX provider. Supplier received forty nine thousand eight hundred fifty. Six hundred dollar gap between A and C. On the same fifty thousand dollar wire. And here&#x27;s the part most operators miss. All three wire confirmations said no fee. The difference wasn&#x27;t in the fee line. It was in the applied rate. Bank A took one and a half percent FX margin. Bank B took zero point six. Specialist took zero point three. Same wire, three rates, three outcomes. The wire isn&#x27;t the cost. The rate is. Check yours next time. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Three operators. Same fifty thousand dollar wire. Same supplier in China. Same day. Three different amounts arrived. Operator A used a major bank. Supplier received forty nine thousand two hundred fifty. Operator B used a regional bank. Supplier received forty nine thousand seven hundred. Operator C used a specialist FX provider. Supplier received forty nine thousand eight hundred fifty. Six hundred dollar gap between A and C. On the same fifty thousand dollar wire. And here&#x27;s the part most operators miss. All three wire confirmations said no fee. The difference wasn&#x27;t in the fee line. It was in the applied rate. Bank A took one and a half percent FX margin. Bank B took zero point six. Specialist took zero point three. Same wire, three rates, three outcomes. The wire isn&#x27;t the cost. The rate is. Check yours next time. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a1">
+  <header class="card-head">
+    <div class="card-id">P2-A1</div>
+    <h2 class="card-title">How a 2% bank-to-rail gap compounds over a year</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s</span>
+      <span>Topic 02</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>A 2 percent gap between bank wire rate and specialist FX rail rate compounds across every wire in a year. On $500K annual sourcing, that&#x27;s $10,000 silently lost.</li>
+<li>Banks at 2 percent FX margin vs specialist providers at 0.3 to 0.5 percent = a 1.5 to 1.7 percentage point gap per wire, every wire.</li>
+<li>Bancoli case: importer with $200K quarterly inventory at 3.5 percent margin = $28,000 annual hidden cost. At specialist 0.5 percent margin, it&#x27;s $4,000.</li>
+<li>Effective margin spread (bank vs specialist FX rail) tends to be 1.5 to 3 percentage points, with no fee line on either side to show it.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a1-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Math-led</span>
+      <span class="duration">158 words · ~63s</span>
+    </div>
+    <h3 class="vt">How a 2% gap compounds over a year of sourcing</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Two percent on one wire feels small. Run twelve wires a year. Watch what happens. Here&#x27;s the math. Fifty thousand dollars per wire. Twelve wires a year. That&#x27;s six hundred thousand dollars of sourcing volume. Bank FX margin sits around two percent on each wire. Specialist FX rails sit at zero point three to zero point five percent. The gap is roughly one and a half to one point seven percent per wire. Stack twelve wires. Two percent of fifty thousand is one thousand. Times twelve. Twelve thousand dollars. Gone. That&#x27;s not a fee. That&#x27;s not a wire charge. That&#x27;s the rate margin difference between your bank and a specialist FX rail, compounding silently across every transfer. No line item. No notification. Just a slightly smaller amount landing in your supplier&#x27;s bank each time. Two percent looks small per wire. It&#x27;s twelve thousand a year on six hundred thousand of sourcing. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Two percent on one wire feels small. Run twelve wires a year. Watch what happens. Here&#x27;s the math. Fifty thousand dollars per wire. Twelve wires a year. That&#x27;s six hundred thousand dollars of sourcing volume. Bank FX margin sits around two percent on each wire. Specialist FX rails sit at zero point three to zero point five percent. The gap is roughly one and a half to one point seven percent per wire. Stack twelve wires. Two percent of fifty thousand is one thousand. Times twelve. Twelve thousand dollars. Gone. That&#x27;s not a fee. That&#x27;s not a wire charge. That&#x27;s the rate margin difference between your bank and a specialist FX rail, compounding silently across every transfer. No line item. No notification. Just a slightly smaller amount landing in your supplier&#x27;s bank each time. Two percent looks small per wire. It&#x27;s twelve thousand a year on six hundred thousand of sourcing. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+<article class="script" data-script-id="p2-a1-s2">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Pain-led</span>
+      <span class="duration">141 words · ~56s</span>
+    </div>
+    <h3 class="vt">$10,000 you lost this year and didn&#x27;t know</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">You spent five hundred thousand on Chinese sourcing this year. Your bank quietly kept ten thousand of it. Every wire you sent this year carried roughly two percent FX margin baked into the rate. On five hundred thousand of total sourcing, that&#x27;s ten thousand dollars across the year. Silent. Unaccounted. Not on any fee line. Specialist FX rails sit at zero point three to zero point five percent on the same currency pair, same day. The gap is real. The compound is annual. Industry data shows SMEs commonly lose three to five percent of cross-border volume to hidden FX margin every year. Most operators only see the wire fee. They never see the rate spread, which is usually five to ten times bigger. Ten thousand a year. No fee line. No notification. Just gone. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="You spent five hundred thousand on Chinese sourcing this year. Your bank quietly kept ten thousand of it. Every wire you sent this year carried roughly two percent FX margin baked into the rate. On five hundred thousand of total sourcing, that&#x27;s ten thousand dollars across the year. Silent. Unaccounted. Not on any fee line. Specialist FX rails sit at zero point three to zero point five percent on the same currency pair, same day. The gap is real. The compound is annual. Industry data shows SMEs commonly lose three to five percent of cross-border volume to hidden FX margin every year. Most operators only see the wire fee. They never see the rate spread, which is usually five to ten times bigger. Ten thousand a year. No fee line. No notification. Just gone. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a3">
+  <header class="card-head">
+    <div class="card-id">P2-A3</div>
+    <h2 class="card-title">Bank wire vs WorldFirst on the same $50K payment</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s comparison</span>
+      <span>Topic 03</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (5)</summary>
+  <ul><li>On a $50,000 wire to a Chinese supplier, a traditional bank typically costs $750 to $2,000 in total: $35-65 sending fee, 1-4% FX margin (~$500-$2,000), plus $30-150 in SWIFT intermediary fees from 1-3 hops.</li>
+<li>Real-world reference: a $38,000 Wells Fargo wire to a Chinese supplier was charged over $3,100 in fees (over 8%), confirming bank fees can run much higher than published rates.</li>
+<li>1688 World Pay sends CNY direct to 1688 (Alibaba domestic) suppliers via MYbank rails. 80% same-day, 90% next-day. No SWIFT intermediaries.</li>
+<li>On the same $50,000 payment, WorldFirst&#x27;s all-in cost lands in the $150-$300 range. The math: ~0.3-0.6% FX margin, no intermediary bank fees, transparent flat-rate transfer cost.</li>
+<li>The supplier-side experience matters: bank wires often arrive with shortfalls due to intermediary deductions, forcing top-up requests and delayed production. Local rails arrive at the full amount.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a3-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Story</span>
+      <span class="duration">194 words · ~78s</span>
+    </div>
+    <h3 class="vt">I sent $50K. My supplier got $48,500. Here is why.</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">You sent fifty thousand dollars. Your supplier emails: we only got forty eight thousand five hundred sixty. Here is what happened. Your bank quoted CNY, which is Chinese Yuan, also called RMB, at a rate two point five percent worse than the live interbank rate. The interbank rate is what banks trade with each other, also called the mid-market rate. That spread alone is twelve hundred fifty dollars gone before the wire even left. Then the wire passed through two SWIFT intermediary banks. Each one is allowed to deduct around thirty dollars directly from the amount. By the time it reached your supplier, they had forty eight thousand five hundred sixty. You owe them fourteen hundred forty. So you wire again. New sending fee. New FX margin. The single fifty thousand dollar payment cost you fifteen hundred in real costs and your supplier delayed production by four days. On a local rail like the one we run, the same fifty thousand lands at roughly forty nine thousand eight hundred fifty, same day, no intermediaries. Bank wires don&#x27;t just cost more. They cost time, and they cost trust. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="You sent fifty thousand dollars. Your supplier emails: we only got forty eight thousand five hundred sixty. Here is what happened. Your bank quoted CNY, which is Chinese Yuan, also called RMB, at a rate two point five percent worse than the live interbank rate. The interbank rate is what banks trade with each other, also called the mid-market rate. That spread alone is twelve hundred fifty dollars gone before the wire even left. Then the wire passed through two SWIFT intermediary banks. Each one is allowed to deduct around thirty dollars directly from the amount. By the time it reached your supplier, they had forty eight thousand five hundred sixty. You owe them fourteen hundred forty. So you wire again. New sending fee. New FX margin. The single fifty thousand dollar payment cost you fifteen hundred in real costs and your supplier delayed production by four days. On a local rail like the one we run, the same fifty thousand lands at roughly forty nine thousand eight hundred fifty, same day, no intermediaries. Bank wires don&#x27;t just cost more. They cost time, and they cost trust. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a7">
+  <header class="card-head">
+    <div class="card-id">P2-A7</div>
+    <h2 class="card-title">Your sourcing budget shrinks 4% a year (silent compound)</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s</span>
+      <span>Topic 02</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>On $500K annual sourcing at 4 percent bank FX margin (high-end SEA bank), the silent leak is $20,000. Over 3 years, $60,000 compounds.</li>
+<li>If sourcing budget grows 10 percent a year, the FX leak grows with it. Year 1: $20K. Year 3: $24K. Compound effect on a growing book.</li>
+<li>WorldFirst effective margin is ~0.3 to 0.5 percent. Switching halves to thirds the silent leak immediately, without changing supplier or volume.</li>
+<li>Cross-border payment industry data shows SMEs commonly lose 3 to 5 percent of total cross-border volume to hidden FX margin annually.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a7-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Pain-led</span>
+      <span class="duration">161 words · ~64s</span>
+    </div>
+    <h3 class="vt">The 4% you&#x27;ll never get back</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Four percent of your sourcing spend goes to your bank, not your supplier. Every year. On a five hundred thousand dollar sourcing year, four percent is twenty thousand dollars. Over three years, that&#x27;s roughly sixty thousand. And if your sourcing volume grows ten percent a year, which most growing operators target, the leak grows with it. Year three the leak is twenty four thousand on a six hundred thousand dollar book. Here&#x27;s the part that gets missed. You can&#x27;t fix this by negotiating with your supplier. The four percent isn&#x27;t on the invoice. It&#x27;s in the FX margin, which means foreign exchange margin, baked into the rate your bank gives you. Specialist FX rails sit at zero point three to zero point five percent. Same supplier. Same wire. Different rail. The leak halves to a third in year one. You can&#x27;t supplier-negotiate your way out of FX margin. You can rail-switch your way out. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Four percent of your sourcing spend goes to your bank, not your supplier. Every year. On a five hundred thousand dollar sourcing year, four percent is twenty thousand dollars. Over three years, that&#x27;s roughly sixty thousand. And if your sourcing volume grows ten percent a year, which most growing operators target, the leak grows with it. Year three the leak is twenty four thousand on a six hundred thousand dollar book. Here&#x27;s the part that gets missed. You can&#x27;t fix this by negotiating with your supplier. The four percent isn&#x27;t on the invoice. It&#x27;s in the FX margin, which means foreign exchange margin, baked into the rate your bank gives you. Specialist FX rails sit at zero point three to zero point five percent. Same supplier. Same wire. Different rail. The leak halves to a third in year one. You can&#x27;t supplier-negotiate your way out of FX margin. You can rail-switch your way out. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a8">
+  <header class="card-head">
+    <div class="card-id">P2-A8</div>
+    <h2 class="card-title">How to read FX margin off your wire confirmation</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s tutorial</span>
+      <span>Topic 02</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>Reading FX margin from a wire confirmation requires three numbers: applied rate (on the confirmation), interbank rate (Google/XE/Reuters at the same time), and wire amount.</li>
+<li>Formula: ((Interbank rate - Applied rate) / Interbank rate) x 100 = margin percent. Multiply by wire amount = silent cost.</li>
+<li>Example: applied 7.05, interbank 7.22 at 10:15am same day. Spread = (7.22-7.05)/7.22 x 100 = 2.35 percent. On $50K = $1,175.</li>
+<li>Most SEA bank wire confirmations include the applied rate but never list the mid-market reference, by design.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a8-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Tutorial</span>
+      <span class="duration">203 words · ~81s</span>
+    </div>
+    <h3 class="vt">Find the hidden FX margin in 30 seconds</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Open your last wire confirmation. We&#x27;ll find the hidden fee right now. Takes thirty seconds. Step one. Open the wire confirmation. Find the line that says applied rate, exchange rate, or conversion rate. Usually near the bottom. Note the number. Let&#x27;s say it&#x27;s seven point zero five. Step two. Open Google. Type your currency pair, like USD to CNY. CNY stands for Chinese Yuan. Check the rate at roughly the time your wire was sent. That&#x27;s the interbank rate, also called mid-market. Let&#x27;s say seven point two two. Step three. The formula. Subtract applied from interbank, divide by interbank, times one hundred. Seven point two two minus seven point zero five is zero point one seven. Divide by seven point two two. Times one hundred. Two point three five percent. That&#x27;s your bank&#x27;s FX margin on this wire. Step four. Multiply by the wire amount. On a fifty thousand dollar wire at two point three five percent, that&#x27;s eleven hundred seventy five dollars. Silent. Not on the fee line. Applied seven point zero five against interbank seven point two two, the bank took two point three five percent. Now you can read every wire you send. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Open your last wire confirmation. We&#x27;ll find the hidden fee right now. Takes thirty seconds. Step one. Open the wire confirmation. Find the line that says applied rate, exchange rate, or conversion rate. Usually near the bottom. Note the number. Let&#x27;s say it&#x27;s seven point zero five. Step two. Open Google. Type your currency pair, like USD to CNY. CNY stands for Chinese Yuan. Check the rate at roughly the time your wire was sent. That&#x27;s the interbank rate, also called mid-market. Let&#x27;s say seven point two two. Step three. The formula. Subtract applied from interbank, divide by interbank, times one hundred. Seven point two two minus seven point zero five is zero point one seven. Divide by seven point two two. Times one hundred. Two point three five percent. That&#x27;s your bank&#x27;s FX margin on this wire. Step four. Multiply by the wire amount. On a fifty thousand dollar wire at two point three five percent, that&#x27;s eleven hundred seventy five dollars. Silent. Not on the fee line. Applied seven point zero five against interbank seven point two two, the bank took two point three five percent. Now you can read every wire you send. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a9">
+  <header class="card-head">
+    <div class="card-id">P2-A9</div>
+    <h2 class="card-title">Good rate quoted vs real interbank rate</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 45s</span>
+      <span>Topic 02</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (4)</summary>
+  <ul><li>Bank quotes you a &#x27;good&#x27; rate of 7.05 USD-CNY. Reuters interbank rate at the same minute: 7.22. The &#x27;good rate&#x27; carries a 2.4 percent margin.</li>
+<li>Banks rarely quote a rate that&#x27;s actually competitive with interbank. The spread between &#x27;good rate&#x27; marketing and real cost is the FX margin.</li>
+<li>On $10K, a &#x27;good rate&#x27; that&#x27;s 2.4 percent off interbank costs $240. On $100K, $2,400. Same percent, scales with wire size.</li>
+<li>Tools to verify: XE.com, Google search &#x27;USD to CNY&#x27;, Reuters terminal, Wise mid-market quote. All free, all real-time.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a9-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Curiosity-led</span>
+      <span class="duration">138 words · ~55s</span>
+    </div>
+    <h3 class="vt">What &#x27;we&#x27;ll give you a good rate&#x27; actually means</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">When your bank says good rate, they mean good for them. Here&#x27;s the gap. Real interbank USD to CNY at ten fifteen AM: seven point two two. Bank&#x27;s quoted good rate for your wire: seven point zero five. The gap is two point four percent. That&#x27;s not a fee. That&#x27;s the bank&#x27;s silent margin baked into the rate they offered you. The rate isn&#x27;t technically bad. It&#x27;s just not what good implied. On a ten thousand dollar wire, two point four percent is two hundred forty dollars. On one hundred thousand, twenty four hundred. Same percent, scales with size. The check is free. Google your currency pair. Compare to the rate the bank quoted. The gap is the cost. Banks compete on the word good. You should compete on the number. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="When your bank says good rate, they mean good for them. Here&#x27;s the gap. Real interbank USD to CNY at ten fifteen AM: seven point two two. Bank&#x27;s quoted good rate for your wire: seven point zero five. The gap is two point four percent. That&#x27;s not a fee. That&#x27;s the bank&#x27;s silent margin baked into the rate they offered you. The rate isn&#x27;t technically bad. It&#x27;s just not what good implied. On a ten thousand dollar wire, two point four percent is two hundred forty dollars. On one hundred thousand, twenty four hundred. Same percent, scales with size. The check is free. Google your currency pair. Compare to the rate the bank quoted. The gap is the cost. Banks compete on the word good. You should compete on the number. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a13">
+  <header class="card-head">
+    <div class="card-id">P2-A13</div>
+    <h2 class="card-title">How much PayPal actually costs you on a $20K supplier payment</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s</span>
+      <span>Topic 04</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (5)</summary>
+  <ul><li>PayPal international B2B fees typically sit at ~4.4% transaction + 3-4% FX margin = ~7-8% total on a cross-border supplier payment. Industry estimates put a $10K order at $700-1000 in total cost.</li>
+<li>On $20K: ~$880 transaction fee (4.4%) + ~$700 FX margin (3.5%) = ~$1,580 visible cost, ~7.9% of payment value.</li>
+<li>Most Chinese suppliers are reluctant to accept PayPal and often add a price surcharge to absorb their own receiving fee. Some &quot;add 4-5%&quot; to PI when PayPal is the rail.</li>
+<li>Supplier-side cost: PayPal charges receivers ~4.4% + fixed fee for cross-border commercial. Suppliers either eat it or pass it back.</li>
+<li>21-day fund holds and 180-day chargeback windows on PayPal create operational risk on the supplier side, which they price in.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a13-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Math-led</span>
+      <span class="duration">186 words · ~74s</span>
+    </div>
+    <h3 class="vt">What a $20K PayPal supplier payment actually costs</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">You sent $20,000 by PayPal. The receipt says $20,000. The real cost was higher. Let&#x27;s break it down properly. PayPal&#x27;s cross-border B2B transaction fee is around 4.4 percent. On $20,000, that&#x27;s $880 going to PayPal before anyone touches the FX. Then there&#x27;s the conversion to CNY. PayPal&#x27;s FX, foreign exchange, margin runs roughly 3.5 percent off the mid-market rate, the rate banks use among themselves. On $20,000, that&#x27;s another $700 baked into the rate. So visible cost so far: $1,580, almost 8 percent of your payment. Now the part nobody sees. Most Chinese suppliers don&#x27;t want PayPal. They get charged a receiving fee, they wait 21 days for funds to clear, and they carry a 180-day chargeback window on goods they already shipped. So they protect themselves: they quote you 4 to 5 percent higher on the PI when PayPal is the rail. That&#x27;s another $800 to $1,000 silently baked into your invoice. PayPal works. It&#x27;s just priced for retail, not for $20K weekly orders. Once your supplier payments cross five figures, the math stops being on your side. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="You sent $20,000 by PayPal. The receipt says $20,000. The real cost was higher. Let&#x27;s break it down properly. PayPal&#x27;s cross-border B2B transaction fee is around 4.4 percent. On $20,000, that&#x27;s $880 going to PayPal before anyone touches the FX. Then there&#x27;s the conversion to CNY. PayPal&#x27;s FX, foreign exchange, margin runs roughly 3.5 percent off the mid-market rate, the rate banks use among themselves. On $20,000, that&#x27;s another $700 baked into the rate. So visible cost so far: $1,580, almost 8 percent of your payment. Now the part nobody sees. Most Chinese suppliers don&#x27;t want PayPal. They get charged a receiving fee, they wait 21 days for funds to clear, and they carry a 180-day chargeback window on goods they already shipped. So they protect themselves: they quote you 4 to 5 percent higher on the PI when PayPal is the rail. That&#x27;s another $800 to $1,000 silently baked into your invoice. PayPal works. It&#x27;s just priced for retail, not for $20K weekly orders. Once your supplier payments cross five figures, the math stops being on your side. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+<article class="script" data-script-id="p2-a13-s2">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Comparison</span>
+      <span class="duration">150 words · ~60s</span>
+    </div>
+    <h3 class="vt">PayPal at $200 vs PayPal at $20K</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">PayPal at $200 feels cheap. PayPal at $20,000 doesn&#x27;t. Here&#x27;s the thing about percentage-based fees. They feel invisible at low volumes. PayPal&#x27;s cross-border fee is 4.4 percent. On a $200 sample order, 4.4 percent is about $9, and the fixed-fee portion absorbs most of the pain. You barely notice. Same fee structure on a $20,000 supplier wire. 4.4 percent is now $880. The product didn&#x27;t change, the percentage didn&#x27;t change. The math just got loud. And we haven&#x27;t even added the FX, foreign exchange, margin yet. That&#x27;s another 3 to 4 percent on the conversion to CNY. So PayPal works for the $200 sample order. It&#x27;s the wrong tool when your weekly supplier payment hits five figures. Personal-volume apps are priced for personal volumes. If you wouldn&#x27;t pay a bank $880, don&#x27;t pay an app $880. There&#x27;s a different rail for that volume. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="PayPal at $200 feels cheap. PayPal at $20,000 doesn&#x27;t. Here&#x27;s the thing about percentage-based fees. They feel invisible at low volumes. PayPal&#x27;s cross-border fee is 4.4 percent. On a $200 sample order, 4.4 percent is about $9, and the fixed-fee portion absorbs most of the pain. You barely notice. Same fee structure on a $20,000 supplier wire. 4.4 percent is now $880. The product didn&#x27;t change, the percentage didn&#x27;t change. The math just got loud. And we haven&#x27;t even added the FX, foreign exchange, margin yet. That&#x27;s another 3 to 4 percent on the conversion to CNY. So PayPal works for the $200 sample order. It&#x27;s the wrong tool when your weekly supplier payment hits five figures. Personal-volume apps are priced for personal volumes. If you wouldn&#x27;t pay a bank $880, don&#x27;t pay an app $880. There&#x27;s a different rail for that volume. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a14">
+  <header class="card-head">
+    <div class="card-id">P2-A14</div>
+    <h2 class="card-title">Credit cards for international supplier payments: the gap</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s</span>
+      <span>Topic 04</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (5)</summary>
+  <ul><li>Only ~3-5% of Chinese suppliers accept credit cards directly; ~95% transact domestically via Alipay or WeChat Pay.</li>
+<li>Card transactions on Alibaba carry ~2.95-2.99% processing fee, capped at $12,000 per order, plus FX margin from the issuing bank (1-3%).</li>
+<li>Suppliers reject cards primarily due to: 180-day chargeback window (high risk on already-shipped goods), 2-3% fee they&#x27;d absorb, and Alipay/WeChat being the standard domestic rail.</li>
+<li>Card workarounds: Trade Assurance (escrows the payment, supplier accepts because Alibaba holds the dispute risk), sourcing agents (agent takes card, settles to supplier in CNY).</li>
+<li>Bank card terminals are rare in Chinese B2B; most factories have never been set up to accept Visa or Mastercard.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a14-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Category</span>
+      <span class="duration">157 words · ~63s</span>
+    </div>
+    <h3 class="vt">Why your supplier said no to the card</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">You offered Visa. Your supplier asked for T/T. Here&#x27;s why. Let&#x27;s name the gap. Only about 3 to 5 percent of Chinese suppliers accept credit cards directly. The other 95 percent run on Alipay or WeChat Pay domestically. Most factories have never been set up to accept Visa or Mastercard. There&#x27;s no terminal, no merchant account, no infrastructure. Now flip it. From the supplier&#x27;s side, a card payment gives the buyer a 180-day window to dispute the charge. On goods that already shipped, already cleared customs, already sold through. For the supplier, that&#x27;s not payment. That&#x27;s a loan with a return policy. Add the 2 to 3 percent processing fee they&#x27;d have to absorb, and the answer is the same one you got: T/T only. The card isn&#x27;t the problem. The category was built for retail, not for factory orders. Pay the right rail and your supplier says yes faster. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="You offered Visa. Your supplier asked for T/T. Here&#x27;s why. Let&#x27;s name the gap. Only about 3 to 5 percent of Chinese suppliers accept credit cards directly. The other 95 percent run on Alipay or WeChat Pay domestically. Most factories have never been set up to accept Visa or Mastercard. There&#x27;s no terminal, no merchant account, no infrastructure. Now flip it. From the supplier&#x27;s side, a card payment gives the buyer a 180-day window to dispute the charge. On goods that already shipped, already cleared customs, already sold through. For the supplier, that&#x27;s not payment. That&#x27;s a loan with a return policy. Add the 2 to 3 percent processing fee they&#x27;d have to absorb, and the answer is the same one you got: T/T only. The card isn&#x27;t the problem. The category was built for retail, not for factory orders. Pay the right rail and your supplier says yes faster. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a18">
+  <header class="card-head">
+    <div class="card-id">P2-A18</div>
+    <h2 class="card-title">Personal vs business FX rate: the spread</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s</span>
+      <span>Topic 04</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (5)</summary>
+  <ul><li>Major bank FX margin on consumer transfers sits around 2-4% off mid-market; specialist business platforms typically run 0.3-1% on the same pair.</li>
+<li>On a $20K supplier wire at 2% personal vs 0.5% business FX spread = $400 vs $100. The &quot;spread&quot; alone is $300 in your favour on one transfer.</li>
+<li>Mid-market rate = the rate banks use among themselves. Personal tools and bank apps quote a &quot;retail rate&quot; that already has the margin baked in.</li>
+<li>For an SME doing $50K/month in CNY payments, a 1.5% spread difference = $750/mo = $9,000/yr disappearing inside the rate, never appearing on a line item.</li>
+<li>Personal accounts on the same provider as a business account often pay a different rate. Personal tier sees retail spread; business tier sees institutional spread.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a18-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Math-led</span>
+      <span class="duration">163 words · ~65s</span>
+    </div>
+    <h3 class="vt">The rate you see isn&#x27;t the rate that exists</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Open Google. Type &#x27;THB to CNY&#x27;. That rate doesn&#x27;t exist for your wallet. Here&#x27;s how this actually works. Google shows you the mid-market rate, the rate banks use to settle with each other. It&#x27;s the wholesale price. Your wallet, your bank app, your consumer money app, none of them give you that rate. They quote a retail rate, which already has 2 to 4 percent baked in. That&#x27;s the spread, and it never shows up as a line item. It just shows up as &#x27;this conversion came out lower than I expected&#x27;. On a $20,000 supplier wire, a 2 percent personal-tier spread costs you $400. A business-tier spread of 0.5 percent costs $100. Same currency, same day, same supplier. The $300 difference isn&#x27;t a fee. It&#x27;s the rate gap nobody itemises. The rate you see and the rate you get aren&#x27;t the same currency. Once you know that, you stop comparing fees and start comparing rates. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Open Google. Type &#x27;THB to CNY&#x27;. That rate doesn&#x27;t exist for your wallet. Here&#x27;s how this actually works. Google shows you the mid-market rate, the rate banks use to settle with each other. It&#x27;s the wholesale price. Your wallet, your bank app, your consumer money app, none of them give you that rate. They quote a retail rate, which already has 2 to 4 percent baked in. That&#x27;s the spread, and it never shows up as a line item. It just shows up as &#x27;this conversion came out lower than I expected&#x27;. On a $20,000 supplier wire, a 2 percent personal-tier spread costs you $400. A business-tier spread of 0.5 percent costs $100. Same currency, same day, same supplier. The $300 difference isn&#x27;t a fee. It&#x27;s the rate gap nobody itemises. The rate you see and the rate you get aren&#x27;t the same currency. Once you know that, you stop comparing fees and start comparing rates. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+<article class="script" data-script-id="p2-a18-s2">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Comparison</span>
+      <span class="duration">139 words · ~56s</span>
+    </div>
+    <h3 class="vt">Personal vs business FX: the same currency, two prices</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Same currency pair. Same day. Two different rates. Why? Same provider can quote two different rates depending on which account you&#x27;re using. Personal-tier FX on most platforms runs 1.5 to 2 percent off mid-market, the rate banks use among themselves. Business-tier runs 0.3 to 1 percent off. That gap between the two tiers is the spread. On a $20,000 supplier wire, 1.5 percent of difference is $300. Now run that weekly: $1,200 a month. Now run that across a year: over $14,000, gone inside the rate. No fee line, no notification, no breakdown on the confirmation. The number that changes is the supplier-end amount, and it&#x27;s lower than it should be. If you&#x27;re paying suppliers weekly, the tier change pays for itself in one transfer. Personal accounts weren&#x27;t built for business volumes. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Same currency pair. Same day. Two different rates. Why? Same provider can quote two different rates depending on which account you&#x27;re using. Personal-tier FX on most platforms runs 1.5 to 2 percent off mid-market, the rate banks use among themselves. Business-tier runs 0.3 to 1 percent off. That gap between the two tiers is the spread. On a $20,000 supplier wire, 1.5 percent of difference is $300. Now run that weekly: $1,200 a month. Now run that across a year: over $14,000, gone inside the rate. No fee line, no notification, no breakdown on the confirmation. The number that changes is the supplier-end amount, and it&#x27;s lower than it should be. If you&#x27;re paying suppliers weekly, the tier change pays for itself in one transfer. Personal accounts weren&#x27;t built for business volumes. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card" id="p2-a24">
+  <header class="card-head">
+    <div class="card-id">P2-A24</div>
+    <h2 class="card-title">When CAN you pay a Chinese supplier by card?</h2>
+    <div class="card-meta">
+      <span>Pillar P2</span>
+      <span>Short-form 60s</span>
+      <span>Topic 04</span>
+    </div>
+  </header>
+  
+<details class="findings">
+  <summary>Research findings (5)</summary>
+  <ul><li>Cards work cleanly for: samples and small first orders under ~$1,000, agent payments, and Alibaba Trade Assurance orders where escrow holds the dispute risk.</li>
+<li>Alibaba Trade Assurance card cap: ~$12,000 per order. Above that, you&#x27;re back on T/T or specialist rails.</li>
+<li>Card via sourcing agent: agent accepts your card on their side, settles to factory in CNY via Alipay or T/T. Agent takes a fee (typically 3-5%) for the bridge.</li>
+<li>Cards do NOT work for: bulk production orders &gt;$12K, factories without Trade Assurance, ongoing weekly volumes, FX-locked payments, or any scenario where the supplier needs CNY directly.</li>
+<li>Buyer-side protection via card chargeback is the actual reason to use a card for samples: 180-day window catches bad samples that T/T can&#x27;t recover.</li></ul>
+</details>
+  <div class="scripts">
+    
+<article class="script" data-script-id="p2-a24-s1">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Tutorial</span>
+      <span class="duration">172 words · ~69s</span>
+    </div>
+    <h3 class="vt">When CAN you pay a Chinese supplier by card?</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Cards don&#x27;t always fail with Chinese suppliers. They work in three scenarios. Scenario one. Samples and small first orders under $1,000. The 2.95 percent card processing fee is small in absolute terms, and the 180-day chargeback window protects you if the sample arrives wrong. Scenario two. Alibaba Trade Assurance orders, up to roughly $12,000 per order. Alibaba escrows the payment, holds the dispute risk, and that&#x27;s why the supplier accepts the card. Scenario three. A sourcing agent. The agent accepts your card on their side, then settles to the factory in CNY via Alipay or T/T, telegraphic transfer. They take a 3 to 5 percent fee for being the bridge. Outside those three, you&#x27;re in T/T territory or you need a dedicated cross-border B2B rail. Bulk production over $12K, ongoing weekly volume, FX-locked orders, factories with no Trade Assurance, none of that works on a card. Cards have a use. Just know which one. The wrong tool slows the order, the right one closes it. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Cards don&#x27;t always fail with Chinese suppliers. They work in three scenarios. Scenario one. Samples and small first orders under $1,000. The 2.95 percent card processing fee is small in absolute terms, and the 180-day chargeback window protects you if the sample arrives wrong. Scenario two. Alibaba Trade Assurance orders, up to roughly $12,000 per order. Alibaba escrows the payment, holds the dispute risk, and that&#x27;s why the supplier accepts the card. Scenario three. A sourcing agent. The agent accepts your card on their side, then settles to the factory in CNY via Alipay or T/T, telegraphic transfer. They take a 3 to 5 percent fee for being the bridge. Outside those three, you&#x27;re in T/T territory or you need a dedicated cross-border B2B rail. Bulk production over $12K, ongoing weekly volume, FX-locked orders, factories with no Trade Assurance, none of that works on a card. Cards have a use. Just know which one. The wrong tool slows the order, the right one closes it. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+<article class="script" data-script-id="p2-a24-s2">
+  <header class="script-head">
+    <div class="script-meta">
+      <span class="approach">Math-led</span>
+      <span class="duration">151 words · ~60s</span>
+    </div>
+    <h3 class="vt">The $12,000 wall on credit cards</h3>
+  </header>
+  <div class="vo-block">
+    <p class="vo">Alibaba card payments cap at $12,000 per order. That&#x27;s not arbitrary. Here&#x27;s why the wall exists. Alibaba Trade Assurance lets you pay by card because Alibaba escrows the money and holds the dispute risk between you and the supplier. But cards come with a 180-day chargeback window. Above $12,000 per order, the dispute risk on a single transaction gets too large for Alibaba to underwrite against the supplier. So they push you to T/T, telegraphic transfer, a bank wire, or to a dedicated cross-border B2B rail. The $12K ceiling isn&#x27;t a random number. It&#x27;s roughly where samples and first orders end and real production begins. Cards live below the wall. Production orders live above it. Same factory, different rail, different rules. Cards are a sample tool. Above $12,000, it&#x27;s a different game. Match the rail to the order size and the rest gets easier. Follow us for more cross-border sourcing tactics.</p>
+    <button class="copy-btn" data-vo="Alibaba card payments cap at $12,000 per order. That&#x27;s not arbitrary. Here&#x27;s why the wall exists. Alibaba Trade Assurance lets you pay by card because Alibaba escrows the money and holds the dispute risk between you and the supplier. But cards come with a 180-day chargeback window. Above $12,000 per order, the dispute risk on a single transaction gets too large for Alibaba to underwrite against the supplier. So they push you to T/T, telegraphic transfer, a bank wire, or to a dedicated cross-border B2B rail. The $12K ceiling isn&#x27;t a random number. It&#x27;s roughly where samples and first orders end and real production begins. Cards live below the wall. Production orders live above it. Same factory, different rail, different rules. Cards are a sample tool. Above $12,000, it&#x27;s a different game. Match the rail to the order size and the rest gets easier. Follow us for more cross-border sourcing tactics." type="button">Copy VO</button>
+  </div>
+</article>
+  </div>
+</section>
+
+  <div class="foot">
+    Production cards · <a href="https://socialworldfirst.github.io/sea-production/">sea-production</a> ·
+    Content bank · <a href="https://socialworldfirst.github.io/sea-content-bank/">sea-content-bank</a>
+  </div>
+</main>
+
+</div>
+
+<script>
+// Scrollspy
+const nav_links = document.querySelectorAll('nav a');
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      nav_links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+cards.forEach(c => observer.observe(c));
+
+// Copy buttons
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const vo = btn.getAttribute('data-vo');
+    try {
+      await navigator.clipboard.writeText(vo);
+      const orig = btn.textContent;
+      btn.textContent = 'Copied';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+    } catch (e) {
+      console.error(e);
+    }
+  });
+});
+</script>
+</body>
+</html>
