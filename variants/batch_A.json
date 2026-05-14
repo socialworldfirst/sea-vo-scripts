@@ -1,0 +1,308 @@
+[
+  {
+    "card_id": "P1-A2",
+    "card_title": "3 ways CNY actually reaches your supplier",
+    "videos": [
+      {
+        "video_title": "The 3 paths your CNY takes to China (most operators only know one)",
+        "approach": "Curiosity-led",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.6,
+            "rating_audience": 4.5,
+            "rating_sales": 4.2,
+            "wf_product": "World Account + MYbank routing",
+            "vo": "Last quarter I sent the same supplier three wires. Same factory, same bank account on their end. First one took five days. Second one took two. Third one landed same day. I thought my bank was being weird. Turns out my CNY was taking three different paths to China and nobody told me. Path one was SWIFT, hopping through correspondent banks. Path two was CIPS, China's own clearing system. Path three was MYbank, Ant Group's bank that handles the CNY leg directly. Most banks pick path one by default because it's what they're plugged into. We route through MYbank by default. Same supplier, same destination, just a faster road. World Account holds CNY natively and sends via MYbank. Link's in the bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.3,
+            "rating_audience": 4.7,
+            "rating_sales": 4.5,
+            "wf_product": "MYbank routing via World Account",
+            "vo": "Quick maths on CNY rails to China. Path one, SWIFT through correspondent banks, three to five business days, $30 to $150 in intermediary deductions, FX margin 1 to 2 percent. Path two, CIPS, that's China's own Cross-border Interbank Payment System, one to two days, no intermediary chain, FX margin around 0.5 percent. Path three, MYbank routing, Ant Group's bank handles the CNY leg, same day 80 percent of the time, FX margin 0.3 to 0.5 percent. On a $50,000 wire that's the difference between $49,000 landing in five days and $49,800 landing today. Your bank picks the slowest, most expensive one by default. World Account ships CNY via MYbank. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.8,
+            "rating_audience": 4.4,
+            "rating_sales": 4.3,
+            "wf_product": "World Account",
+            "vo": "Your bank told you the CNY wire takes five days. They lied by omission. There are three paths your CNY can take to China and they put you on the slowest one. SWIFT through correspondent banks is the old rail. Built in the seventies, designed for messages, not money. CIPS, China's own clearing system, processes 24 trillion dollars a year and your bank pretends it doesn't exist. MYbank, Ant Group's bank, settles CNY same day and your bank pretends that doesn't exist either. The slow wire isn't a fact of physics. It's a routing choice your bank made for you. World Account skips the lecture and uses the fast rail. Operators in the bio know."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P1-A4",
+    "card_title": "Your supplier asked you to pay the $200 they didn't receive",
+    "videos": [
+      {
+        "video_title": "Your supplier just asked for the $200 they did not get",
+        "approach": "Pain-led",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.7,
+            "rating_audience": 4.6,
+            "rating_sales": 4.4,
+            "wf_product": "Beneficiary verification + MYbank routing",
+            "vo": "I sent 50 grand to my factory in Shenzhen. WhatsApp comes back the next morning. Boss, we only got 49,835. Please top up. I'm staring at my bank app. It says sent. Successful. Done. So who's lying. Neither of us. The wire went through SWIFT, which means three correspondent banks passed it along. Each one shaved 50 to 80 dollars off the top before sending it on. My bank set the instruction to SHA, which is fancy for supplier eats every middleman fee. I owe my supplier 165 dollars on a wire I already paid for. WorldFirst sends CNY direct via MYbank, no middlemen, full amount lands. Link's in the bio so you don't end up topping up like I did."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.4,
+            "rating_audience": 4.7,
+            "rating_sales": 4.5,
+            "wf_product": "1688 World Pay / MYbank routing",
+            "vo": "Quick maths on why your wire arrives short. A US to China SWIFT wire passes through one to three correspondent banks. Each one deducts 15 to 50 dollars before passing on the rest. So on a $50,000 wire, that's 45 to 150 dollars gone before your supplier sees a cent. The default instruction code is SHA, which means supplier eats every deduction. You can switch to OUR, sender pays all, but it costs 30 to 75 dollars upfront and your bank may quietly add margin on top. Or you skip the SWIFT chain entirely. WorldFirst routes CNY through MYbank direct, no correspondent banks, full amount lands. On 12 wires a year that's up to 1,800 dollars recovered. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.7,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "MYbank routing",
+            "vo": "Everyone treats the missing 200 dollars on a China wire like a mystery. It's not a mystery. It's an architecture. SWIFT isn't a payment system. It's a messaging system from 1973 that lets banks pass instructions to each other. Real money moves through correspondent banks, which is a polite name for middlemen who all get paid. Each one takes 15 to 50 dollars from your wire. Your bank knows this. They wrote SHA in field 71A of your wire because SHA means supplier pays the middlemen. You're not being scammed. You're being routed through 1970s infrastructure that was designed to charge per hop. WorldFirst sends CNY direct, no hops. Bio."
+          }
+        ]
+      },
+      {
+        "video_title": "Why your wire arrived 3 days late and short $150",
+        "approach": "Pain-led",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.5,
+            "rating_audience": 4.7,
+            "rating_sales": 4.4,
+            "wf_product": "Beneficiary verification + MYbank routing",
+            "vo": "Day one, I wired 30 grand to my factory. Day two, my supplier is quiet. Day three, still quiet. Day four, finally a WhatsApp. Boss, the bank is reviewing it. Day five, it's released. Short 150 dollars. I had production lined up for Monday and now it's Friday. Two things ate that week. One, my wire passed through two correspondent banks on the SWIFT chain, each took a day and 50 to 80 dollars. Two, the beneficiary name on my wire said Shenzhen ABC Trading but the registered name is Shenzhen ABC Trading Co Ltd. Chinese bank flagged it for review. The fix isn't paying more attention. It's not using SWIFT for China. World Account verifies the beneficiary before the wire leaves and routes via MYbank. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.3,
+            "rating_audience": 4.7,
+            "rating_sales": 4.6,
+            "wf_product": "Beneficiary verification",
+            "vo": "Quick maths on a delayed China wire. Two failure points. One, intermediary correspondent banks. A US to China SWIFT wire usually routes through one to three of them. Each takes a business day and shaves 15 to 50 dollars. Two, beneficiary name mismatch. Chinese banks check the name on your wire against the company registration. If you wrote Shenzhen ABC Trading and the registered name is Shenzhen ABC Trading Co Ltd, the wire pauses for compliance review. Three to ten days typical. 5 to 10 percent of China-bound wires get held this way. Two minutes matching the exact registered name saves a week. WorldFirst's beneficiary check catches this before the wire leaves. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.6,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "Beneficiary verification + MYbank routing",
+            "vo": "Your bank told you the wire would clear in two days. It's day five. Your supplier is still chasing. Your bank says it cleared their system on day one, so this isn't their problem. Here's what they didn't tell you. Your wire is sitting at correspondent bank number two, in a compliance queue, because the beneficiary name didn't match the Chinese company registration exactly. Co Ltd missing. Pinyin instead of characters. One tiny gap and the wire stalls for a week. Banks treat this as a feature. We treat it as a bug. WorldFirst's beneficiary check catches the mismatch before the wire leaves. Operators in the bio don't get the day-five message."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P1-A6",
+    "card_title": "Why paying your supplier in CNY actually wins",
+    "videos": [
+      {
+        "video_title": "USD feels safer. It costs you 2% more.",
+        "approach": "Reframe",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.6,
+            "rating_audience": 4.6,
+            "rating_sales": 4.5,
+            "wf_product": "World Account CNY + 1688 World Pay",
+            "vo": "I paid my supplier in USD for two years because it felt safer. Universal currency, you know the drill. Last month I asked my accountant to break down the wire costs. On 20 grand orders I was losing about 400 dollars a pop. Not in fees. In FX margin. My bank converted my local currency to USD at 1 percent margin. My supplier's Chinese bank converted USD back to CNY at another 0.5 percent. Two conversions, both invisible, both on me. Switched to paying CNY direct via World Account. One conversion, 0.4 percent margin, supplier got the full amount same day. The USD safety was an illusion priced at 2 percent of every order. Link's in the bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.4,
+            "rating_audience": 4.8,
+            "rating_sales": 4.7,
+            "wf_product": "1688 World Pay + World Account",
+            "vo": "Quick maths on USD vs CNY to your Chinese supplier. USD route, two FX margins stack. Your bank converts local to USD, 0.5 to 1.5 percent. Supplier's bank converts USD to CNY on receipt, 0.3 to 0.8 percent. Combined hidden cost, 0.8 to 2.3 percent on top of the invoice. On a 20,000 USD order that's 160 to 460 dollars before anything ships. CNY direct route, one conversion at 0.3 to 0.5 percent total. Same payment, same destination bank, half the cost. 1688 World Pay sends CNY direct via MYbank, no double conversion, no SWIFT. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.7,
+            "rating_audience": 4.6,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "Everyone tells you to pay in USD because it's safe. Safe for who. Your USD wire to a Chinese factory goes through two FX conversions. Your bank takes 1 percent turning your local cash into USD. Supplier's bank takes another 0.5 percent turning that USD into CNY. Both margins are invisible because they're baked into the rate, not the fee. Meanwhile the supplier is sitting on USD they can't spend, waiting 7 days for it to clear, paying their own bank to flip it. Safety is a marketing word. The cost is mathematical. Pay in CNY direct and the whole stack disappears. 1688 World Pay routes CNY via MYbank by default. Bio."
+          }
+        ]
+      },
+      {
+        "video_title": "Why your supplier secretly wants CNY",
+        "approach": "Supplier-perspective",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.7,
+            "rating_audience": 4.6,
+            "rating_sales": 4.5,
+            "wf_product": "1688 World Pay",
+            "vo": "I asked my factory boss point blank last month. Mate, do you actually want USD or CNY. He laughed at me. He said every USD wire is a week of waiting, a forex fee his bank takes off the top, and a bet on which way the rate moves before it clears. So what does he do. He pads the USD price by 3, 4, sometimes 5 percent to protect himself. I'd never asked. I'd been paying that markup for two years. I switched to paying him in CNY direct that week. Next quote came back 3 percent lower. Same factory, same order, just a different currency on the PI. 1688 World Pay sends CNY direct to 1688 suppliers. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.5,
+            "rating_audience": 4.7,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "Quick maths on what your supplier actually loses on a USD wire. USD lands in their Chinese bank. Three costs. One, 7 to 10 days clearing wait, that's working capital frozen. Two, forex fee to convert USD to CNY, 0.3 to 0.8 percent. Three, currency risk if the rate moves between wire and settlement. On a 20,000 USD order that's 60 to 160 dollars in fees plus a week of cashflow plus exchange risk. So they pad the next PI by 2 to 5 percent to cover it. You've been paying that markup invisibly for years. Ask for the CNY price. 1688 World Pay sends CNY direct via MYbank. Watch the new quote. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.7,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "1688 World Pay + World Account",
+            "vo": "Your supplier doesn't want your USD. They just don't say it because they're polite. Every USD wire forces them to wait a week for clearance, pay their own bank a forex fee, and eat the currency risk if the rate moves. So they don't refuse it. They just price it in. The USD PI you got is 3 to 5 percent higher than the CNY one would be. That's not greed. That's defence. You've been paying for your supplier's exchange risk and calling it the invoice price. Ask for the CNY quote. Pay in CNY direct via 1688 World Pay. Watch the number drop. Bio."
+          }
+        ]
+      },
+      {
+        "video_title": "The math on USD vs CNY for a $20,000 supplier payment",
+        "approach": "Math-led",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.3,
+            "rating_audience": 4.7,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "Pulled up my last 12 supplier wires this morning. All 20 grand orders, all paid USD. Wanted to know what it actually cost me. My bank's FX margin on the USD leg, 1 percent, 200 bucks a pop. Supplier's bank converting USD to CNY on receipt, 0.5 percent, another 100. SWIFT intermediary fees, 60. Total per wire, 360 dollars. Times 12. 4,320 dollars. Sitting in someone else's pocket. I ran one of those orders through 1688 World Pay in CNY direct. One conversion at 0.4 percent. 80 dollars total. Same supplier, same bank account on their end. Difference, 280 dollars on one order. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.5,
+            "rating_audience": 4.8,
+            "rating_sales": 4.8,
+            "wf_product": "1688 World Pay via MYbank",
+            "vo": "Quick maths on a 20,000 USD supplier payment. Route A, USD wire. Your bank FX margin 1 percent, 200 dollars. Supplier's bank converts USD to CNY at 0.5 percent, 100 dollars hidden in the rate. SWIFT and intermediary fees, 60 dollars. Total leakage, 360 dollars. Four days to land. Route B, CNY direct via 1688 World Pay. One FX conversion at 0.4 percent, 80 dollars. Settled same day via MYbank routing. Difference per order, 280 dollars. Run 12 orders a year. 3,360 dollars. That's not fees. That's just the rate margin gap. Run the numbers on your last 10 invoices. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.5,
+            "rating_audience": 4.5,
+            "rating_sales": 4.5,
+            "wf_product": "1688 World Pay",
+            "vo": "Your accountant told you 360 dollars per wire is the cost of doing business. They're wrong. That 360 isn't fees. It isn't operational cost. It's the gap between what your bank pays for currency and what they charge you for currency. 200 dollars on your side conversion. 100 on your supplier's side conversion. 60 in SWIFT hops. None of it is line-itemed because none of it is technically a fee. It's just margin baked into the rate. 12 wires a year and you're handing your bank 4,320 dollars for nothing they earned. CNY direct via 1688 World Pay is one conversion, 80 dollars. The rest was always optional. Bio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P1-A8",
+    "card_title": "The 3-letter code that decides if your wire is same-day",
+    "videos": [
+      {
+        "video_title": "The 3-letter code on every China wire (most operators never see it)",
+        "approach": "Curiosity-led",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.6,
+            "rating_audience": 4.5,
+            "rating_sales": 4.3,
+            "wf_product": "1688 World Pay (skips SWIFT)",
+            "vo": "Last week I asked my relationship banker why my wires keep coming up short on the supplier end. He sighed. Pulled up my MT103. The SWIFT wire form. Pointed at field 71A. Three letters. SHA. He said that's why. SHA means shared fees, which actually means supplier eats every middleman charge in the chain. I'd been sending wires with SHA for three years and nobody mentioned it. Could've changed it to OUR, where sender pays all the intermediaries. Would've cost me 75 bucks upfront but my supplier would've stopped texting me about shortfalls. Or I could skip the SWIFT form entirely. 1688 World Pay routes CNY via MYbank, no field 71A, no chain of middlemen. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.3,
+            "rating_audience": 4.7,
+            "rating_sales": 4.4,
+            "wf_product": "1688 World Pay",
+            "vo": "Quick maths on field 71A of SWIFT MT103. Three options. OUR, sender pays all intermediary fees, supplier gets full wire amount, costs you 30 to 75 dollars extra upfront. SHA, shared, intermediaries deduct from the wire amount, supplier gets less, typically 45 to 150 dollars off on a US to China wire with two correspondent hops. BEN, beneficiary pays everything, supplier gets way less. Your bank's default is SHA. They picked it for you. You can flip it to OUR. Or you can skip the SWIFT system. 1688 World Pay routes CNY via MYbank direct, no field 71A, no chain. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.7,
+            "rating_audience": 4.4,
+            "rating_sales": 4.3,
+            "wf_product": "1688 World Pay",
+            "vo": "Your bank picked a three-letter code for you and never asked. Field 71A of your SWIFT wire form. SHA. Sounds neutral. It isn't. SHA means supplier pays for every middleman bank that touches the wire. On a typical US to China route that's two or three correspondent banks each shaving 30 bucks. SHA is the default at every major bank because it costs them nothing and they don't have to explain it. You could change it to OUR and pay the chain yourself. Or you could ask why you're using a system designed in the seventies that has a code for who eats the middleman tax. 1688 World Pay skips the whole format. Bio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P1-A9",
+    "card_title": "Supplier said wire didn't arrive. Bank says it did.",
+    "videos": [
+      {
+        "video_title": "My bank says sent. My supplier says nothing. Both right.",
+        "approach": "Pain-first",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.8,
+            "rating_audience": 4.7,
+            "rating_sales": 4.5,
+            "wf_product": "World Account + MYbank routing",
+            "vo": "Day three after my wire. Bank app says sent. Supplier WhatsApp says nothing. I'm refreshing both like a maniac. Called the bank. They said it left their system on day one, not their problem after that. Called my supplier. They said no funds visible, send the SWIFT reference. I send it. They forward it to their bank. Day four, it's sitting at a correspondent bank in Hong Kong on an AML hold. Nobody told me. Nobody told my bank. I just had to find it. The wire wasn't lost. It was in a queue I couldn't see. World Account uses MYbank routing, no SWIFT chain, no invisible queues, same day settlement to Chinese banks 80 percent of the time. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.4,
+            "rating_audience": 4.7,
+            "rating_sales": 4.6,
+            "wf_product": "MYbank routing",
+            "vo": "Quick maths on where your wire actually sits when both your bank and supplier are right. Stage one, sender bank, half a day. Stage two, correspondent bank one, can hold up to 2 days for compliance or AML review. Stage three, correspondent bank two, another 1 to 2 days. Stage four, FX conversion window, up to 2 working days. Stage five, supplier's bank, plus local holiday delays. Total possible delay, 5 to 10 business days, none of it visible to you or your bank. The only fix is no chain. MYbank routing via World Account lands CNY same day in 80 percent of cases. No queue, no AML opacity. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.7,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "World Account + MYbank routing",
+            "vo": "Your bank says the wire was sent. Your supplier says they got nothing. Everyone's telling the truth and the system is the lie. When a bank says sent, they mean it left their building. They have no idea where it is now. When your supplier says nothing, they mean their account is empty. The space in between is two or three correspondent banks running compliance checks, doing FX conversions, batching transactions, and not telling anybody. SWIFT was built so banks can pass each other messages. It was never built so you can find your money. World Account uses MYbank direct routing, no chain, no invisible middle. Bio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P1-A11",
+    "card_title": "Why your CNY payment sometimes arrives in USD",
+    "videos": [
+      {
+        "video_title": "3 places where your CNY can become USD",
+        "approach": "Mechanism-led",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.5,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "World Account + MYbank routing",
+            "vo": "Last month I paid my supplier in CNY. Or thought I did. The wire instruction said CNY. The amount was in CNY. Three days later my supplier messages me. Boss, why did this come in as USD. I had to convert it again. I lost 200 dollars. I'm staring at my bank app like, but I sent CNY. Turns out my CNY became USD in three different places before reaching her. My bank converted to USD because they only hold USD as a treasury currency. The correspondent only handled USD. The receiving bank converted USD back to CNY on the supplier's end. Double conversion, two hidden margins. World Account holds CNY natively and routes via MYbank. No conversion. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.3,
+            "rating_audience": 4.6,
+            "rating_sales": 4.5,
+            "wf_product": "World Account (holds CNY natively)",
+            "vo": "Quick maths on where your CNY can secretly become USD. Three conversion points. One, sender bank. They convert your CNY instruction to USD because they don't hold CNY as a treasury currency. Margin 0.5 to 1 percent. Two, correspondent bank. Only handles USD on the SWIFT chain. Adds another conversion if needed, 0.3 to 0.8 percent. Three, supplier's bank. Receives USD because no CNY direct correspondent exists. Converts back to CNY at 0.3 to 0.8 percent. Each hop adds a spread. On a 20K wire that's 240 to 500 dollars in conversion costs you never authorised. World Account holds CNY natively. No conversion, no surprises. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.7,
+            "rating_audience": 4.5,
+            "rating_sales": 4.4,
+            "wf_product": "World Account + MYbank routing",
+            "vo": "You typed CNY into the wire form. Your supplier got USD. Both of you assume something went wrong. Nothing went wrong. The system worked exactly as designed. Your bank doesn't hold CNY. They hold USD. So they converted. The correspondent bank doesn't hold CNY. They hold USD. So they kept it in USD. Your supplier's bank received USD and had to convert back to CNY. Three banks, three opportunities to take a spread, all hidden inside what looked like a CNY wire. The fix isn't asking nicely. The fix is using an account that actually holds CNY. World Account does. Bio."
+          }
+        ]
+      }
+    ]
+  }
+]

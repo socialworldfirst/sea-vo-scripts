@@ -1,0 +1,236 @@
+[
+  {
+    "card_id": "P2-A13",
+    "card_title": "How much PayPal actually costs you on a $20K supplier payment",
+    "videos": [
+      {
+        "video_title": "What a $20K PayPal supplier payment actually costs",
+        "approach": "Cost decomposition",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.6,
+            "rating_audience": 4.6,
+            "rating_sales": 4.8,
+            "wf_product": "World Account business",
+            "vo": "I sent my Yiwu supplier 20 grand on PayPal last March. I thought I was paying maybe a flat fee. Like 30 bucks. The receipt said 20K sent. Done. Then my accountant pulled the statement. 880 dollars on the cross-border fee. 700 more buried in the FX rate. Then she pointed out the PI itself was 4 percent higher than the supplier's CNY quote. He'd padded it to absorb his own PayPal receiving fee. So the real number was closer to 22 and a half. On one order. PayPal is built for someone buying a 60 dollar hoodie from a friend abroad. Not for business volume. World Account is built for cross-border business, not personal payments. Operators in the bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.4,
+            "rating_audience": 4.7,
+            "rating_sales": 4.8,
+            "wf_product": "World Account business",
+            "vo": "Quick maths on a 20 grand PayPal payment to a Chinese supplier. Cross-border transaction fee, 4.4 percent. That's 880 dollars. FX margin to CNY, around 3.5 percent. Another 700. Supplier usually adds 4 to 5 percent on the PI to cover their receiving fee. Call that 800 more. Add it up. 2,380 dollars on a 20K order. That's almost 12 percent. Wired through a business account at near interbank, the same payment costs you under 100. World Account is built for cross-border business, not personal payments. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.7,
+            "rating_audience": 4.5,
+            "rating_sales": 4.6,
+            "wf_product": "World Account business",
+            "vo": "Everyone says PayPal is the easy option for paying suppliers. Truth is, PayPal was built for buying a hoodie online, not for sending 20 grand to a factory. The 4.4 percent fee makes sense on a 200 dollar order. On 20K it's 880 dollars. The 3.5 percent FX margin is invisible. The supplier markup, because they hate receiving PayPal, that's another 800 sitting in your PI quietly. Same product. Same brand. Different math at scale. Personal tools were not built for business volume. World Account is built for cross-border business, not personal payments. Bio."
+          }
+        ]
+      },
+      {
+        "video_title": "PayPal at $200 vs PayPal at $20K",
+        "approach": "Scale comparison",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.3,
+            "rating_audience": 4.5,
+            "rating_sales": 4.6,
+            "wf_product": "World Account business",
+            "vo": "When I started, I paid my sample supplier 200 bucks on PayPal. Fee was like 5 bucks. I didn't even notice. Two years later, same app, same supplier, but the orders are 20 grand. I looked at the fee one day. 880 dollars. Same screen. Same UI. Same brand. I'd just kept clicking the same button as my volume grew 100x. The percentage doesn't change. The dollar amount does. Nobody warned me. The app didn't pop up and say hey, you've outgrown this. World Account is built for cross-border business, not personal payments. Operators in the bio figured this out the same way."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.4,
+            "rating_audience": 4.6,
+            "rating_sales": 4.7,
+            "wf_product": "World Account business",
+            "vo": "PayPal on 200 dollars. Fee is around 9 bucks. That's 4.5 percent but it feels fine because the absolute is small. Now PayPal on 20 grand. Same 4.4 percent. The fee is 880 dollars. Plus FX margin. Plus supplier markup. The percentage didn't change. The dollar amount got loud. If you wouldn't hand a bank 880 bucks to wire 20K, don't hand an app 880 bucks to wire 20K. World Account quotes you near interbank because we're built for business, not personal payments. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.6,
+            "rating_audience": 4.4,
+            "rating_sales": 4.5,
+            "wf_product": "World Account business",
+            "vo": "Everyone says PayPal is cheap. They're right, on 200 dollars. They're not right on 20,000. Same product, same fee structure, completely different reality. At 200 the fixed bit absorbs the pain. At 20K the percentage takes over and 880 dollars walks out the door. The app didn't change. Your volume did. Most operators don't notice because the UI never changes. World Account is built for cross-border business, not personal payments. Bio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P2-A14",
+    "card_title": "Credit cards for international supplier payments: the gap",
+    "videos": [
+      {
+        "video_title": "Why your supplier said no to the card",
+        "approach": "Category gap",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.5,
+            "rating_audience": 4.6,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "I offered my factory in Dongguan Visa. Real card, real limit, real ready. He said no. Politely. Just said, T/T only please. I thought he was being difficult. He wasn't. I found out later only about 3 to 5 percent of Chinese suppliers can even accept cards. The other 95 run on Alipay and WeChat Pay domestically. And even if he could take it, the buyer gets 180 days to chargeback on goods that already shipped to my warehouse. From his angle, a card isn't payment. It's a loan with a return policy. If your supplier won't take cards, most don't, 1688 World Pay routes the payment cleanly in CNY. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.3,
+            "rating_audience": 4.6,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "The maths on why Chinese suppliers refuse cards. Card acceptance rate among Chinese suppliers, 3 to 5 percent. Processing fee they'd absorb, 2.95 to 2.99 percent. Chargeback window, 180 days, on goods that shipped in 30. So a 10K order has a 2.99 percent fee. That's roughly 300 dollars they pay. Plus six months of dispute exposure on something already delivered. They'd rather lose the order. The category was built for retail. Not factory orders. 1688 World Pay routes card-impossible payments straight to suppliers in CNY. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.5,
+            "rating_audience": 4.5,
+            "rating_sales": 4.5,
+            "wf_product": "1688 World Pay",
+            "vo": "Everyone says just use your business card to pay the factory. Truth is, the factory probably can't accept it, and wouldn't if they could. Cards were built for retail, where the buyer is the consumer and chargebacks protect them on a 50 dollar item. Factory orders run on T/T because the supplier needs the money to actually clear, not sit in dispute purgatory for six months. Cards aren't broken. They were built for a different category. 1688 World Pay routes the card-impossible payments cleanly in CNY. Bio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P2-A18",
+    "card_title": "Personal vs business FX rate: the spread",
+    "videos": [
+      {
+        "video_title": "The rate you see isn't the rate that exists",
+        "approach": "Mid-market gap",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.7,
+            "rating_audience": 4.5,
+            "rating_sales": 4.6,
+            "wf_product": "World Account FX",
+            "vo": "I used to Google the THB to CNY rate before every supplier payment. I'd see 0.248. I'd go to my bank app and the rate was 0.243. I thought my timing was just bad. I'd refresh. Same gap. Refresh again. Same gap. That's because the rate Google shows you doesn't exist for your wallet. That's the interbank rate. Banks use it among themselves. You get a retail rate with 2 to 4 percent baked in. The rate I saw wasn't broken. It was just for a different tier of customer. WF quotes near interbank because we're a business account, not a personal one. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.5,
+            "rating_audience": 4.7,
+            "rating_sales": 4.8,
+            "wf_product": "World Account FX",
+            "vo": "Quick maths on the rate you actually get. Google shows you mid-market. That's what banks pay each other. On personal wallets, the rate you see has 2 to 4 percent built in. Run a 20K supplier wire at 2 percent margin, that's 400 dollars you didn't see. On a business rail at 0.5 percent, that's 100. The currency moved the same direction. The rate just had less baked into it. WF quotes near interbank because we're a business account, not a personal one. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.6,
+            "rating_audience": 4.5,
+            "rating_sales": 4.6,
+            "wf_product": "World Account FX",
+            "vo": "Everyone says check the rate on Google before you send. Truth is, that rate doesn't exist for your wallet. The mid-market rate is what banks use among each other. Your personal account sees a retail rate with 2 to 4 percent margin already in it. It's not a rate change. It's a rate tier. Personal accounts pay personal rates. Business accounts get quoted closer to interbank. Same currency pair, same minute, two prices. WF quotes near interbank because we're a business account, not a personal one. Bio."
+          }
+        ]
+      },
+      {
+        "video_title": "Personal vs business FX: the same currency, two prices",
+        "approach": "Tier comparison",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.6,
+            "rating_audience": 4.5,
+            "rating_sales": 4.7,
+            "wf_product": "World Account FX",
+            "vo": "A friend and I sent CNY to the same supplier on the same Tuesday. Same provider. He sent 5 grand from his personal account. I sent 20K from my business account. We compared screenshots after. His rate was 0.243. Mine was 0.247. Same currency pair. Same minute. Same brand on the front. The personal tier sees retail spread. Business sees something closer to institutional. On the same 20K wire, that gap was 800 dollars in my favour. We did not negotiate anything. We just had different account types. WF quotes near interbank because we're a business account, not a personal one. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.5,
+            "rating_audience": 4.6,
+            "rating_sales": 4.8,
+            "wf_product": "World Account FX",
+            "vo": "Quick maths on the personal versus business FX gap. Personal tier on most platforms, 1.5 to 2 percent off mid-market. Business tier, 0.3 to 1 percent. On a 20K supplier wire, that's 300 dollars of spread difference. Run it weekly, that's 1,200 dollars a month, 14 grand a year, never appearing on a line item. It's just inside the rate. The fix isn't switching providers. It's switching tiers. WF quotes near interbank because we're a business account, not a personal one. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.6,
+            "rating_audience": 4.4,
+            "rating_sales": 4.5,
+            "wf_product": "World Account FX",
+            "vo": "Everyone says Wise gives you the best rate. They do, on personal transfers. Truth is, the rate on a personal account and a business account is never the same, even on the same app. Personal tier runs at retail spread. Business tier runs at institutional spread. The gap is 1 to 2 percentage points and it shows up on every single transfer you make. On 20K weekly, that's 1,200 a month gone. Quietly. WF quotes near interbank because we're a business account, not a personal one. Bio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "card_id": "P2-A24",
+    "card_title": "When CAN you pay a Chinese supplier by card?",
+    "videos": [
+      {
+        "video_title": "When CAN you pay a Chinese supplier by card?",
+        "approach": "Use-case tutorial",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.6,
+            "rating_audience": 4.7,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "First sample I ever paid for. 600 bucks. I used my Amex. Worked instantly. Chargeback protection in case the samples were bad. I felt clever. Then I tried the same card on the 15K production order. Declined. Then declined again. Then my supplier asked for T/T. I realised cards work for three scenarios. Samples under a grand. Alibaba Trade Assurance up to 12K, because Alibaba escrows the dispute. And through a sourcing agent who takes the card and pays the factory in CNY. Outside those three, you're on a wire. If your supplier won't take cards, most won't, 1688 World Pay solves the same routing in CNY. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.5,
+            "rating_audience": 4.7,
+            "rating_sales": 4.7,
+            "wf_product": "1688 World Pay",
+            "vo": "Three scenarios where cards actually work for Chinese suppliers. One, samples and first orders under 1,000 dollars. Card fee is 2.95 percent, low absolute cost, plus 180 days of chargeback protection if the samples are bad. Two, Alibaba Trade Assurance orders capped at 12,000 per order. Alibaba holds the dispute risk. Three, sourcing agents. Agent takes your card, settles to the factory in CNY, charges 3 to 5 percent for the bridge. Outside those three, it's T/T or a B2B rail. 1688 World Pay routes the card-impossible payments in CNY. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.6,
+            "rating_audience": 4.5,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "Everyone says cards never work for Chinese suppliers. Truth is, they work in three scenarios. Samples under a grand, where the 2.95 percent fee is small and chargeback covers you. Alibaba Trade Assurance, capped at 12K, where Alibaba escrows the risk. And via a sourcing agent who bridges the card to CNY for a 3 to 5 percent fee. The mistake operators make is thinking cards scale. They don't. They're a sample tool. Production runs on T/T. 1688 World Pay routes the card-impossible payments in CNY. Bio."
+          }
+        ]
+      },
+      {
+        "video_title": "The $12,000 wall on credit cards",
+        "approach": "Hard ceiling",
+        "variants": [
+          {
+            "style": "Story / Lived experience",
+            "rating_social": 4.5,
+            "rating_audience": 4.5,
+            "rating_sales": 4.6,
+            "wf_product": "1688 World Pay",
+            "vo": "I tried to put 14 grand on Alibaba on my card. Declined. Tried again. Declined. Called my bank. Card was fine. Then I read the Trade Assurance terms. Card payments are capped at 12K per order. I thought it was an arbitrary number. It's not. Above 12K, the chargeback risk on a single order is too large for Alibaba to escrow against a factory. So they push you to T/T. 12 grand is roughly where sample buying becomes production buying. Cards live below the wall. Production lives above it. Same factory. Different rail. 1688 World Pay handles the above-12K payments straight to suppliers in CNY. Bio."
+          },
+          {
+            "style": "Tactical / Numbers-led",
+            "rating_social": 4.4,
+            "rating_audience": 4.6,
+            "rating_sales": 4.7,
+            "wf_product": "1688 World Pay",
+            "vo": "Alibaba's card payment cap is 12,000 dollars per order. Below that, card works with Trade Assurance, fee around 2.95 percent, escrow protection. Above 12K, you're rejected at checkout. The reason is risk. Alibaba can't escrow a 50K chargeback against a single supplier order. So they push you to T/T or a B2B rail. The 12K line is where sample buying ends and production buying starts. 1688 World Pay handles every payment above that wall, in CNY, direct to your 1688 supplier. Bio."
+          },
+          {
+            "style": "Counter-narrative / Reframe",
+            "rating_social": 4.5,
+            "rating_audience": 4.4,
+            "rating_sales": 4.5,
+            "wf_product": "1688 World Pay",
+            "vo": "Everyone says cards are the easy way to pay Alibaba. Truth is, there's a hard 12 grand wall on card payments per order. Below it, fine, Trade Assurance escrows the risk. Above it, you're rejected. That ceiling isn't a glitch. It's the line between sample buying and production buying. Cards were never built to back a 50K factory order. Production runs on T/T or a B2B rail. 1688 World Pay handles every payment above the wall, direct to your 1688 supplier in CNY. Bio."
+          }
+        ]
+      }
+    ]
+  }
+]
