@@ -5,61 +5,115 @@
     "videos": [
       {
         "video_title": "What a $20K PayPal supplier payment actually costs",
-        "approach": "Cost decomposition",
+        "approach": "Math-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
-            "rating_social": 4.6,
-            "rating_audience": 4.6,
-            "rating_sales": 4.8,
-            "wf_product": "World Account business",
-            "vo": "Pattern we see across new importers. First few supplier payments go out on PayPal because it's the app they already have. Works fine on a 300 dollar sample. Then orders grow. By the time the payment hits 20 grand, the maths stops working. When you pay your supplier with PayPal, they take 4.4 percent of every payment. On a 20,000 dollar payment, that's 880 dollars. Just for the platform. Then they also change your money from your currency into Chinese yuan, and they add 3.5 percent on top of the actual exchange rate. Another 700 dollars, hidden. Most Chinese suppliers also raise their price 4 to 5 percent when PayPal is the only payment option, because PayPal charges them a fee too, and they don't want to eat it. So a 20K order quietly becomes 22 and a half thousand. Check out WorldFirst. Built for cross-border business payments."
+            "style": "Story / Narrative arc",
+            "rating_social": 4.7,
+            "rating_audience": 4.7,
+            "rating_sales": 4.6,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "A business owner sends $20,000 to their Chinese supplier through PayPal.",
+              "Why does a $20,000 PayPal supplier payment actually cost $1,580?",
+              "PayPal feels easy. On a $20K supplier payment, it costs you around 8 percent.",
+              "$20,000 in. The supplier sees a quote 5 percent higher next time. Here is why.",
+              "Here is what happens when a business owner pays a factory $20,000 through PayPal."
+            ],
+            "hook_recommended": 0,
+            "body": "A business owner sends $20,000 to their Chinese supplier through PayPal. The receipt says $20,000. The reality is different. PayPal charges a cross-border transaction fee of 4.4 percent, that is $880. Then PayPal converts to CNY at a rate around 3.5 percent worse than the real exchange rate, another $700. The supplier sees the money arrive, but they also pay a receiving fee on their side, so the next invoice quietly comes back 4 to 5 percent higher. The business owner thinks they paid $20,000. They actually paid closer to $22,400. That is why you should use WorldFirst. Same $20K supplier payment, real bank-level exchange rate, no 4.4 percent transaction fee, money lands same-day in CNY.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.4,
+            "rating_social": 4.7,
             "rating_audience": 4.7,
-            "rating_sales": 4.8,
-            "wf_product": "World Account business",
-            "vo": "Quick maths on a 20,000 dollar PayPal payment to a Chinese factory. First, PayPal takes 4.4 percent of the payment, that's 880 dollars in fees. Second, they change your money into Chinese yuan, but the rate they give you is 3.5 percent worse than the real rate the banks use. That hides another 700 dollars inside the exchange. Third, your supplier knows PayPal charges them a fee on their side, so they quietly add 4 to 5 percent on the price quote. Call that 800 dollars more on a 20K order. Total: 2,380 dollars on top of the 20,000 you thought you were paying. That's nearly 12 percent. WorldFirst pays Chinese suppliers like they're local. Search WorldFirst."
+            "rating_sales": 4.6,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "$20,000 sent on PayPal. $880 in transaction fees. $700 in exchange rate margin. $800 in supplier markup. That is $2,380 gone.",
+              "Here is the math on a $20K PayPal supplier payment.",
+              "PayPal at $20,000 is not a flat fee product. It is a 4.4 percent product.",
+              "The receipt says $20,000. The real cost is $22,380. Let me break it down.",
+              "A $20,000 PayPal payment to China costs about 12 percent of the invoice. Here is where it goes."
+            ],
+            "hook_recommended": 1,
+            "body": "Line one. Cross-border transaction fee, 4.4 percent on $20,000, that is $880. Line two. FX margin, which is the gap between the real exchange rate and the one PayPal applies, about 3.5 percent, another $700. Line three. Most Chinese suppliers add 4 to 5 percent to the invoice when PayPal is the rail, because they pay a receiving fee on their side. On $20K, that is roughly $800 already baked into the price. Total real cost on a $20,000 PayPal supplier payment, around $2,380. That is why you should use WorldFirst. 0.3 to 0.6 percent exchange rate margin, no 4.4 percent transaction fee, supplier gets CNY directly so the markup goes away.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
             "rating_social": 4.7,
-            "rating_audience": 4.5,
+            "rating_audience": 4.7,
             "rating_sales": 4.6,
-            "wf_product": "World Account business",
-            "vo": "Everyone says PayPal is the easy way to pay suppliers. Truth is, PayPal was built for buying a hoodie online, not for sending 20 grand to a factory in Guangzhou. The 4.4 percent fee makes sense on a 200 dollar order, that's 9 bucks. On a 20,000 dollar order it's 880 dollars. They also turn your money into Chinese yuan at a rate 3.5 percent worse than the real one, another 700 dollars you never see on a receipt. And because PayPal charges the supplier a fee too, most Chinese factories add 4 to 5 percent to the price quote when PayPal is the rail. Same app. Same brand. Different reality at scale. Look up WorldFirst. Built for cross-border business, not retail."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "PayPal is not expensive. It is just priced for the wrong job.",
+              "PayPal is not a B2B product. You are using it as one.",
+              "Everyone calls PayPal a fintech. For factory payments, it behaves like a retail tool.",
+              "PayPal works fine. The problem is what you are using it for.",
+              "Stop blaming PayPal for being expensive. It was never designed for $20K supplier payments."
+            ],
+            "hook_recommended": 0,
+            "body": "PayPal was designed for retail. Buying a $40 t-shirt, paying a $200 freelancer, splitting a hotel bill. At that size, the 4.4 percent fee and 3.5 percent exchange rate margin barely register. When a business owner uses the same tool to send $20,000 to a Chinese factory, the percentages do not change but the dollars do. 4.4 percent of $20,000 is $880. 3.5 percent of $20,000 is $700. Plus the supplier marks up the next quote by 4 to 5 percent to absorb their own fee. Total cost on a $20K supplier payment, around $2,380. The product did not get expensive. The use case got bigger. That is why you should use WorldFirst. Built for cross-border B2B, real exchange rate, supplier gets CNY directly.",
+            "cta": "Check out WorldFirst."
           }
         ]
       },
       {
         "video_title": "PayPal at $200 vs PayPal at $20K",
-        "approach": "Scale comparison",
+        "approach": "Comparison",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.3,
             "rating_audience": 4.5,
-            "rating_sales": 4.6,
-            "wf_product": "World Account business",
-            "vo": "Pattern we see across operators. First sample order goes out on PayPal. 200 bucks, fee is about 9 dollars, nobody notices. Two years later, same app, same supplier, but the orders are 20 grand each. PayPal still takes 4.4 percent of the payment. So the fee is now 880 dollars. Same screen. Same brand. Same login. The percentage never moved. The dollar amount did. The app never sent a warning saying you'd outgrown it. The volume crept up. The cost crept up with it. Most importers don't see it until their accountant flags it at year end. WorldFirst was built for cross-border business payments. Check us out."
+            "rating_sales": 4.5,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "A business owner used PayPal for $200 payments for years. Then they tried it for $20,000.",
+              "PayPal at $200 feels cheap. PayPal at $20,000 does not.",
+              "Same PayPal app. Same buttons. At $20K the fee bill is 100 times bigger.",
+              "Why does the same app feel free at $200 and expensive at $20,000?",
+              "A business owner sends $200 on PayPal and pays $5. They send $20,000 and pay $880. Same app. Different math."
+            ],
+            "hook_recommended": 0,
+            "body": "A business owner pays a freelancer $200 on PayPal. PayPal charges around $5. Nobody thinks about it. The business grows. Now they are paying a Chinese supplier $20,000 a month. Same PayPal account. Same buttons. The fee on this one is $880. Plus another $700 in exchange rate margin. Then the supplier quietly adds 4 to 5 percent to the invoice to absorb their own receiving fee, so really it is closer to $2,380. The product did not change. The order size did. That is why you should use WorldFirst. Built for $20K supplier payments, not $200 invoices, real exchange rate, supplier gets CNY directly.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.4,
-            "rating_audience": 4.7,
-            "rating_sales": 4.7,
-            "wf_product": "World Account business",
-            "vo": "Same app, two orders, two very different costs. Order one: 200 dollars to a supplier, PayPal fee around 9 dollars. Painless. Order two: 20,000 dollars to the same supplier, PayPal fee 880 dollars. Painful. The fee rate didn't change. They take 4.4 percent of every cross-border payment. On 200 that's small. On 20,000 it's nearly 900 bucks before the exchange-rate markup even kicks in. Add the exchange-rate markup of about 3.5 percent and you're looking at 1,580 dollars gone on a single payment. WorldFirst pays Chinese suppliers like they're local. Search WorldFirst."
+            "rating_social": 4.3,
+            "rating_audience": 4.5,
+            "rating_sales": 4.5,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "PayPal $200 transfer: $5.80 fee. PayPal $20,000 transfer: $880 fee. Same percentage. Different reality.",
+              "4.4 percent on $200 is $9. 4.4 percent on $20,000 is $880. The fee did not scale. The bill did.",
+              "Here is the math on PayPal at retail vs PayPal at supplier scale.",
+              "Two PayPal transfers, same percentage rate, $871 difference. Here is why it matters.",
+              "$200 on PayPal costs $5. $20,000 on PayPal costs $880. The fee model is the same. Your bank balance is not."
+            ],
+            "hook_recommended": 0,
+            "body": "Transfer one. $200 payment to a freelancer. PayPal charges around $5.80, mostly a fixed fee. The percentage feels invisible. Transfer two. $20,000 payment to a Chinese factory. PayPal charges 4.4 percent, that is $880. Plus a 3.5 percent exchange rate margin, another $700. Plus the supplier pads the next invoice 4 to 5 percent because they pay a receiving fee, that is $800. The fee model did not change between these two transfers. The order size did, and the math followed. That is why you should use WorldFirst. Built for the supplier-payment use case, 0.3 to 0.6 percent exchange rate margin, no 4.4 percent transaction fee, supplier gets CNY directly.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
-            "rating_audience": 4.4,
+            "rating_social": 4.3,
+            "rating_audience": 4.5,
             "rating_sales": 4.5,
-            "wf_product": "World Account business",
-            "vo": "Everyone treats PayPal like one product. Truth is, PayPal at 200 dollars and PayPal at 20,000 dollars are two completely different products that just happen to live in the same app. At 200, the fixed fees soak up most of the pain. At 20,000, the 4.4 percent fee takes over and you're paying 880 dollars. Add another 3.5 percent because they change your currency at a worse rate than the banks use among themselves, and that's 700 more, hidden. Personal-volume apps were priced for personal volumes. If you wouldn't pay a bank 880 dollars on one transfer, don't pay an app 880 dollars. Look up WorldFirst."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "PayPal did not get expensive. Your invoices got bigger.",
+              "The problem is not the fee. The problem is using a $200 tool for $20,000 payments.",
+              "Personal-volume apps are priced for personal volumes. Then business owners use them at business volumes.",
+              "If you would not pay a bank $880 to send $20K, do not pay an app $880 either.",
+              "PayPal works perfectly at retail. The problem is what you grew into."
+            ],
+            "hook_recommended": 2,
+            "body": "Most business owners used PayPal for years before they started sourcing from China. At a $200 invoice, PayPal is cheap, easy, and the fee feels like a rounding error. Then the business grows. Now the same app is moving $20,000 to a factory every week. Same percentage rate. Same UI. $880 in transaction fees. $700 in exchange rate margin. Plus suppliers quietly pad the invoice. The app is not expensive. The job changed. Retail tools were never priced for $20K weekly supplier orders. That is why you should use WorldFirst. Built for cross-border supplier payments at scale, real exchange rate, supplier gets CNY directly, no per-transaction percentage.",
+            "cta": "Check out WorldFirst."
           }
         ]
       }
@@ -71,31 +125,58 @@
     "videos": [
       {
         "video_title": "Why your supplier said no to the card",
-        "approach": "Category gap",
+        "approach": "Category",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.4,
             "rating_audience": 4.6,
             "rating_sales": 4.4,
-            "wf_product": "World Account business",
-            "vo": "Pattern we see all the time. New importer offers their Visa to a Chinese supplier. Supplier says no, asks for a bank wire. The importer thinks the supplier is being difficult. They're not. Only about 3 to 5 percent of Chinese factories accept credit cards at all. The other 95 percent run their business on Alipay and WeChat Pay, the two local apps that handle nearly every payment inside China. Even if a supplier does accept Visa, the card company gives the buyer 180 days to reverse the payment after the fact. The goods have already shipped. For the supplier, that's not really a payment. That's a loan with a return policy hanging over them for six months. WorldFirst pays Chinese suppliers the way they actually get paid locally. Check out WorldFirst."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "A business owner offers their Chinese supplier a Visa card. The supplier says no and asks for T/T.",
+              "Why did your Chinese supplier say no when you offered to pay by card?",
+              "Only 3 to 5 percent of Chinese factories accept credit cards. The other 95 percent run on Alipay and WeChat Pay.",
+              "Your supplier did not reject the card. They rejected 180 days of chargeback risk on goods that already shipped.",
+              "Here is what happens when a business owner tries to pay a Chinese factory with a credit card."
+            ],
+            "hook_recommended": 0,
+            "body": "A business owner offers their Chinese supplier a Visa card to speed up the deposit. The supplier replies, T/T only, which means bank transfer. The business owner thinks the supplier is being difficult. They are not. Only 3 to 5 percent of Chinese factories are even set up to accept credit cards. The other 95 percent run on Alipay or WeChat Pay domestically. On top of that, a card transaction gives the buyer 180 days to dispute the charge, on goods that already left the warehouse. For the supplier, that is not payment. It is a loan with a return policy. T/T means the money lands and it stays landed. That is why you should use WorldFirst. The supplier gets CNY directly to their Chinese bank, same-day, no chargeback risk on their end, no card fees on yours.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
             "rating_social": 4.4,
-            "rating_audience": 4.5,
+            "rating_audience": 4.6,
             "rating_sales": 4.4,
-            "wf_product": "World Account business",
-            "vo": "The card-acceptance numbers for Chinese suppliers. Roughly 3 to 5 percent take Visa or Mastercard directly. The other 95 percent only accept Alipay, WeChat Pay, or bank transfer in Chinese yuan. If the supplier does accept your card, they're hit with 2 to 3 percent in card-processing fees, and they sit on 180 days of chargeback risk, the window where the card company can claw back the payment if you dispute it. On a 10 grand order that risk equals 10 grand of exposure on goods they already shipped. That's why the answer is usually no. Search WorldFirst. Built for paying suppliers the way they want to be paid."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "Three numbers explain why your Chinese supplier rejected the card: 3 percent acceptance, 2.95 percent fee, 180 days chargeback.",
+              "180 days. That is how long a card payment can be reversed on goods that already shipped.",
+              "Card acceptance with Chinese factories: 3 to 5 percent. Card fee absorbed by supplier: 2.95 percent. Chargeback window: 180 days.",
+              "Here are the three numbers your Chinese supplier was running when they said no to your Visa.",
+              "Why 95 percent of Chinese factories say no to credit cards. The math in 30 seconds."
+            ],
+            "hook_recommended": 0,
+            "body": "Number one. Only 3 to 5 percent of Chinese suppliers accept cards directly. The other 95 percent operate on Alipay and WeChat Pay, which are the domestic payment apps used inside China. Most factories have never had a Visa terminal. Number two. If a supplier does accept a card, the processing fee is around 2.95 percent, which they absorb or pad back into your invoice. Number three, this is the big one. A card payment can be charged back for 180 days. The factory ships the goods today and lives with reversal risk for six months. That math does not work for them. That is why you should use WorldFirst. Supplier gets CNY directly, no chargeback exposure, no 2.95 percent processing fee, no 180-day risk window.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.5,
+            "rating_social": 4.4,
             "rating_audience": 4.6,
-            "rating_sales": 4.5,
-            "wf_product": "World Account business",
-            "vo": "Everyone says Chinese suppliers should accept cards in 2026. Truth is, the card was never built for factory orders. Cards were built for retail. The card company gives the buyer 180 days to dispute the payment, which is fine when you're buying a 50 dollar shirt. It's not fine when a factory has shipped 20 grand of stock. So 95 percent of Chinese suppliers stick to Alipay, WeChat Pay, or a direct bank transfer in Chinese yuan, because those settle and stay settled. The card isn't broken. It's just designed for a different game. WorldFirst was built for business cross-border. Look us up."
+            "rating_sales": 4.4,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "Credit cards are not broken. They were never built for Chinese supplier payments in the first place.",
+              "Your supplier did not reject your card. They rejected the category.",
+              "Stop trying to fix the card. The whole rail was designed for retail, not factories.",
+              "The card works for samples. Production was never the use case.",
+              "Card networks were built for retail dispute protection. Factories operate on the other side of that promise."
+            ],
+            "hook_recommended": 1,
+            "body": "Card networks were designed for retail. The whole product, from chargebacks to the 180-day dispute window, exists to protect buyers from sellers in a consumer setting. Walking into a store, buying a shirt, having the option to reverse it if it never arrives. That same protection becomes a problem when you flip the parties. A Chinese factory ships $20,000 worth of product to a buyer halfway around the world. They cannot reverse the shipment, but the buyer can reverse the payment, for six months. So 95 percent of factories simply opted out of card acceptance. The card is not failing. The category was never aimed at this use case. That is why you should use WorldFirst. Built for cross-border B2B, supplier gets CNY directly, no chargeback risk, no retail-protection model layered on top.",
+            "cta": "Check out WorldFirst."
           }
         ]
       }
@@ -106,62 +187,116 @@
     "card_title": "Personal vs business FX rate: the spread",
     "videos": [
       {
-        "video_title": "The rate you see isn't the rate that exists",
-        "approach": "Mid-market education",
+        "video_title": "The rate you see is not the rate that exists",
+        "approach": "Math-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.6,
             "rating_audience": 4.6,
             "rating_sales": 4.7,
-            "wf_product": "World Account business",
-            "vo": "Pattern we see all the time. New importer opens Google, types Thai baht to Chinese yuan, sees the rate, does the maths, sends the wire. Money lands. It's about 2 percent less than they calculated. They think they did the maths wrong. They didn't. The rate Google shows is called the mid-market rate. It's the rate banks use when they trade with each other. It's the real one. Personal accounts never get that rate. Personal apps and bank apps quote you a retail rate, which already has 2 to 4 percent baked in for the bank to keep. It never appears as a fee. It just shows up as the conversion coming out lower than you expected. WorldFirst quotes business rates close to mid-market. Check us out."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "A business owner Googles THB to CNY before paying their supplier. The rate they see is not the rate they get.",
+              "Why does the exchange rate on Google look better than the one your bank actually uses?",
+              "Open Google. Type THB to CNY. That rate does not exist for your wallet.",
+              "The Google exchange rate is real. It just is not for you.",
+              "Here is why a business owner sees one exchange rate online and a different one at their bank."
+            ],
+            "hook_recommended": 0,
+            "body": "A business owner checks the exchange rate on Google before paying their Chinese supplier. THB to CNY, looks fine. They send $20,000 worth. The amount that lands at the factory is noticeably smaller than what Google suggested. They are not crazy. Google shows the interbank rate, which is the rate banks use among themselves. The rate offered to a regular wallet is a retail rate that already has 2 to 4 percent margin baked in. That margin never shows up as a fee line. It just appears as a smaller number on the other side. On a $20,000 supplier payment, 2 percent of hidden margin is $400 gone. That is why you should use WorldFirst. Real interbank exchange rate, 0.3 to 0.6 percent margin instead of 2 to 4 percent, what you see on Google is roughly what your supplier gets.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
             "rating_social": 4.6,
-            "rating_audience": 4.7,
-            "rating_sales": 4.8,
-            "wf_product": "World Account business",
-            "vo": "Quick maths on the exchange rate gap. On a 20,000 dollar wire to a Chinese supplier, a personal account loses about 2 percent inside the rate, that's 400 dollars. A business rail loses about 0.5 percent, that's 100 dollars. The difference: 300 dollars per wire, every wire. If you pay suppliers weekly, that's 1,200 a month, 14,400 a year. None of it shows as a fee. It's all hidden inside the exchange rate. Banks tell you they give you a competitive rate, but they quote you something 1.5 to 2 percent worse than what banks actually trade at. WorldFirst was built for business cross-border. Search WorldFirst."
+            "rating_audience": 4.6,
+            "rating_sales": 4.7,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "Bank exchange rate margin: 2 to 4 percent. Specialist exchange rate margin: 0.3 to 1 percent. The gap is the spread.",
+              "Same currency. Same day. Two different rates. Here is the math.",
+              "A 1.5 percent exchange rate gap on $50K a month equals $9,000 a year. Hidden inside the rate.",
+              "The exchange rate gap between a bank and a specialist FX provider, in numbers.",
+              "$20,000 supplier wire. Bank rate margin: $400. Specialist rate margin: $100. Same wire, $300 difference."
+            ],
+            "hook_recommended": 1,
+            "body": "Most major bank consumer transfers carry a 2 to 4 percent margin off the real exchange rate. Specialist business platforms run 0.3 to 1 percent on the exact same currency pair. That gap is called the spread. It does not appear as a fee line on either side. It just gets baked into the rate you are quoted. On a $20,000 supplier wire, a 2 percent bank margin is $400, a 0.5 percent specialist margin is $100. Same wire, same supplier, $300 difference, every transfer. If a business owner pays $50,000 in CNY every month, a 1.5 percent gap is $750 a month, $9,000 a year, completely invisible. That is why you should use WorldFirst. 0.3 to 0.6 percent exchange rate margin, transparent so the savings show up on every wire.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
             "rating_social": 4.6,
-            "rating_audience": 4.5,
+            "rating_audience": 4.6,
             "rating_sales": 4.7,
-            "wf_product": "World Account business",
-            "vo": "Everyone thinks there's one exchange rate. Truth is, there are two, and you're not on the one you think. The real rate, the one banks use among themselves, is called the mid-market rate. Google shows it. Banks know it. You don't get it. Your wallet gets the retail rate, which is 2 to 4 percent worse, and that gap is the bank's quiet margin. No line item. No notification. Just a conversion that comes out lower than expected. That's not a discount on a fee, that is the fee. WorldFirst quotes business-level rates close to the real one. Look up WorldFirst."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "There is no hidden fee on your supplier wire. There is a hidden rate.",
+              "Your bank did not charge you for the exchange. They charged you in the exchange.",
+              "Stop looking for the fee. Start looking at the rate.",
+              "Banks compete on fees because fees are visible. They make their money on rates because rates are not.",
+              "The fee line says zero. That does not mean the conversion was free."
+            ],
+            "hook_recommended": 1,
+            "body": "Most business owners think the wire fee is the cost of moving money to a supplier. So they shop on fees, find a zero-fee promo, feel good. Banks know this. So they leave the fee at zero and make their margin on the exchange rate instead. On a $20,000 wire, a 2 percent rate margin is $400. There is no line item, no notification, no fee that says we took this. It just shows up as a smaller number on the supplier side. The fee was never the cost. The rate is. That is why you should use WorldFirst. The exchange rate margin is published, 0.3 to 0.6 percent versus 2 to 4 percent at most banks. The saving is in the rate, not the fee.",
+            "cta": "Check out WorldFirst."
           }
         ]
       },
       {
         "video_title": "Personal vs business FX: the same currency, two prices",
-        "approach": "Tier comparison",
+        "approach": "Comparison",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.5,
             "rating_audience": 4.5,
             "rating_sales": 4.7,
-            "wf_product": "World Account business",
-            "vo": "Pattern we see across operators. Same currency pair, same day, same provider, two completely different rates. Personal account gets one rate. Business account on the same platform gets a better one. The gap is what banks call the spread, the cut they take on every conversion. On a personal tier, the spread is around 1.5 to 2 percent. On a business tier, it's closer to 0.3 to 0.5 percent. The difference doesn't appear as a line item. It just lives inside the rate. If you're paying suppliers in Chinese yuan every week, switching tiers pays for itself on the first transfer. WorldFirst was built for cross-border business. Check us out."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "A business owner opens their personal wallet and their business account. Same currency. Different rates. Why?",
+              "Why does the same exchange rate cost more on a personal account than a business one?",
+              "Same currency. Same day. Two different rates from the same provider. Here is what is happening.",
+              "Personal-tier exchange rate versus business-tier exchange rate. The gap is a 4-figure annual number.",
+              "Here is what a business owner discovers when they compare their personal app exchange rate against a business account."
+            ],
+            "hook_recommended": 0,
+            "body": "A business owner pays their Chinese supplier from a personal app on Monday. On Tuesday, they pay another supplier from a business account on the same provider. Same currency, same day, but the rates do not match. The personal-tier exchange rate carries 1.5 to 2 percent margin. The business-tier rate runs 0.3 to 1 percent. On a $20,000 supplier wire, that 1.5 percent gap is $300. Once a week, that is $1,200 a month, $14,400 a year, invisible inside the rate. The tier they signed up under quietly priced every conversion they made. That is why you should use WorldFirst. Business-tier exchange rates by default, 0.3 to 0.6 percent margin, no personal-tier pricing dressed up as a business product.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.6,
-            "rating_audience": 4.6,
-            "rating_sales": 4.8,
-            "wf_product": "World Account business",
-            "vo": "Quick maths on personal versus business exchange rates. Same provider. Same day. Same currency pair. Personal account pays around 2 percent more than the real rate banks use among themselves. Business account pays around 0.5 percent more. Sounds small. On a 20 grand supplier payment, that's 400 dollars versus 100 dollars. 300 dollars in your favour every wire. Pay weekly, that's 1,200 a month. 14,400 a year. Personal apps never tell you the business tier exists because it's not their core user. WorldFirst pays Chinese suppliers like they're local. Search WorldFirst."
+            "rating_social": 4.5,
+            "rating_audience": 4.5,
+            "rating_sales": 4.7,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "Personal-tier exchange margin: 1.5 to 2 percent. Business-tier: 0.3 to 1 percent. On $20K weekly, the gap is $1,200 a month.",
+              "Two rates. Same provider. Same currency. $1,200 a month difference on a $20K weekly wire.",
+              "Here is what the same currency conversion costs on personal versus business tier.",
+              "The same dollar buys 1.5 percent less CNY on a personal account than a business one. Here is the math.",
+              "$20,000 supplier wire. Personal tier margin: $400. Business tier margin: $100. $300 per wire. $14,400 a year."
+            ],
+            "hook_recommended": 0,
+            "body": "Number one. Personal-tier exchange rate margin on most consumer platforms sits at 1.5 to 2 percent. Number two. Business-tier exchange rate margin on the same provider runs 0.3 to 1 percent. Number three. On a $20,000 supplier wire, that 1.5 percent difference is $300. Number four. A business owner paying suppliers weekly is doing 4 to 5 wires a month, so the gap is $1,200 to $1,500 monthly. Number five. Annualised, that is $14,400 to $18,000 disappearing into the rate, with no line item, no fee notification, no warning that personal pricing was being applied to business volume. That is why you should use WorldFirst. Business-tier exchange rates from the start, 0.3 to 0.6 percent margin, same on every wire.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
             "rating_social": 4.5,
             "rating_audience": 4.5,
             "rating_sales": 4.7,
-            "wf_product": "World Account business",
-            "vo": "Everyone assumes the exchange rate is the exchange rate. Truth is, the same currency pair has two prices on the same day. Personal account gets one. Business account gets another, usually 1.5 percent better. The gap is the spread, the cut banks and apps take on every conversion. Personal tier is built for tourists and one-off transfers. Business tier is built for someone paying a factory every week. On a 20 grand wire, the difference is 300 dollars per transfer. Same money. Same destination. Different tier, different rate. WorldFirst was built for cross-border business payments. Look us up."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "Personal-tier accounts are not for personal use only. They are for personal pricing.",
+              "Your business is being charged the personal rate. That is not a mistake. That is the product tier.",
+              "Same provider, two prices. The tier is the price.",
+              "Tier is not just a label. It is the exchange rate margin you pay.",
+              "Most business owners are running supplier payments on a personal-tier rate without knowing it."
+            ],
+            "hook_recommended": 1,
+            "body": "Personal-tier and business-tier are not just account labels. They are different exchange rate margins. Personal tier sees retail spread, 1.5 to 2 percent off the real rate. Business tier sees institutional spread, 0.3 to 1 percent. The provider does not advertise this difference, but the math is in every wire confirmation. Most business owners signed up on a personal account, started paying suppliers from it, and never moved across. So every $20,000 wire is quietly paying $300 extra in rate margin, just because of the tier the account was opened under. On 4 wires a month, that is $1,200 going to the provider, every month. That is why you should use WorldFirst. Built as a business product from day one, business-tier exchange rates by default, no personal-tier pricing hiding underneath.",
+            "cta": "Check out WorldFirst."
           }
         ]
       }
@@ -176,58 +311,112 @@
         "approach": "Tutorial",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.6,
             "rating_audience": 4.7,
             "rating_sales": 4.6,
-            "wf_product": "Mixed (cards for small, WF for production)",
-            "vo": "Pattern we see across new importers. They think cards never work with Chinese suppliers. That's not quite right. Cards work cleanly in three situations. First, samples and small first orders under 1,000 dollars, where the 3 percent card fee is tiny and the buyer protection actually helps if the sample is bad. Second, orders placed through Alibaba Trade Assurance, the program where Alibaba holds the payment in escrow until you confirm delivery. Cards work there up to about 12,000 dollars an order. Third, through a sourcing agent, where the agent takes your card and pays the factory locally in Chinese yuan. Outside those three, the factory wants a bank wire. WorldFirst handles the bank-wire side for production orders. Check out WorldFirst."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "A business owner wants to pay a Chinese factory by credit card. Here is when it actually works.",
+              "Credit cards do not always fail with Chinese suppliers. They work in three specific scenarios.",
+              "Three times you can pay a Chinese supplier by card. One time you absolutely cannot.",
+              "Cards work with Chinese suppliers under $1,000, on Trade Assurance, and through agents. Everywhere else, T/T.",
+              "Here is the rule a business owner learns the hard way. Cards have a ceiling on Chinese supplier payments."
+            ],
+            "hook_recommended": 0,
+            "body": "A business owner wants to pay their first Chinese supplier by credit card. Three scenarios make sense. One, samples and small first orders under $1,000, where the 2.95 percent card fee is small and the 180-day chargeback window protects them from a bad sample. Two, Alibaba Trade Assurance orders up to $12,000, because Alibaba escrows the money and absorbs the chargeback risk for the supplier. Three, paying through a sourcing agent who accepts the card, then pays the factory in CNY via Alipay or bank transfer. Outside those three, the answer is bank transfer or a B2B rail. Production volume, recurring weekly orders, anything over $12K, the card stops working. That is why you should use WorldFirst. Built for the orders cards cannot cover, $12K production runs, weekly supplier payments, factories without Trade Assurance.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.5,
-            "rating_audience": 4.6,
+            "rating_social": 4.6,
+            "rating_audience": 4.7,
             "rating_sales": 4.6,
-            "wf_product": "Mixed (cards for small, WF for production)",
-            "vo": "Quick rules on paying Chinese suppliers by card. Use a card when: orders under 1,000 dollars, where the 3 percent card fee is 30 bucks and worth it for the buyer protection. Use a card on Alibaba Trade Assurance up to 12,000 dollars per order, because Alibaba holds the money in escrow until you confirm delivery. Use a card through a sourcing agent who'll charge you 3 to 5 percent to take the card on their side and pay the factory in Chinese yuan locally. Skip the card when: orders are over 12,000 dollars, when the factory has no Trade Assurance, or when you're paying the same factory weekly. That's where a business cross-border rail matters. Search WorldFirst."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "Three numbers tell you when a card works with a Chinese supplier: under $1,000, under $12K via Trade Assurance, or via an agent at 3 to 5 percent.",
+              "Three scenarios. Three caps. One simple rule for paying Chinese suppliers by card.",
+              "Card with a Chinese supplier works at $1,000 for samples, $12,000 via Trade Assurance, and at any size via an agent. Anywhere else, T/T.",
+              "The math on credit cards with Chinese suppliers, scenario by scenario.",
+              "Here is exactly when a credit card works for a Chinese supplier payment, in numbers."
+            ],
+            "hook_recommended": 0,
+            "body": "Scenario one. Sample orders under $1,000. The 2.95 percent card processing fee is around $30, and the 180-day chargeback window catches bad samples. Use the card. Scenario two. Production orders under $12,000 via Alibaba Trade Assurance. Alibaba escrows the money, handles the dispute, so the supplier accepts cards inside that envelope. Use the card. Scenario three. Any size, through a sourcing agent who takes the card on their end and settles to the factory in CNY. Agent fee is 3 to 5 percent on top of the card processing fee. Outside those three, bank transfer or a B2B payment rail is the path. That is why you should use WorldFirst. Built for the scenarios cards cannot handle, $12K production runs, weekly supplier wires, factory payments outside Trade Assurance.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.7,
+            "rating_social": 4.6,
             "rating_audience": 4.7,
-            "rating_sales": 4.7,
-            "wf_product": "Mixed (cards for small, WF for production)",
-            "vo": "Everyone says cards don't work with Chinese suppliers. Truth is, cards work fine in three specific situations: samples under 1,000 dollars, Alibaba Trade Assurance orders up to 12,000, and payments through a sourcing agent. What cards don't do is production orders, weekly volume, or anything where the factory needs Chinese yuan in their bank account fast. Different problems need different tools. Cards solve the small-order, buyer-protection problem. Bank rails solve the production-volume problem. Pick the right one. Look up WorldFirst. Built for the production-volume side."
+            "rating_sales": 4.6,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "Cards are not a supplier payment tool. They are a sample protection tool.",
+              "Stop trying to make cards the rail. Use them as the safety net.",
+              "Cards are not failing at supplier payments. They were never the supplier payment.",
+              "The card has one job in sourcing: protect the sample. Everything bigger needs a different rail.",
+              "Most business owners use cards wrong. The card is for the first $1,000, not the $20K production run."
+            ],
+            "hook_recommended": 0,
+            "body": "Most business owners reach for a credit card on every supplier payment because cards offer chargeback protection, points, and a familiar interface. The card is not the wrong tool. It is the wrong tool for production. For a $500 sample order, the 2.95 percent fee is around $15 and the 180-day chargeback window is exactly what a business owner needs against a bad first sample. For a $20,000 production run on a recurring weekly schedule, the same tool turns into 2.95 percent on every wire, $590 per transfer, plus the supplier rejects cards above $12K via Trade Assurance anyway. The card is a sample tool. The production rail is something else. That is why you should use WorldFirst. Built as the production rail, supplier gets CNY directly, no 2.95 percent per wire, scales past the $12K Trade Assurance cap.",
+            "cta": "Check out WorldFirst."
           }
         ]
       },
       {
         "video_title": "The $12,000 wall on credit cards",
-        "approach": "Ceiling explainer",
+        "approach": "Math-led",
         "variants": [
           {
-            "style": "Pattern / What we see",
+            "style": "Story / Narrative arc",
             "rating_social": 4.4,
             "rating_audience": 4.5,
             "rating_sales": 4.6,
-            "wf_product": "World Account business",
-            "vo": "Pattern we see when operators move from samples to production. They've been paying small orders by card on Alibaba. Works fine. Then they place a 15,000 dollar order and the card stops working. Alibaba caps card payments at around 12,000 dollars per order. That cap isn't random. Above 12 grand, the risk of a buyer disputing the charge and clawing the money back is too big for Alibaba to take on against the supplier. So the system pushes you to a bank wire. The 12K line is roughly where samples become production. Cards live below the line. Production lives above it. Same factory. Different rail. WorldFirst handles the bank-wire side. Check us out."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "A business owner tries to pay $14,000 to a Chinese factory by card. Alibaba blocks the payment at $12,000.",
+              "Alibaba caps credit card payments at $12,000 per order. That number is not arbitrary.",
+              "Why does Alibaba stop accepting credit cards at $12,000? The answer is about who carries the risk.",
+              "$12,000 is the line between samples and production. It is also the line between cards and bank transfers.",
+              "Here is what a business owner runs into when they try to pay a Chinese supplier above $12K by card."
+            ],
+            "hook_recommended": 0,
+            "body": "A business owner places a $14,000 order on Alibaba and tries to pay by credit card. The platform blocks it. Cards are capped at $12,000 per order. Same factory, same buyer, but above $12K the rail changes to bank transfer. The $12K ceiling is not random. It is roughly the line between samples and production. Below the line, Alibaba Trade Assurance can escrow the payment, absorb the chargeback risk, and let the supplier accept cards safely. Above the line, the risk on a single order is too big for the platform to carry, so they push you off cards entirely. Production-size orders live above the wall. Cards live below it. That is why you should use WorldFirst. Built for the production side of the line, supplier gets CNY directly, no $12K ceiling, same-day to Chinese bank accounts.",
+            "cta": "Check out WorldFirst."
           },
           {
             "style": "Tactical / Numbers-led",
-            "rating_social": 4.5,
+            "rating_social": 4.4,
             "rating_audience": 4.5,
             "rating_sales": 4.6,
-            "wf_product": "World Account business",
-            "vo": "Quick maths on the Alibaba card ceiling. Card payments are capped at around 12,000 dollars per order. The fee on a card payment is 2.95 percent. On 12K that's 354 dollars. Reasonable for the buyer protection you get. Above 12 grand, Alibaba won't let you use a card, because the chargeback risk on a single order is too big for them to escrow against the supplier. So production orders move to bank wires. A bank wire on 50,000 dollars through a regular bank costs around 1,500 in fees and exchange-rate markup. Through a business cross-border rail, it's closer to 200. Search WorldFirst."
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "$12,000 per order. That is the Alibaba credit card cap. Here is why it stops there.",
+              "Card cap with a Chinese supplier: $12,000. Card fee: 2.95 percent. Chargeback window: 180 days. The math sets the ceiling.",
+              "Why $12,000? Because above that, a single chargeback breaks the supplier month.",
+              "Alibaba $12K cap is a risk calculation, not a marketing decision.",
+              "On Alibaba, $11,999 goes through on a card. $12,001 does not. The wall is hard."
+            ],
+            "hook_recommended": 0,
+            "body": "Number one. Alibaba Trade Assurance card cap is $12,000 per order. Number two. Card processing fee is 2.95 percent, capped at $12,000 of payment value. Number three. Chargeback window is 180 days, which means the supplier carries reversal risk for six months after shipping. Number four. Above $12,000, a single chargeback can wipe out the supplier entire monthly margin, so the platform de-risks by pushing those orders to bank transfer. Number five. The $12K line is roughly where samples end and production begins, so cards live below it, production wires live above it. That is why you should use WorldFirst. Built for production-size payments, no $12K ceiling, supplier gets CNY directly, same-day to Chinese bank accounts.",
+            "cta": "Search WorldFirst."
           },
           {
             "style": "Counter-narrative / Reframe",
-            "rating_social": 4.5,
-            "rating_audience": 4.6,
-            "rating_sales": 4.7,
-            "wf_product": "World Account business",
-            "vo": "Everyone treats the 12,000 dollar credit card cap on Alibaba as a random rule. Truth is, it's the line where the buyer-protection model breaks. Cards give the buyer 180 days to dispute the payment, even after goods ship. On a 500 dollar order, that risk is small. On a 50,000 dollar order, no factory will accept the risk and no platform will guarantee it. So 12 grand is roughly the wall between samples and production. Below it, cards are fine. Above it, you're on a bank wire, and the rail you choose decides whether you pay 200 dollars in fees or 1,500. WorldFirst pays Chinese suppliers like they're local. Look us up."
+            "rating_social": 4.4,
+            "rating_audience": 4.5,
+            "rating_sales": 4.6,
+            "wf_product": "WorldFirst",
+            "hook_options": [
+              "The $12,000 cap is not a limit. It is the platform telling you the rail does not fit anymore.",
+              "Alibaba is not blocking your card. They are protecting the supplier from your chargeback rights.",
+              "Cards are not failing above $12K. The category is just done.",
+              "$12,000 is not a bug in the credit card system. It is the design.",
+              "Stop trying to lift the $12K card ceiling. It is there for a reason, and the reason is not you."
+            ],
+            "hook_recommended": 0,
+            "body": "Most business owners read the $12,000 card cap on Alibaba as a limit that needs working around. It is not a limit. It is the design. Below $12K, the platform can absorb the chargeback risk of a single order if it goes wrong. Above $12K, the loss on one disputed shipment is bigger than what Trade Assurance can carry for the supplier, so the platform stops accepting cards. The buyer is not being throttled. The supplier is being protected. The card was a retail-protection product, and at production size, the protection itself becomes the problem. Below the wall, cards make sense. Above it, the rail has to change. That is why you should use WorldFirst. Designed for above-the-wall payments, supplier gets CNY directly, same-day, no platform escrow needed.",
+            "cta": "Check out WorldFirst."
           }
         ]
       }

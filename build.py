@@ -70,6 +70,63 @@ def render_variant(card_id, vid_idx, var_idx, variant):
     style_letter = ['A', 'B', 'C'][var_idx]
     style_label = variant.get('style', '')
     wf_product = variant.get('wf_product', '')
+
+    # v5 structure: hook_options + body + cta. v4 fallback: vo
+    hook_options = variant.get('hook_options', [])
+    hook_recommended = variant.get('hook_recommended', 0)
+    body = variant.get('body', '')
+    cta = variant.get('cta', '')
+    legacy_vo = variant.get('vo', '')
+
+    if hook_options:
+        # v5 structure: render 5 hook options + body + cta
+        hooks_html = ''
+        for hi, h in enumerate(hook_options):
+            checked = ' checked' if hi == hook_recommended else ''
+            rec_badge = '<span class="hook-rec">Recommended</span>' if hi == hook_recommended else ''
+            hooks_html += f'''
+      <label class="hook-option">
+        <input type="radio" name="hook-{esc(var_id)}" class="hp" data-vid="{esc(var_id)}" data-hidx="{hi}" data-hook="{esc(h)}"{checked}>
+        <span class="hook-radio"></span>
+        <span class="hook-content">
+          <span class="hook-num">{hi+1}</span>
+          <span class="hook-text">{esc(h)}</span>
+        </span>
+        {rec_badge}
+      </label>'''
+        script_block = f'''
+  <div class="hooks-block">
+    <div class="block-label">5 hook options — pick one</div>
+    <div class="hooks-list">{hooks_html}
+    </div>
+  </div>
+  <div class="body-block">
+    <div class="block-label">Body</div>
+    <p class="body-text">{esc(body)}</p>
+  </div>
+  <div class="cta-block">
+    <div class="block-label">CTA</div>
+    <p class="cta-text">{esc(cta)}</p>
+  </div>
+  <div class="assembled-block">
+    <div class="block-label">Assembled VO (picked hook + body + CTA)</div>
+    <p class="assembled-vo" data-vid="{esc(var_id)}" data-body="{esc(body)}" data-cta="{esc(cta)}">{esc(hook_options[hook_recommended] + ' ' + body + ' ' + cta)}</p>
+    <div class="vo-actions">
+      <span class="wf-product">↳ {esc(wf_product)}</span>
+      <button class="copy-btn" data-vid="{esc(var_id)}" type="button">Copy VO</button>
+    </div>
+  </div>'''
+    else:
+        # v4 fallback
+        script_block = f'''
+  <div class="vo-block">
+    <p class="vo">{esc(legacy_vo)}</p>
+    <div class="vo-actions">
+      <span class="wf-product">↳ {esc(wf_product)}</span>
+      <button class="copy-btn" data-vo="{esc(legacy_vo)}" type="button">Copy VO</button>
+    </div>
+  </div>'''
+
     return f'''
 <div class="variant" data-variant-id="{esc(var_id)}">
   <header class="variant-head">
@@ -88,13 +145,9 @@ def render_variant(card_id, vid_idx, var_idx, variant):
       <span class="overall"><span class="rl">Overall</span><span class="rv">{overall}</span></span>
     </div>
   </header>
-  <div class="vo-block">
-    <p class="vo">{esc(variant.get('vo', ''))}</p>
-    <div class="vo-actions">
-      <span class="wf-product">↳ {esc(wf_product)}</span>
-      <button class="copy-btn" data-vo="{esc(variant.get('vo', ''))}" type="button">Copy VO</button>
-    </div>
-    <textarea class="variant-comment" data-vid="{esc(var_id)}" placeholder="Comment on this variant. Want different angle? Stronger CTA? Specific tweak? Type it here. Auto-included in the bottom prompt."></textarea>
+  {script_block}
+  <div class="comment-block">
+    <textarea class="variant-comment" data-vid="{esc(var_id)}" placeholder="Comment on this variant. Want different hook? Different angle? Stronger CTA? Type it here. Auto-included in the bottom prompt."></textarea>
   </div>
 </div>'''
 
@@ -332,9 +385,52 @@ h1 {{ font-size: 32px; line-height: 1.15; letter-spacing: -0.02em;
   cursor: pointer; transition: all 0.15s; }}
 .copy-btn:hover {{ border-color: var(--ink); color: var(--ink); }}
 .copy-btn.copied {{ background: var(--pick); color: #fff; border-color: var(--pick); }}
+
+/* v5 hooks/body/cta/assembled blocks */
+.hooks-block, .body-block, .cta-block, .assembled-block, .comment-block {{
+  padding: 14px 20px; border-top: 1px solid var(--line-soft);
+}}
+.hooks-block {{ border-top: none; }}
+.block-label {{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ink-mute); font-weight: 600;
+  margin-bottom: 10px; }}
+.hooks-list {{ display: flex; flex-direction: column; gap: 4px; }}
+.hook-option {{ display: grid; grid-template-columns: 22px 1fr auto;
+  gap: 10px; align-items: start; padding: 8px 10px;
+  border: 1px solid transparent; border-radius: 5px; cursor: pointer;
+  transition: background 0.12s, border-color 0.12s; position: relative; }}
+.hook-option:hover {{ background: var(--tint); }}
+.hook-option input[type="radio"] {{ position: absolute; opacity: 0; cursor: pointer; }}
+.hook-radio {{ width: 16px; height: 16px; border: 2px solid var(--line);
+  border-radius: 50%; background: var(--bg); margin-top: 2px;
+  position: relative; flex-shrink: 0; }}
+.hook-option input:checked ~ .hook-radio {{ border-color: var(--ink); }}
+.hook-option input:checked ~ .hook-radio::after {{ content: ''; display: block;
+  width: 8px; height: 8px; border-radius: 50%; background: var(--ink);
+  position: absolute; top: 2px; left: 2px; }}
+.hook-option input:checked ~ .hook-content {{ color: var(--ink); font-weight: 500; }}
+.hook-option input:checked ~ .hook-content .hook-text {{ color: var(--ink); }}
+.hook-content {{ display: grid; grid-template-columns: 18px 1fr; gap: 6px;
+  align-items: baseline; color: var(--ink-soft); }}
+.hook-num {{ font-family: var(--mono); font-size: 11px; color: var(--ink-mute);
+  letter-spacing: 0.04em; }}
+.hook-text {{ font-size: 14px; line-height: 1.45;
+  font-family: ui-serif, "New York", Georgia, serif; }}
+.hook-rec {{ font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--pick); padding: 2px 7px;
+  border: 1px solid var(--pick); border-radius: 100px; align-self: start; }}
+
+.body-text, .cta-text, .assembled-vo {{ font-size: 14.5px; line-height: 1.7;
+  color: var(--ink);
+  font-family: ui-serif, "New York", "Iowan Old Style", Georgia, serif; }}
+.cta-text {{ font-weight: 600; }}
+.assembled-block {{ background: rgba(10,109,47,0.03); border-top: 1px solid var(--pick); }}
+.assembled-vo {{ font-size: 15.5px; }}
+
+.comment-block {{ padding-top: 12px; }}
 .variant-comment {{ width: 100%; min-height: 50px; padding: 9px 12px;
   border: 1px solid var(--line); border-radius: 6px; font-family: inherit;
-  font-size: 13px; line-height: 1.5; resize: vertical; margin-top: 12px;
+  font-size: 13px; line-height: 1.5; resize: vertical;
   background: var(--bg); box-sizing: border-box; }}
 .variant-comment:focus {{ outline: 1px solid var(--ink); border-color: var(--ink); }}
 .variant-comment::placeholder {{ color: rgba(0,0,0,0.32); }}
@@ -426,15 +522,16 @@ h1 {{ font-size: 32px; line-height: 1.15; letter-spacing: -0.02em;
 </div>
 
 <script>
-const STORAGE_KEY = 'sea_vo_variants_v2';
+const STORAGE_KEY = 'sea_vo_variants_v5';
 
 function loadState() {{
-  try {{ return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{{"picks":[],"comments":{{}}}}'); }}
-  catch (e) {{ return {{picks:[], comments:{{}}}}; }}
+  try {{ return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{{"picks":[],"comments":{{}},"hooks":{{}}}}'); }}
+  catch (e) {{ return {{picks:[], comments:{{}}, hooks:{{}}}}; }}
 }}
 function saveState(s) {{ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }}
 
 let state = loadState();
+if (!state.hooks) state.hooks = {{}};
 
 // Hydrate checkboxes and comments from state
 document.querySelectorAll('.vp').forEach(cb => {{
@@ -448,6 +545,41 @@ document.querySelectorAll('.variant-comment').forEach(ta => {{
   const vid = ta.getAttribute('data-vid');
   if (state.comments[vid]) ta.value = state.comments[vid];
 }});
+
+// Hydrate hook picks
+document.querySelectorAll('.hp').forEach(rb => {{
+  const vid = rb.getAttribute('data-vid');
+  const hidx = parseInt(rb.getAttribute('data-hidx'));
+  if (state.hooks[vid] !== undefined) {{
+    rb.checked = (state.hooks[vid] === hidx);
+  }}
+}});
+
+// Hook picker — reassemble VO on change
+function reassembleVO(vid) {{
+  const assembledEl = document.querySelector(`.assembled-vo[data-vid="${{vid}}"]`);
+  if (!assembledEl) return;
+  const body = assembledEl.getAttribute('data-body');
+  const cta = assembledEl.getAttribute('data-cta');
+  const radio = document.querySelector(`.hp[data-vid="${{vid}}"]:checked`);
+  if (!radio) return;
+  const hook = radio.getAttribute('data-hook');
+  assembledEl.textContent = `${{hook}} ${{body}} ${{cta}}`;
+}}
+
+document.querySelectorAll('.hp').forEach(rb => {{
+  rb.addEventListener('change', () => {{
+    const vid = rb.getAttribute('data-vid');
+    const hidx = parseInt(rb.getAttribute('data-hidx'));
+    state.hooks[vid] = hidx;
+    saveState(state);
+    reassembleVO(vid);
+    updatePanel();
+  }});
+}});
+
+// Refresh all assembled VOs on load to honor persisted hook picks
+document.querySelectorAll('.assembled-vo').forEach(el => reassembleVO(el.getAttribute('data-vid')));
 
 function variantInfo(vid) {{
   const cb = document.querySelector(`.vp[data-vid="${{vid}}"]`);
@@ -466,14 +598,33 @@ function buildPrompt() {{
   const commentEntries = Object.entries(state.comments).filter(([k,v]) => (v||'').trim());
 
   const lines = [
-    '== SEA VO scripts v1 paste-back ==',
+    '== SEA VO scripts v5 paste-back ==',
     '',
     `PICKED VARIANTS (${{picks.length}}):`,
   ];
   if (picks.length === 0) lines.push('  (none yet)');
   picks.forEach(p => {{
-    lines.push(`  ${{p.card_id}} / Video ${{p.vidx}}: "${{p.video_title}}" / ${{p.letter}} ${{p.style}}`);
+    const hookIdx = state.hooks[p.vid];
+    const hookPart = (hookIdx !== undefined) ? ` · Hook #${{hookIdx+1}}` : '';
+    lines.push(`  ${{p.card_id}} / Video ${{p.vidx}}: "${{p.video_title}}" / ${{p.letter}} ${{p.style}}${{hookPart}}`);
   }});
+
+  lines.push('');
+  lines.push(`HOOK PICKS NOT YET CONFIRMED (changed from recommended):`);
+  let changedHooks = 0;
+  Object.entries(state.hooks).forEach(([vid, hidx]) => {{
+    const radio = document.querySelector(`.hp[data-vid="${{vid}}"][data-hidx="${{hidx}}"]`);
+    if (!radio) return;
+    const recRadio = document.querySelector(`.hp[data-vid="${{vid}}"]`);
+    // Find recommended hook (the one initially checked-by-default)
+    // Workaround: we track explicit override only when user picks something different
+    const info = variantInfo(vid);
+    if (info && !state.picks.includes(vid)) {{
+      lines.push(`  ${{info.card_id}} / V${{info.vidx}} / ${{info.letter}}: Hook #${{hidx+1}} (variant not picked, hook noted)`);
+      changedHooks++;
+    }}
+  }});
+  if (changedHooks === 0) lines.pop();  // drop the header if nothing to show
 
   lines.push('');
   lines.push(`COMMENTS (${{commentEntries.length}}):`);
@@ -481,7 +632,7 @@ function buildPrompt() {{
   commentEntries.forEach(([k, c]) => {{
     const info = variantInfo(k);
     if (info) {{
-      lines.push(`  ${{info.card_id}} / Video ${{info.vidx}} / ${{info.letter}}: "${{c.trim()}}"`);
+      lines.push(`  ${{info.card_id}} / V${{info.vidx}} / ${{info.letter}}: "${{c.trim()}}"`);
     }}
   }});
 
@@ -532,11 +683,18 @@ document.querySelectorAll('.variant-comment').forEach(ta => {{
   }});
 }});
 
-// Copy individual VO
+// Copy individual VO — reads from assembled-vo if v5, data-vo if v4 fallback
 document.querySelectorAll('.copy-btn').forEach(btn => {{
   btn.addEventListener('click', async (e) => {{
     e.stopPropagation();
-    const vo = btn.getAttribute('data-vo');
+    let vo;
+    const vid = btn.getAttribute('data-vid');
+    if (vid) {{
+      const el = document.querySelector(`.assembled-vo[data-vid="${{vid}}"]`);
+      vo = el ? el.textContent : '';
+    }} else {{
+      vo = btn.getAttribute('data-vo') || '';
+    }}
     try {{
       await navigator.clipboard.writeText(vo);
       btn.textContent = 'Copied';
